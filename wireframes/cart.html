@@ -43,46 +43,64 @@
 
 <!-- Page Content Begins Here-->
 <div class="row">
- <div class="small-6 columns">
-  <h1>Account</h1>
+ <div class="small-12 columns">
+  <h1>Order Review</h1>
+  <p>Item Name</p>
+  <p>Description $4.50</p>
  </div>
 </div>
 
+<hr>
+
 <div class="row">
- <div class="small-6 columns">
-
-  <p>Push Notifications</p>
-
-  <div class="switch">
-   <input class="switch-input" id="PushSwitch" type="checkbox" name="PushSwitch"></input>
-   <label class="switch-paddle" for="PushSwitch">
-   </label>
-  </div>
-
+ <div class="small-12 columns">
+  <h2>PICK UP</h2>
+  <ul class="inline-list">
+   <li>ASAP</li>
+   <li>15 min</li>
+   <li>30 min</li>
+   <li>1 hour</li>
+  </ul>
  </div>
 </div>
 
+
+
 <div class="row">
- <div class="small-6 columns">
-
-  <p>Email Updates</p>
-
-  <div class="switch">
-   <input class="switch-input" id="EmailSwitch" type="checkbox" name="EmailSwitch"></input>
-   <label class="switch-paddle" for="EmailSwitch">
-   </label>
-  </div>
-
+ <div class="small-12 columns">
+  <ul class="inline-list">
+   <li>15%</li>
+   <li>20%</li>
+   <li>25%</li>
+   <li>Custom</li>
+   <li>No Tip</li>
+  </ul>
  </div>
 </div>
 
 <div class="row">
  <div class="small-12 columns">
-  <h1>Card Information</h1>
-  <p>DISCOVER</p>
-  <P>xxxx xxxx xxxx 1234</P>
-  <p>MASTERCARD</p>
-  <P>xxxx xxxx xxxx 6789</P>
+  Total: $4.50
+ </div>
+</div>
+
+<hr>
+
+<div class="row">
+ <div class="small-12 columns">
+ <fieldset>
+  <input type="radio" name="payment" value="Pay With Cash" id="payWithCash" required><label for="payWithCash">Pay With Cash</label>
+  <br>
+  <input type="radio" name="payment" value="Pay With Card" id="payWithCard" required><label for="payWithCard">Pay With Card Discover xxxx xxxx xxxx 1234</label>
+ </fieldset>
+ </div>
+</div>
+
+<hr>
+
+<div class="row">
+ <div class="small-12 columns">
+  <a class="success button" href="confirm.html">Confirm</a>
  </div>
 </div>
 
@@ -92,7 +110,6 @@
  </div>
 </div>
 <!--^ Do NOT Remove Above Div Tags ^  -->
-
 
 
 <!-- All The Javascript -->

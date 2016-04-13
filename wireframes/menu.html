@@ -16,7 +16,7 @@
  </div>
 
  <div class="title-bar-right">
-  <img src="images/shopping-cart.svg" alt="A Shopping Cart">
+  <a href="cart.html"><img src="images/shopping-cart.svg" alt="A Shopping Cart"></a>
  </div>
 </div>
 
@@ -30,10 +30,11 @@
     </button>
 
     <ul class="vertical menu">
+     <li><a href="menu.html">Menu</a></li>
      <li><a href="settings.html">Account and Settings</a></li>
-     <li><a href="#">Past Orders</a></li>
-     <li><a href="#">Favorites</a></li>
-     <li><a href="#">Rewards</a></li>
+     <li><a href="pastOrders.html">Past Orders</a></li>
+     <li><a href="favorites.html">Favorites</a></li>
+     <li><a href="rewards.html">Rewards</a></li>
     </ul>
 
    </div>
@@ -50,7 +51,7 @@
 
   <div class="row">
    <div class="columns">
-    <ul class="accordion" data-accordion>
+    <ul class="accordion" data-accordion data-allow-all-closed="true">
      <li class="accordion-item" data-accordion-item>
       <a href="#" class="accordion-title" id="menu-toggle">Sandwiches</a>
       <div class="accordion-content" data-tab-content>
