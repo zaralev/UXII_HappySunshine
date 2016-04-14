@@ -59,12 +59,35 @@
        <p>Steak, Egg &amp; Cheese <span>$6.50</span></p>
        <a data-open="make-your-own"><p>Make Your Own</p></a>
       <!--MODAL!!--><div class="reveal" id="make-your-own" data-reveal>
-                        <div class="small-10 columns"><img src="http://blogs.plos.org/obesitypanacea/files/2014/10/sandwich.jpg"></div>
-
-
+                        <div class="foodmodal small-12 columns"><img src="http://blogs.plos.org/obesitypanacea/files/2014/10/sandwich.jpg"></div>
+                        <br><br>
+                        <h1>Bread</h1>
+                        Description<br><br>
+                        <form action="">
+                          <input type="radio" name="bread" value="hoagie"> Hoagie<br>
+                          <input type="radio" name="bread" value="bagel"> Bagel<br>
+                          <input type="radio" name="bread" value="toast"> Toast
+                        </form>
+                        <a data-open="eggs"><p>Next</p></a>
                         <button class="close-button" data-close aria-label="close modal" type="button">
                          <span aria-hidden="true">&times;</span>
       <!--END!!!!--></div>
+
+      <!--MODAL!!--><div class="reveal" id="eggs" data-reveal>
+                        <div class="foodmodal small-12 columns"><img src="https://authoritynutrition.com/wp-content/uploads/2013/07/chicken-and-egg-smaller.jpg"></div>
+                        <h1>Egg</h1>
+                        Description<br><br>
+                        <form action="">
+                          <input type="radio" name="egg" value="sunny"> Sunny-side up<br>
+                          <input type="radio" name="egg" value="scrambled"> Scrambled<br>
+                          <input type="radio" name="egg" value="none"> None
+                        </form>
+                        <a data-open="#"><p>Next</p></a>
+                        <button class="close-button" data-close aria-label="close modal" type="button">
+                         <span aria-hidden="true">&times;</span>
+      <!--END!!!!--></div>
+
+      
       </div>
      </li>
 
