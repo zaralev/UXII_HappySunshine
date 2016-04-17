@@ -5,6 +5,7 @@
   <meta name="name" content="width=device-width, initial-scale=1">
   <title>Happy Sunshine</title>
   <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/app.css">
  </head>
  <body>
 
@@ -83,11 +84,59 @@
                           <input type="radio" name="egg" value="none"> None
                         </form>
                         <a class="FORMPLZ disabled button">Next</a>
-                        <a data-open="#" class="next success button">Next</a>  
+                        <a data-open="cheese" class="next success button">Next</a>
                         <button class="close-button" data-close aria-label="close modal" type="button">
                          <span aria-hidden="true">&times;</span>
       <!--END!!!!--></div>
 
+      <!--MODAL!!--><div class="reveal" id="cheese" data-reveal>
+                        <div class="foodmodal small-12 columns"><img src="http://static.grilledcheeseacademy.com/img/cheeses/detail/sliced-swiss.png"></div>
+                        <h1>Cheese</h1>
+                        Description<br><br>
+                        <form action="">
+                          <input type="radio" name="cheese" value="american"> American<br>
+                          <input type="radio" name="cheese" value="swiss"> Swiss<br>
+                          <input type="radio" name="cheese" value="none"> None
+                        </form>
+                        <a class="FORMPLZ disabled button">Next</a>
+                        <a data-open="meat" class="next success button">Next</a>
+                        <button class="close-button" data-close aria-label="close modal" type="button">
+                         <span aria-hidden="true">&times;</span>
+      <!--END!!!!--></div>
+
+      <!--MODAL!!--><div class="reveal" id="meat" data-reveal>
+                        <div class="foodmodal small-12 columns"><img src="http://img.wennermedia.com/article-leads-horizontal/mj-618_348_the-problem-with-breakfast-meat.jpg"></div>
+                        <h1>Meat</h1>
+                        Description<br><br>
+                        <form action="">
+                          <input type="radio" name="meat" value="bacon"> Bacon<br>
+                          <input type="radio" name="meat" value="steak"> Steak<br>
+                          <input type="radio" name="meat" value="turkey sausage"> Turkey Sausage<br>
+                          <input type="radio" name="meat" value="none"> None
+                        </form>
+                        <a class="FORMPLZ disabled button">Next</a>
+                        <a data-open="addOns" class="next success button">Next</a>
+                        <button class="close-button" data-close aria-label="close modal" type="button">
+                         <span aria-hidden="true">&times;</span>
+      <!--END!!!!--></div>
+
+            <!--MODAL!!--><div class="reveal" id="addOns" data-reveal>
+                              <div class="foodmodal small-12 columns"></div>
+                              <h1>Add Ons</h1>
+                              <br>
+                              <form action="">
+                                <input type="checkbox" name="addOn" value="salt"> Salt<br>
+                                <input type="checkbox" name="addOn" value="pepper"> Pepper<br>
+                                <input type="checkbox" name="addOn" value="ketchup"> Ketchup<br>
+                                <input type="checkbox" name="addOn" value="hsahbrown"> Hashbrown<br>
+                                <input type="checkbox" name="addOn" value="onions"> Onions<br>
+                                <input type="checkbox" name="addOn" value="peppers"> Peppers<br>
+                              </form>
+                              <a href="cart.html" class="FORMPLZ success button">Add To Cart</a>
+                              <a data-open="#" class="next success button">Next</a>
+                              <button class="close-button" data-close aria-label="close modal" type="button">
+                               <span aria-hidden="true">&times;</span>
+            <!--END!!!!--></div>
 
       </div>
      </li>
