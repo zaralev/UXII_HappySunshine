@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="utf-8">
-  <meta name="name" content="width=device-width, initial-scale=1">
-  <title>Happy Sunshine</title>
-  <link rel="stylesheet" href="css/foundation.css">
-  <link rel="stylesheet" href="css/app.css">
- </head>
- <body>
 
-<!-- Foundation off-Canvas Navigation Begins! -->
-<div class="title-bar">
- <div class="title-bar-left">
-  <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
-  <button type="button" class="button" data-open="offCanvas"></button>
- </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="name" content="width=device-width, initial-scale=1">
+    <title>Happy Sunshine</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+</head>
 
- <div class="title-bar-right">
-  <a href="cart.html"><img src="images/shopping-cart.svg" alt="A Shopping Cart"></a>
+<body>
+
+    <!-- Foundation off-Canvas Navigation Begins! -->
+    <div class="title-bar">
+        <div class="title-bar-left">
+            <i class="fa fa-bars fa-3x" data-open="offCanvas" aria-hidden="true"></i>
+        </div>
+
+        <div class="title-bar-right">
+            <a href="cart.html"><i class="fa fa-shopping-cart fa-3x"></i>/<a>
  </div>
-</div>
+</div>3
 
 
  <div class="off-canvas-wrapper">
@@ -32,95 +34,98 @@
 
     <ul class="vertical menu">
      <li><a href="menu.html">Menu</a></li>
-     <li><a href="settings.html">Account and Settings</a></li>
-     <li><a href="pastOrders.html">Past Orders</a></li>
-     <li><a href="favorites.html">Favorites</a></li>
-     <li><a href="rewards.html">Rewards</a></li>
-    </ul>
+            <li><a href="settings.html">Account and Settings</a></li>
+            <li><a href="pastOrders.html">Past Orders</a></li>
+            <li><a href="favorites.html">Favorites</a></li>
+            <li><a href="rewards.html">Rewards</a></li>
+            </ul>
 
-   </div>
+        </div>
 
-<!-- Foundation Off-Canvas Navigation Ends! -->
+        <!-- Foundation Off-Canvas Navigation Ends! -->
 
-<!-- Page Content Begins Here-->
-<div class="row">
- <div class="small-12 columns">
-  <h1>Order Review</h1>
-  <p>Item Name</p>
-  <p>Description $4.50</p>
- </div>
-</div>
+        <!-- Page Content Begins Here-->
+        <div class="row">
+            <div class="small-12 columns">
+                <h1>Order Review</h1>
+                <p>Item Name</p>
+                <p>Description $4.50</p>
+            </div>
+        </div>
 
-<hr>
+        <hr>
 
-<div class="row">
- <div class="small-12 columns">
-  <h2>PICK UP</h2>
-  <ul class="inline-list">
-   <li>ASAP</li>
-   <li>15 min</li>
-   <li>30 min</li>
-   <li>1 hour</li>
-  </ul>
- </div>
-</div>
-
-
-
-<div class="row">
- <div class="small-12 columns">
-  <ul class="inline-list">
-   <li>15%</li>
-   <li>20%</li>
-   <li>25%</li>
-   <li>Custom</li>
-   <li>No Tip</li>
-  </ul>
- </div>
-</div>
-
-<div class="row">
- <div class="small-12 columns">
-  Total: $4.50
- </div>
-</div>
-
-<hr>
-
-<div class="row">
- <div class="small-12 columns">
- <fieldset>
-  <input type="radio" name="payment" value="Pay With Cash" id="payWithCash" required><label for="payWithCash">Pay With Cash</label>
-  <br>
-  <input type="radio" name="payment" value="Pay With Card" id="payWithCard" required><label for="payWithCard">Pay With Card Discover xxxx xxxx xxxx 1234</label>
- </fieldset>
- </div>
-</div>
-
-<hr>
-
-<div class="row">
- <div class="small-12 columns">
-  <a class="success button" href="confirm.html">Confirm</a>
- </div>
-</div>
-
-<!-- Page Content Ends Here -->
-
-<!-- Following Two Div Tags Close the Off-Canvas Wrapper -->
- </div>
-</div>
-<!--^ Do NOT Remove Above Div Tags ^  -->
+        <div class="row">
+            <div class="small-12 columns">
+                <h2>PICK UP</h2>
+                <ul class="inline-list">
+                    <li>ASAP</li>
+                    <li>15 min</li>
+                    <li>30 min</li>
+                    <li>1 hour</li>
+                </ul>
+            </div>
+        </div>
 
 
-<!-- All The Javascript -->
-  <script src="js/vendor/jquery.js"></script>
 
-  <!-- Foundation JS -->
-  <script src="js/vendor/what-input.js"></script>
-  <script src="js/vendor/foundation.js"></script>
+        <div class="row">
+            <div class="small-12 columns">
+                <ul class="inline-list">
+                    <li>15%</li>
+                    <li>20%</li>
+                    <li>25%</li>
+                    <li>Custom</li>
+                    <li>No Tip</li>
+                </ul>
+            </div>
+        </div>
 
-  <script src="js/app.js"></script>
+        <div class="row">
+            <div class="small-12 columns">
+                Total: $4.50
+            </div>
+        </div>
 
- </body>
+        <hr>
+
+        <div class="row">
+            <div class="small-12 columns">
+                <fieldset>
+                    <input type="radio" name="payment" value="Pay With Cash" id="payWithCash" required>
+                    <label for="payWithCash">Pay With Cash</label>
+                    <br>
+                    <input type="radio" name="payment" value="Pay With Card" id="payWithCard" required>
+                    <label for="payWithCard">Pay With Card Discover xxxx xxxx xxxx 1234</label>
+                </fieldset>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="small-12 columns">
+                <a class="success button" href="confirm.html">Confirm</a>
+            </div>
+        </div>
+
+        <!-- Page Content Ends Here -->
+
+        <!-- Following Two Div Tags Close the Off-Canvas Wrapper -->
+    </div>
+    </div>
+    <!--^ Do NOT Remove Above Div Tags ^  -->
+
+
+    <!-- All The Javascript -->
+    <script src="js/vendor/jquery.js"></script>
+
+    <!-- Foundation JS -->
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+
+    <script src="js/app.js"></script>
+
+</body>
+
 </html>

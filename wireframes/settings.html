@@ -1,113 +1,168 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="utf-8">
-  <meta name="name" content="width=device-width, initial-scale=1">
-  <title>Happy Sunshine</title>
-  <link rel="stylesheet" href="css/foundation.css">
-  <link rel="stylesheet" href="css/app.css">
- </head>
- <body>
 
-<!-- Foundation off-Canvas Navigation Begins! -->
-<div class="title-bar">
- <div class="title-bar-left">
-  <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
-  <button type="button" class="button" data-open="offCanvas"></button>
- </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="name" content="width=device-width, initial-scale=1">
+    <title>Happy Sunshine</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+</head>
 
- <div class="title-bar-right">
-<<<<<<< HEAD
-  <a href="car.html"><img src="images/shopping-cart.svg" alt="A Shopping Cart"></a>
-=======
-  <a href="cart.html"><img src="images/shopping-cart.svg" alt="A Shopping Cart"></a>
->>>>>>> master
- </div>
-</div>
+<body>
+
+    <!-- Foundation off-Canvas Navigation Begins! -->
+    <div class="title-bar">
+        <div class="title-bar-left">
+            <i class="fa fa-bars fa-3x" data-open="offCanvas" aria-hidden="true"></i>
+        </div>
+
+        <div class="title-bar-right">
+            <a href="cart.html"><i class="fa fa-shopping-cart fa-3x"></i></a>
+        </div>
+    </div>
 
 
- <div class="off-canvas-wrapper">
-  <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-   <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+    <div class="off-canvas-wrapper">
+        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+            <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
 
-    <button class="close-button" aria-label="close-menu" type="button" data-close>
-     <span aria-hidden="true">&times;</span>
-    </button>
+                <button class="close-button" aria-label="close-menu" type="button" data-close>
+                    <span aria-hidden="true">&times;</span>
+                </button>
 
-    <ul class="vertical menu">
-     <li><a href="menu.html">Menu</a></li>
-     <li><a href="settings.html">Account and Settings</a></li>
-     <li><a href="pastOrders.html">Past Orders</a></li>
-     <li><a href="favorites.html">Favorites</a></li>
-     <li><a href="rewards.html">Rewards</a></li>
-    </ul>
+                <ul class="vertical menu">
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="settings.html">Account and Settings</a></li>
+                    <li><a href="pastOrders.html">Past Orders</a></li>
+                    <li><a href="favorites.html">Favorites</a></li>
+                    <li><a href="rewards.html">Rewards</a></li>
+                </ul>
 
-   </div>
+            </div>
 
-<!-- Foundation Off-Canvas Navigation Ends! -->
+            <!-- Foundation Off-Canvas Navigation Ends! -->
 
-<!-- Page Content Begins Here-->
-<div class="row">
- <div class="small-6 columns">
-  <h1>Account</h1>
- </div>
-</div>
+            <!-- Page Content Begins Here-->
+            <div class="row">
+                <div class="small-6 columns">
+                    <h1>Account</h1>
+                </div>
+            </div>
 
-<div class="row">
- <div class="small-6 columns">
+            <div class="row">
+                <div class="small-6 columns">
 
-  <p>Push Notifications</p>
+                    <p>Push Notifications</p>
 
-  <div class="switch">
-   <input class="switch-input" id="PushSwitch" type="checkbox" name="PushSwitch"></input>
-   <label class="switch-paddle" for="PushSwitch">
-   </label>
-  </div>
+                    <div class="switch">
+                        <input class="switch-input" id="PushSwitch" type="checkbox" name="PushSwitch"></input>
+                        <label class="switch-paddle" for="PushSwitch">
+                        </label>
+                    </div>
 
- </div>
-</div>
+                </div>
+            </div>
 
-<div class="row">
- <div class="small-6 columns">
+            <div class="row">
+                <div class="small-6 columns">
 
-  <p>Email Updates</p>
+                    <p>Email Updates</p>
 
-  <div class="switch">
-   <input class="switch-input" id="EmailSwitch" type="checkbox" name="EmailSwitch"></input>
-   <label class="switch-paddle" for="EmailSwitch">
-   </label>
-  </div>
+                    <div class="switch">
+                        <input class="switch-input" id="EmailSwitch" type="checkbox" name="EmailSwitch"></input>
+                        <label class="switch-paddle" for="EmailSwitch">
+                        </label>
+                    </div>
 
- </div>
-</div>
+                </div>
+            </div>
 
-<div class="row">
- <div class="small-12 columns">
-  <h1>Card Information</h1>
-  <p>DISCOVER</p>
-  <P>xxxx xxxx xxxx 1234</P>
-  <p>MASTERCARD</p>
-  <P>xxxx xxxx xxxx 6789</P>
- </div>
-</div>
+            <div class="row">
+                <div class="small-12 columns">
+                    <h1>Card Information</h1>
+                    <p>DISCOVER</p>
+                    <P>xxxx xxxx xxxx 1234</P>
+                    <p>MASTERCARD</p>
+                    <P>xxxx xxxx xxxx 6789</P>
+                    <p><a data-open="add-card">Add Another Card</a></p>
+                    <div class="reveal" id="add-card" data-reveal>
+                        <div class="cardmodal small-12 columns">
+                            <h1>Card Details</h1>
+                            <form>
+                             <div class="row">
+                              <div class="large-12 columns">
+                               <label>Card Type
+                               <select>
+                                <option value="AmEx">American Express</option>
+                                <option value="Discover">Discover</option>
+                                <option value="MasterCard">MasterCard</option>
+                                <option value="Visa">Visa</option>
+                               </select></label>
+                              </div>
+                             </div>
+                                <div class="row">
+                                    <div class="large-12 columns">
+                                        <label>Card Number
+                                            <input type="text" placeholder="XXXX XXXX XXXX 1234">
+                                        </label>
+                                    </div>
+                                </div>
 
-<!-- Page Content Ends Here -->
+                                <div class="row">
+                                    <div class="large-4 columns">
+                                        <label>Card Expiration Date
+                                            <input type="text" placeholder="Month">
+                                        </label>
+                                    </div>
+                                </div>
 
-<!-- Following Two Div Tags Close the Off-Canvas Wrapper -->
- </div>
-</div>
-<!--^ Do NOT Remove Above Div Tags ^  -->
+                                <div class="row">
+                                    <div class="large-4 columns">
+                                        <input type="text" placeholder="Year">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="large-4 columns">
+                                        <label for="CVC Code">
+                                            <input type="text" placeholder="CVC Code">
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <button class="close-button" data-close aria-label="close modal" type="button">
+                         <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div class="row">
+                         <div class="large-4 columns">
+                          <button class="success button">Save Card</button>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page Content Ends Here -->
+
+            <!-- Following Two Div Tags Close the Off-Canvas Wrapper -->
+        </div>
+    </div>
+    <!--^ Do NOT Remove Above Div Tags ^  -->
 
 
 
-<!-- All The Javascript -->
-  <script src="js/vendor/jquery.js"></script>
+    <!-- All The Javascript -->
+    <script src="js/vendor/jquery.js"></script>
 
-  <!-- Foundation JS -->
-  <script src="js/vendor/what-input.js"></script>
-  <script src="js/vendor/foundation.js"></script>
+    <!-- Foundation JS -->
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
 
-  <script src="js/app.js"></script>
+    <script src="js/app.js"></script>
 
- </body>
+</body>
+
 </html>
