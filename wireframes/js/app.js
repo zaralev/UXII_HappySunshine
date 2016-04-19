@@ -19,7 +19,6 @@ $(document).ready(function() {
         for (var i = 0; i < form.length; i++) {
             $("form")[i].reset();
         };
-        // $("form")[0].reset();
     });
 
 
