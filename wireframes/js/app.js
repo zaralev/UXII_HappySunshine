@@ -14,7 +14,7 @@ $(document).ready(function() {
 
     });
 
-    $(".close-button").click(function() {
+    $(".menu-reset").click(function() {
         var form = jQuery('form');
         for (var i = 0; i < form.length; i++) {
             $("form")[i].reset();
