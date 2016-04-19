@@ -14,6 +14,9 @@ $(document).ready(function() {
 
     });
 
+    $(".close-button").click(function(){
+        $("form")[0].reset();
+    });
 
 
 });
