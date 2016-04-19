@@ -14,8 +14,11 @@ $(document).ready(function() {
 
     });
 
-    $(".close-button").click(function(){
-        $("form")[0].reset();
+    $(".close-button").click(function() {
+        var form = jQuery('form');
+        for (var i = 0; i < form.length; i++) {
+            $("form")[length - 1].reset();
+        };
     });
 
 
