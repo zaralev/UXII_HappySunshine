@@ -59,10 +59,14 @@
             <div class="small-12 columns">
                 <h2>PICK UP</h2>
                 <ul class="inline-list">
-                    <li>ASAP</li>
-                    <li>15 min</li>
-                    <li>30 min</li>
-                    <li>1 hour</li>
+                    <input type="radio" name="pickUp" id="pickUpASAP" required>
+                    <label for="pickUpAsap">ASAP</label>
+                    <input type="radio" name="pickUp" id="pickUp15">
+                    <label for="pickUp15">15 Min</label>
+                    <input type="radio" name="pickUp" id="pickUp30">
+                    <label for="pickUp30">30 Min</label>
+                    <input type="radio" name="pickUp" id="pickUp60">
+                    <label for="pickUp60">1 Hour</label>
                 </ul>
             </div>
         </div>
@@ -72,11 +76,14 @@
         <div class="row">
             <div class="small-12 columns">
                 <ul class="inline-list">
-                    <li>15%</li>
-                    <li>20%</li>
-                    <li>25%</li>
-                    <li>Custom</li>
-                    <li>No Tip</li>
+                    <input type="radio" name="tip" id="tip15" required>
+                    <label for="tip15">15%</label>
+                    <input type="radio" name="tip" id="tip20" required>
+                    <label for="tip20">20%</label>
+                    <input type="radio" name="tip" id="tip25" required>
+                    <label for="tip25">25%</label>
+                    <input type="radio" name="tip" id="tipNone" required>
+                    <label for="tipNone">None</label>
                 </ul>
             </div>
         </div>
