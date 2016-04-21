@@ -26,17 +26,17 @@ body {
         color: #1D7AA1;
         font-size: 3em;
         font-family: "Sun", Helvetica, sans-serif;
-        margin-bottom: 0em; }
+        margin-bottom: 0; }
     #greetingContainer #greeting img {
       max-width: 100%; }
     #greetingContainer #greeting #happy-sunshine {
-      margin-top: -0.2em;
+      margin-top: -1.2em;
       color: #50514F;
       font-size: 3.5em;
       line-height: 1em;
       font-family: "Sun", Helvetica, sans-serif; }
     #greetingContainer #greeting #location {
-      margin-top: -1.8em;
+      margin-top: -2.8em;
       color: #70C1B3; }
 
 hr {
@@ -50,17 +50,40 @@ hr {
   padding: 1em 1em 0.2em;
   background-color: #FAECA7;
   width: 100%; }
-
-input[type="text"] {
-  background-color: #FFF8CC;
-  border: none;
-  color: #50514F;
-  box-shadow: none; }
-  input[type="text"]:focus {
-    color: #50514F;
-    background-color: #fffce7;
+  .bottom input[type="text"] {
+    background-color: #FFF8CC;
     border: none;
+    color: #50514F;
     box-shadow: none; }
+    .bottom input[type="text"]:focus {
+      color: #50514F;
+      background-color: #fffce7;
+      border: none;
+      box-shadow: none; }
+
+input[type="button"].login {
+  width: 100%;
+  background-color: #16da53;
+  padding: 10px;
+  float: left;
+  margin-bottom: 0.5em;
+  font-size: 18px;
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: none;
+  border: none; }
+
+input[type="button"].create {
+  width: 100%;
+  background-color: #f19933;
+  padding: 10px;
+  float: left;
+  margin-bottom: 0.8em;
+  font-size: 18px;
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: none;
+  border: none; }
 
 input[type="text"]::-webkit-input-placeholder {
   color: #a6a6a6; }

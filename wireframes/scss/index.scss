@@ -1,15 +1,10 @@
 @font-face {
-	font-family: 'Sun';
-	src: url('../fonts/DKLemonYellowSun.eot');
-	src: url('../fonts/DKLemonYellowSun.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/DKLemonYellowSun.woff2') format('woff2'),
-		url('../fonts/DKLemonYellowSun.woff') format('woff'),
-		url('../fonts/DKLemonYellowSun.ttf') format('truetype'),
-		url('../fonts/DKLemonYellowSun.svg#DKLemonYellowSun') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'Sun';
+    src: url('../fonts/DKLemonYellowSun.eot');
+    src: url('../fonts/DKLemonYellowSun.eot?#iefix') format('embedded-opentype'), url('../fonts/DKLemonYellowSun.woff2') format('woff2'), url('../fonts/DKLemonYellowSun.woff') format('woff'), url('../fonts/DKLemonYellowSun.ttf') format('truetype'), url('../fonts/DKLemonYellowSun.svg#DKLemonYellowSun') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
-
 $darkgray: #50514F;
 $lightgray: #a6a6a6;
 $blue: #1D7AA1;
@@ -19,7 +14,8 @@ $yellow2: #fffce7;
 $teal: #70C1B3;
 $red: #f25f5c;
 $heading: 'Sun', Helvetica, sans-serif;
-
+$login: #16da53;
+$create: #f19933;
 body {
     background-color: $yellow;
 }
@@ -43,21 +39,21 @@ body {
                 color: $blue;
                 font-size: 3em;
                 font-family: $heading;
-                margin-bottom: 0em;
+                margin-bottom: 0;
             }
         }
         img {
             max-width: 100%;
         }
         #happy-sunshine {
-            margin-top: -0.2em;
+            margin-top: -1.2em;
             color: $darkgray;
             font-size: 3.5em;
             line-height: 1em;
             font-family: $heading;
         }
         #location {
-            margin-top: -1.8em;
+            margin-top: -2.8em;
             color: $teal;
         }
     }
@@ -73,18 +69,45 @@ hr {
     padding: 1em 1em 0.2em;
     background-color: $yellow;
     width: 100%;
-}
-input[type="text"] {
-    background-color: $yellow1;
-    border: none;
-    color: $darkgray;
-    box-shadow: none;
-    &:focus {
-        color: $darkgray;
-        background-color: $yellow2;
+    input[type="text"] {
+        background-color: $yellow1;
         border: none;
+        color: $darkgray;
         box-shadow: none;
+        &:focus {
+            color: $darkgray;
+            background-color: $yellow2;
+            border: none;
+            box-shadow: none;
+        }
     }
+}
+
+input[type="button"].login {
+    width: 100%;
+    background-color:$login;
+    padding: 10px;
+    float: left;
+    // border-radius: 0.4em;
+    margin-bottom: 0.5em;
+    font-size: 18px;
+    color: #FFF;
+    font-weight:bold;
+    text-decoration: none;
+    border:none;
+}
+input[type="button"].create {
+    width: 100%;
+    background-color:$create;
+    padding: 10px;
+    float: left;
+    // border-radius: 0.4em;
+        margin-bottom: 0.8em;
+    font-size: 18px;
+    color: #FFF;
+    font-weight:bold;
+    text-decoration: none;
+    border:none;
 }
 //PLACEHOLDER FORM TEXT
 input[type="text"]::-webkit-input-placeholder {
