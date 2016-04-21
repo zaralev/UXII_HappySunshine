@@ -1,6 +1,5 @@
-body {
-    margin-top: 2rem;
-}
+@import "normalize";
+
 .title-bar {
     background: #333;
     padding: 0.9rem;
@@ -44,7 +43,4 @@ body {
             border: none;
         }
     }
-}
-#happy-sunshine {
-    color: #f00;
 }
