@@ -1,89 +1,92 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1.0;">
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1.0;">
+        <link rel="stylesheet" href="css/foundation.css">
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    </head>
 
-<body>
-    <div class="row">
-        <div class="small-12 columns">
-            <h1>Happy Sunshine</h1>
-            <p>3200 Arch St.</p>
-            <p>Good Morning</p>
+    <body>
+        <div class="row">
+            <div class="small-12 columns">
+                <h1 id="happy-sunshine">Happy Sunshine</h1>
+                <p>3200 Arch St.</p>
+                <p>Good Morning</p>
+            </div>
         </div>
-    </div>
 
-    <hr>
+        <hr>
 
-    <div class="row">
-        <div class="small-12 columns">
-            <label>email</label>
-            <input type="text" name="email" />
+        <div class="row">
+            <div class="small-12 columns">
+                <label>email</label>
+                <input type="text" name="email"/>
+            </div>
         </div>
-    </div>
 
-    <div class="row">
-        <div class="small-12 columns">
-            <label>password</label>
-            <input type="text" name="password" />
+        <div class="row">
+            <div class="small-12 columns">
+                <label>password</label>
+                <input type="text" name="password"/>
+            </div>
         </div>
-    </div>
 
-
-    <div class="row">
-        <div class="small-12 columns">
-            <a href="menu.html">login</a>
+        <div class="row">
+            <div class="small-12 columns">
+                <a href="menu.html">login</a>
+            </div>
         </div>
-    </div>
 
-    <div class="row">
-        <div class="small-12 columns">
-            <p><a class="menu-reset" data-open="create-account">create an account</a></p>
-            <div class="reveal" id="create-account" data-reveal>
-                <div class="accountmodal small-12 columns">
-                    <h1>Create An Account</h1>
-                    <form>
-                        <div class="row">
-                            <div class="small-12 columns">
-                                <input type="text" placeholder="enter your email">
+        <div class="row">
+            <div class="small-12 columns">
+                <p>
+                    <a class="menu-reset" data-open="create-account">create an account</a>
+                </p>
+                <div class="reveal" id="create-account" data-reveal>
+                    <div class="accountmodal small-12 columns">
+                        <h1>Create An Account</h1>
+                        <form>
+                            <div class="row">
+                                <div class="small-12 columns">
+                                    <input type="text" placeholder="enter your email">
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="small-12 columns">
-                                <input type="text" placeholder="enter your password">
+                            <div class="row">
+                                <div class="small-12 columns">
+                                    <input type="text" placeholder="enter your password">
+                                </div>
                             </div>
-                        </div>
-                    </form>
-                </div>
-                <button class="close-button" data-close aria-label="close modal" type="button"><span aria-hidden="true">&times;</span>
-                </button>
+                        </form>
+                    </div>
+                    <button class="close-button" data-close aria-label="close modal" type="button">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
 
-                <div class="row">
-                    <div class="small-12 columns">
-                        <button class="success button"><a href="menu.html">Confirm Account</a></button>
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <button class="success button">
+                                <a href="menu.html">Confirm Account</a>
+                            </button>
+                        </div>
                     </div>
                 </div>
+
             </div>
-
         </div>
-    </div>
 
-    <!-- All The Javascript -->
-    <script src="js/vendor/jquery.js"></script>
+        <!-- All The Javascript -->
+        <script src="js/vendor/jquery.js"></script>
 
-    <!-- Foundation JS -->
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
+        <!-- Foundation JS -->
+        <script src="js/vendor/what-input.js"></script>
+        <script src="js/vendor/foundation.js"></script>
 
-    <script src="js/app.js"></script>
+        <script src="js/app.js"></script>
 
-
-</body>
+    </body>
 
 </html>
