@@ -1,9 +1,48 @@
 $tan: #F4F2DF;
-
+$darkgray: #50514F;
+$blue: #1D7AA1;
+$yellow: #FAECA7;
 body {
-  background-color:$tan ;
+    background-color: $tan;
 }
-
-#happy-sunshine {
-    color: #0ff;
+body {
+    width: 100%;
+    margin: auto;
+}
+#greetingContainer {
+    width: 80%;
+    #greeting {
+        margin-top: 2em;
+        text-align: right;
+        .center {
+            text-align: center;
+            .morning {
+                color: $blue;
+                font-size: 2em;
+            }
+        }
+        img {
+            max-width: 100%;
+        }
+        #happy-sunshine {
+            margin-top: -0.2em;
+            color: $darkgray;
+            font-size: 2.5em;
+        }
+        #location {
+            margin-top: -1.8em;
+        }
+    }
+}
+hr {
+    margin: 0;
+    display: block;
+    border-style: solid;
+    border-width: 3px;
+    border-color: $darkgray;
+}
+.bottom {
+  padding: 2em 1em 1em 1em;
+    background-color: $yellow;
+    width: 100%;
 }
