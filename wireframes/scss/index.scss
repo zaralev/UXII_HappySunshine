@@ -1,10 +1,25 @@
-$tan: #F4F2DF;
+@font-face {
+	font-family: 'Sun';
+	src: url('../fonts/DKLemonYellowSun.eot');
+	src: url('../fonts/DKLemonYellowSun.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/DKLemonYellowSun.woff2') format('woff2'),
+		url('../fonts/DKLemonYellowSun.woff') format('woff'),
+		url('../fonts/DKLemonYellowSun.ttf') format('truetype'),
+		url('../fonts/DKLemonYellowSun.svg#DKLemonYellowSun') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 $darkgray: #50514F;
 $lightgray: #a6a6a6;
 $blue: #1D7AA1;
 $yellow: #FAECA7;
 $yellow1: #FFF8CC;
 $yellow2: #fffce7;
+$teal: #70C1B3;
+$red: #f25f5c;
+$heading: 'Sun', Helvetica, sans-serif;
+
 body {
     background-color: $yellow;
 }
@@ -14,10 +29,10 @@ body {
 }
 #topbackground {
     // this exists because of styling
-    background-color: $tan;
+    background-color: $yellow2;
 }
 #greetingContainer {
-    background-color: $tan;
+    background-color: $yellow2;
     width: 80%;
     #greeting {
         margin-top: 1.3em;
@@ -26,7 +41,9 @@ body {
             text-align: center;
             .morning {
                 color: $blue;
-                font-size: 2em;
+                font-size: 3em;
+                font-family: $heading;
+                margin-bottom: 0em;
             }
         }
         img {
@@ -35,10 +52,13 @@ body {
         #happy-sunshine {
             margin-top: -0.2em;
             color: $darkgray;
-            font-size: 2.5em;
+            font-size: 3.5em;
+            line-height: 1em;
+            font-family: $heading;
         }
         #location {
             margin-top: -1.8em;
+            color: $teal;
         }
     }
 }
