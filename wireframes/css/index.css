@@ -60,6 +60,16 @@ hr {
       background-color: #fffce7;
       border: none;
       box-shadow: none; }
+  .bottom input[type="password"] {
+    background-color: #FFF8CC;
+    border: none;
+    color: #50514F;
+    box-shadow: none; }
+    .bottom input[type="password"]:focus {
+      color: #50514F;
+      background-color: #fffce7;
+      border: none;
+      box-shadow: none; }
 
 input[type="button"].login {
   width: 100%;

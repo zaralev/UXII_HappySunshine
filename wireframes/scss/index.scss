@@ -81,6 +81,18 @@ hr {
             box-shadow: none;
         }
     }
+    input[type="password"] {
+        background-color: $yellow1;
+        border: none;
+        color: $darkgray;
+        box-shadow: none;
+        &:focus {
+            color: $darkgray;
+            background-color: $yellow2;
+            border: none;
+            box-shadow: none;
+        }
+    }
 }
 
 input[type="button"].login {
