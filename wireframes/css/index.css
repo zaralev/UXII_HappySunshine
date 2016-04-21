@@ -1,14 +1,18 @@
 body {
-  background-color: #F4F2DF; }
+  background-color: #FAECA7; }
 
 body {
   width: 100%;
   margin: auto; }
 
+#topbackground {
+  background-color: #F4F2DF; }
+
 #greetingContainer {
+  background-color: #F4F2DF;
   width: 80%; }
   #greetingContainer #greeting {
-    margin-top: 2em;
+    margin-top: 1.3em;
     text-align: right; }
     #greetingContainer #greeting .center {
       text-align: center; }
@@ -32,8 +36,33 @@ hr {
   border-color: #50514F; }
 
 .bottom {
-  padding: 2em 1em 1em 1em;
+  padding: 1em 1em 0.2em;
   background-color: #FAECA7;
   width: 100%; }
+
+input[type="text"] {
+  background-color: #FFF8CC;
+  border: none;
+  color: #50514F;
+  box-shadow: none; }
+  input[type="text"]:focus {
+    color: #50514F;
+    background-color: #fffce7;
+    border: none;
+    box-shadow: none; }
+
+input[type="text"]::-webkit-input-placeholder {
+  color: #a6a6a6; }
+
+input[type="text"]:-moz-placeholder {
+  /* Firefox 18- */
+  color: #a6a6a6; }
+
+input[type="text"]::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #a6a6a6; }
+
+input[type="text"]::-ms-input-placeholder {
+  color: #a6a6a6; }
 
 /*# sourceMappingURL=index.css.map */

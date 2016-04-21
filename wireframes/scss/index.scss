@@ -1,18 +1,26 @@
 $tan: #F4F2DF;
 $darkgray: #50514F;
+$lightgray: #a6a6a6;
 $blue: #1D7AA1;
 $yellow: #FAECA7;
+$yellow1: #FFF8CC;
+$yellow2: #fffce7;
 body {
-    background-color: $tan;
+    background-color: $yellow;
 }
 body {
     width: 100%;
     margin: auto;
 }
+#topbackground {
+    // this exists because of styling
+    background-color: $tan;
+}
 #greetingContainer {
+    background-color: $tan;
     width: 80%;
     #greeting {
-        margin-top: 2em;
+        margin-top: 1.3em;
         text-align: right;
         .center {
             text-align: center;
@@ -42,7 +50,34 @@ hr {
     border-color: $darkgray;
 }
 .bottom {
-  padding: 2em 1em 1em 1em;
+    padding: 1em 1em 0.2em;
     background-color: $yellow;
     width: 100%;
+}
+input[type="text"] {
+    background-color: $yellow1;
+    border: none;
+    color: $darkgray;
+    box-shadow: none;
+    &:focus {
+        color: $darkgray;
+        background-color: $yellow2;
+        border: none;
+        box-shadow: none;
+    }
+}
+//PLACEHOLDER FORM TEXT
+input[type="text"]::-webkit-input-placeholder {
+    color: $lightgray;
+}
+input[type="text"]:-moz-placeholder {
+    /* Firefox 18- */
+    color: $lightgray;
+}
+input[type="text"]::-moz-placeholder {
+    /* Firefox 19+ */
+    color: $lightgray;
+}
+input[type="text"]::-ms-input-placeholder {
+    color: $lightgray;
 }
