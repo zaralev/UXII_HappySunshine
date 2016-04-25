@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1.0;">
-g    <link rel="stylesheet" href="css/foundation.css">
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1.0;"> g
+    <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 </head>
@@ -14,7 +14,7 @@ g    <link rel="stylesheet" href="css/foundation.css">
     <!-- Foundation off-Canvas Navigation Begins! -->
     <div class="title-bar">
         <div class="title-bar-left">
-            <i class="fa fa-bars fa-3x" data-open="offCanvas" aria-hidden="true"></i>
+            <i class="fa fa-bars fa-3x" data-toggle="offCanvas" aria-hidden="true"></i>
         </div>
 
         <div class="title-bar-right">
@@ -27,9 +27,6 @@ g    <link rel="stylesheet" href="css/foundation.css">
         <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
             <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
 
-                <button class="close-button" aria-label="close-menu" type="button" data-close>
-                    <span aria-hidden="true">&times;</span>
-                </button>
 
                 <ul class="vertical menu">
                     <li><a href="menu.html">Menu</a></li>
@@ -90,17 +87,18 @@ g    <link rel="stylesheet" href="css/foundation.css">
                         <div class="cardmodal small-12 columns">
                             <h1>Card Details</h1>
                             <form>
-                             <div class="row">
-                              <div class="large-12 columns">
-                               <label>Card Type
-                               <select>
-                                <option value="AmEx">American Express</option>
-                                <option value="Discover">Discover</option>
-                                <option value="MasterCard">MasterCard</option>
-                                <option value="Visa">Visa</option>
-                               </select></label>
-                              </div>
-                             </div>
+                                <div class="row">
+                                    <div class="large-12 columns">
+                                        <label>Card Type
+                                            <select>
+                                                <option value="AmEx">American Express</option>
+                                                <option value="Discover">Discover</option>
+                                                <option value="MasterCard">MasterCard</option>
+                                                <option value="Visa">Visa</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                </div>
                                 <div class="row">
                                     <div class="large-12 columns">
                                         <label>Card Number
@@ -133,12 +131,12 @@ g    <link rel="stylesheet" href="css/foundation.css">
                             </form>
                         </div>
                         <button class="close-button" data-close aria-label="close modal" type="button">
-                         <span aria-hidden="true">&times;</span>
+                            <span aria-hidden="true">&times;</span>
                         </button>
                         <div class="row">
-                         <div class="large-4 columns">
-                          <button class="success button">Save Card</button>
-                         </div>
+                            <div class="large-4 columns">
+                                <button class="success button">Save Card</button>
+                            </div>
                         </div>
                     </div>
                 </div>

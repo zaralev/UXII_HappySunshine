@@ -369,4 +369,7 @@ table {
 .dropdown .menu .submenu {
   border: none; }
 
+i {
+  cursor: pointer; }
+
 /*# sourceMappingURL=app.css.map */
