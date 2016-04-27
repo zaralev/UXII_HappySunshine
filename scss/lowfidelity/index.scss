@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Sun';
-    src: url('../fonts/DKLemonYellowSun.eot');
-    src: url('../fonts/DKLemonYellowSun.eot?#iefix') format('embedded-opentype'), url('../fonts/DKLemonYellowSun.woff2') format('woff2'), url('../fonts/DKLemonYellowSun.woff') format('woff'), url('../fonts/DKLemonYellowSun.ttf') format('truetype'), url('../fonts/DKLemonYellowSun.svg#DKLemonYellowSun') format('svg');
+    src: url('../../fonts/DKLemonYellowSun.eot');
+    src: url('../../fonts/DKLemonYellowSun.eot?#iefix') format('embedded-opentype'), url('../../fonts/DKLemonYellowSun.woff2') format('woff2'), url('../../fonts/DKLemonYellowSun.woff') format('woff'), url('../../fonts/DKLemonYellowSun.ttf') format('truetype'), url('../../fonts/DKLemonYellowSun.svg#DKLemonYellowSun') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -17,7 +17,7 @@ $heading: 'Sun', Helvetica, sans-serif;
 $login: #16da53;
 $create: #f19933;
 body {
-    background-color: $yellow;
+    background-color: /*$yellow*/ #fff;
 }
 body {
     width: 100%;
@@ -25,10 +25,10 @@ body {
 }
 #topbackground {
     // this exists because of styling
-    background-color: $yellow2;
+    background-color: /*$yellow2*/ #fff;
 }
 #greetingContainer {
-    background-color: $yellow2;
+    background-color: /*$yellow2*/ #fff;
     width: 80%;
     #greeting {
         margin-top: 1.3em;
