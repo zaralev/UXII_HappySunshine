@@ -5,16 +5,19 @@
   font-weight: normal;
   font-style: normal; }
 body {
-  background-color: #fff; }
+  /*$yellow*/
+  background-color: #Fed859; }
 
 body {
   width: 100%;
   margin: auto; }
 
 #topbackground {
+  /*$yellow2*/
   background-color: #fff; }
 
 #greetingContainer {
+  /*$yellow2*/
   background-color: #fff;
   width: 80%; }
   #greetingContainer #greeting {
@@ -23,7 +26,7 @@ body {
     #greetingContainer #greeting .center {
       text-align: center; }
       #greetingContainer #greeting .center .morning {
-        color: #1D7AA1;
+        color: #2c688b;
         font-size: 3em;
         font-family: "Sun", Helvetica, sans-serif;
         margin-bottom: 0; }
@@ -37,7 +40,7 @@ body {
       font-family: "Sun", Helvetica, sans-serif; }
     #greetingContainer #greeting #location {
       margin-top: -2.8em;
-      color: #70C1B3; }
+      color: #39cbaf; }
 
 hr {
   margin: 0;
@@ -48,7 +51,7 @@ hr {
 
 .bottom {
   padding: 1em 1em 0.2em;
-  background-color: #FAECA7;
+  background-color: #Fed859;
   width: 100%; }
   .bottom input[type="text"] {
     background-color: #FFF8CC;
@@ -82,10 +85,12 @@ input[type="button"].login {
   font-weight: bold;
   text-decoration: none;
   border: none; }
+  input[type="button"].login:active, input[type="button"].login:hover {
+    background-color: #4ef783; }
 
 input[type="button"].create {
   width: 100%;
-  background-color: #f19933;
+  background-color: #fd823c;
   padding: 10px;
   float: left;
   margin-bottom: 0.8em;
@@ -94,6 +99,8 @@ input[type="button"].create {
   font-weight: bold;
   text-decoration: none;
   border: none; }
+  input[type="button"].create:active, input[type="button"].create:hover {
+    background-color: #f7ad57; }
 
 input[type="text"]::-webkit-input-placeholder {
   color: #a6a6a6; }

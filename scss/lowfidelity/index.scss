@@ -7,28 +7,36 @@
 }
 $darkgray: #50514F;
 $lightgray: #a6a6a6;
-$blue: #1D7AA1;
-$yellow: #FAECA7;
+// COLOR SCHEME
+$blue: #2c688b;
+$teal: #39cbaf;
+$yellow: #Fed859;
+$orange: #fd823c;
+$red: #ff5f4b;
+// COLOR SCHEME
 $yellow1: #FFF8CC;
 $yellow2: #fffce7;
-$teal: #70C1B3;
-$red: #f25f5c;
 $heading: 'Sun', Helvetica, sans-serif;
 $login: #16da53;
-$create: #f19933;
+$loginHover: #4ef783;
+$create: #fd823c;
+$createHover: #f7ad57;
 body {
-    background-color: /*$yellow*/ #fff;
+    /*$yellow*/
+    background-color: $yellow;
 }
 body {
     width: 100%;
     margin: auto;
 }
 #topbackground {
+    /*$yellow2*/
     // this exists because of styling
-    background-color: /*$yellow2*/ #fff;
+    background-color: #fff;
 }
 #greetingContainer {
-    background-color: /*$yellow2*/ #fff;
+    /*$yellow2*/
+    background-color: #fff;
     width: 80%;
     #greeting {
         margin-top: 1.3em;
@@ -94,32 +102,39 @@ hr {
         }
     }
 }
-
 input[type="button"].login {
     width: 100%;
-    background-color:$login;
+    background-color: $login;
     padding: 10px;
     float: left;
     // border-radius: 0.4em;
     margin-bottom: 0.5em;
     font-size: 18px;
     color: #FFF;
-    font-weight:bold;
+    font-weight: bold;
     text-decoration: none;
-    border:none;
+    border: none;
+    &:active,
+    &:hover {
+        background-color: $loginHover;
+    }
 }
 input[type="button"].create {
     width: 100%;
-    background-color:$create;
+    background-color: $create;
     padding: 10px;
     float: left;
     // border-radius: 0.4em;
-        margin-bottom: 0.8em;
+    margin-bottom: 0.8em;
     font-size: 18px;
     color: #FFF;
-    font-weight:bold;
+    font-weight: bold;
     text-decoration: none;
-    border:none;
+    border: none;
+    &:active,
+    &:hover {
+        background-color: $createHover;
+    }
 }
 //PLACEHOLDER FORM TEXT
 input[type="text"]::-webkit-input-placeholder {
