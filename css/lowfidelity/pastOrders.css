@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Sun';
+  src: url("../../fonts/DKLemonYellowSun.eot");
+  src: url("../../fonts/DKLemonYellowSun.eot?#iefix") format("embedded-opentype"), url("../../fonts/DKLemonYellowSun.woff2") format("woff2"), url("../../fonts/DKLemonYellowSun.woff") format("woff"), url("../../fonts/DKLemonYellowSun.ttf") format("truetype"), url("../../fonts/DKLemonYellowSun.svg#DKLemonYellowSun") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+.past-orders {
+  font-size: 1.3em;
+  width: 100%;
+  text-align: center;
+  background-color: #Fed859;
+  padding: 0;
+  margin-bottom: 1em; }
+  .past-orders h1 {
+    font-family: "Sun", Helvetica, sans-serif;
+    padding: 0;
+    margin: 0.3em; }
+
+div.small-12 p {
+  display: inline-table;
+  padding: 0.6em; }
+div.small-12 p:first-child {
+  font-size: 3em;
+  color: #39cbaf;
+  width: 50%;
+  float: left;
+  margin: 0;
+  font-family: "Sun", Helvetica, sans-serif; }
+div.small-12 p:nth-child(2) {
+  width: 40%;
+  float: right; }
+
+.food {
+  margin-top: 2em; }
+
+.order:first-child {
+  background-color: #fff; }
+
+.title {
+  margin-bottom: -2em; }
+
+/*# sourceMappingURL=pastOrders.css.map */
