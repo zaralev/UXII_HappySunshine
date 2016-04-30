@@ -8,11 +8,46 @@
   font-size: 3em;
   text-align: center;
   background-color: #Fed859;
-  padding: 0em;
+  padding: 0;
   font-family: "Sun", Helvetica, sans-serif; }
 
 .accordion {
   width: 105%;
+  border: none;
   margin-left: -1em; }
+  .accordion a.accordion-title {
+    height: 2em;
+    vertical-align: bottom;
+    font-family: "Sun", Helvetica, sans-serif;
+    font-size: 2em;
+    color: #50514F; }
+  .accordion li:active,
+  .accordion li:first-child,
+  .accordion li:hover {
+    background-color: #FFF8CC; }
+  .accordion li:active,
+  .accordion li:hover,
+  .accordion li:nth-child(2) {
+    background-color: #fffce7; }
+  .accordion li:active,
+  .accordion li:hover,
+  .accordion li:nth-child(3) {
+    background-color: #FFF8CC; }
+  .accordion li:active,
+  .accordion li:hover,
+  .accordion li:nth-child(4) {
+    background-color: #fffce7; }
+  .accordion li:active,
+  .accordion li:hover,
+  .accordion li:nth-child(5) {
+    background-color: #FFF8CC; }
+  .accordion li:active,
+  .accordion li:hover,
+  .accordion li:nth-child(6) {
+    background-color: #fffce7; }
+  .accordion li:active,
+  .accordion li:hover,
+  .accordion li:nth-child(7) {
+    background-color: #FFF8CC; }
 
 /*# sourceMappingURL=menu.css.map */

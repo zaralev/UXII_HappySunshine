@@ -7,15 +7,58 @@
     font-style: normal;
 }
 .menu-title {
-  font-size: 3em;
-  text-align:center;
-  background-color: $yellow;
-  padding: 0em;
-  font-family: $heading;
+    font-size: 3em;
+    text-align: center;
+    background-color: $yellow;
+    padding: 0;
+    font-family: $heading;
 }
-
 .accordion {
-  width: 105%;
-  margin-left:-1em;
-  // background-color: $blue;
+    width: 105%;
+    border: none;
+    margin-left: -1em;
+    // background-color: $blue;
+
+    a.accordion-title{
+        height: 2em;
+        vertical-align: bottom;
+        font-family: $heading;
+        font-size: 2em;
+      color: $darkgray;
+    }
+    li:active,
+    li:first-child,
+    li:hover {
+        background-color: $yellow1;
+    }
+    li:active,
+    li:hover,
+    li:nth-child(2) {
+        background-color: $yellow2;
+    }
+    li:active,
+    li:hover,
+    li:nth-child(3) {
+        background-color: $yellow1;
+    }
+    li:active,
+    li:hover,
+    li:nth-child(4) {
+        background-color: $yellow2;
+    }
+    li:active,
+    li:hover,
+    li:nth-child(5) {
+        background-color: $yellow1;
+    }
+    li:active,
+    li:hover,
+    li:nth-child(6) {
+        background-color: $yellow2;
+    }
+    li:active,
+    li:hover,
+    li:nth-child(7) {
+        background-color: $yellow1;
+    }
 }
