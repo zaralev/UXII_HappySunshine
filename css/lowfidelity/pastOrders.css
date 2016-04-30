@@ -27,7 +27,7 @@ div.small-12 p:first-child {
   margin: 0;
   font-family: "Sun", Helvetica, sans-serif; }
 div.small-12 p:nth-child(2) {
-  width: 40%;
+  width: 50%;
   float: right; }
 
 .food {
