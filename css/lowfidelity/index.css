@@ -5,10 +5,7 @@
   font-weight: normal;
   font-style: normal; }
 body {
-  /*$yellow*/
-  background-color: #Fed859; }
-
-body {
+  background-color: #fff;
   width: 100%;
   margin: auto; }
 
@@ -26,8 +23,8 @@ body {
     #greetingContainer #greeting .center {
       text-align: center; }
       #greetingContainer #greeting .center .morning {
-        color: #2c688b;
-        font-size: 3em;
+        color: #fd823c;
+        font-size: 3.5em;
         font-family: "Sun", Helvetica, sans-serif;
         margin-bottom: 0; }
     #greetingContainer #greeting img {
@@ -35,11 +32,11 @@ body {
     #greetingContainer #greeting #happy-sunshine {
       margin-top: -1.2em;
       color: #50514F;
-      font-size: 3.5em;
+      font-size: 3em;
       line-height: 1em;
       font-family: "Sun", Helvetica, sans-serif; }
     #greetingContainer #greeting #location {
-      margin-top: -2.8em;
+      margin-top: -2.5em;
       color: #39cbaf; }
 
 hr {
@@ -47,7 +44,7 @@ hr {
   display: block;
   border-style: solid;
   border-width: 3px;
-  border-color: #50514F; }
+  border-color: #FFF8CC; }
 
 .bottom {
   padding: 1em 1em 0.2em;
@@ -76,7 +73,7 @@ hr {
 
 input[type="button"].login {
   width: 100%;
-  background-color: #16da53;
+  background-color: #39cbaf;
   padding: 10px;
   float: left;
   margin-bottom: 0.5em;
@@ -86,7 +83,7 @@ input[type="button"].login {
   text-decoration: none;
   border: none; }
   input[type="button"].login:active, input[type="button"].login:hover {
-    background-color: #4ef783; }
+    background-color: #47d6bb; }
 
 input[type="button"].create {
   width: 100%;
@@ -100,7 +97,7 @@ input[type="button"].create {
   text-decoration: none;
   border: none; }
   input[type="button"].create:active, input[type="button"].create:hover {
-    background-color: #f7ad57; }
+    background-color: #ff8c39; }
 
 input[type="text"]::-webkit-input-placeholder {
   color: #a6a6a6; }
