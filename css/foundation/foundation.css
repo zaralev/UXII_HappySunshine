@@ -2870,11 +2870,11 @@ body.is-reveal-open {
   user-select: none;
   color: #fefefe;
   font-weight: bold;
-  font-size: 0.875rem; }
+  font-size: 0.875rem;}
 
 .switch-input {
   opacity: 0;
-  position: absolute; }
+  position: absolute;}
 
 .switch-paddle {
   background: #cacaca;
@@ -2884,7 +2884,6 @@ body.is-reveal-open {
   width: 4rem;
   height: 2rem;
   transition: all 0.25s ease-out;
-  border-radius: 0;
   color: inherit;
   font-weight: inherit; }
   input + .switch-paddle {
@@ -2902,7 +2901,7 @@ body.is-reveal-open {
     transform: translate3d(0, 0, 0);
     border-radius: 0; }
   input:checked ~ .switch-paddle {
-    background: #2199e8; }
+    background: #47d6bb; }
     input:checked ~ .switch-paddle::after {
       left: 2.25rem; }
   [data-whatinput='mouse'] input:focus ~ .switch-paddle {
