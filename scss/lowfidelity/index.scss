@@ -7,7 +7,7 @@
     font-style: normal;
 }
 body {
-    background-color: #fff;
+    background-color: $yellow;
     width: 100%;
     margin: auto;
 }
@@ -45,6 +45,7 @@ body {
         #location {
             margin-top: -2.5em;
             color: $teal;
+            margin-right: 2.5em;
         }
     }
 }
@@ -132,4 +133,60 @@ input[type="text"]::-moz-placeholder {
 }
 input[type="text"]::-ms-input-placeholder {
     color: $lightgray;
+}
+.reveal {
+    padding: 1em;
+}
+
+.accountmodal {
+  height: 200px;
+  text-align:center;
+  input[type="text"] {
+    margin-top:2em;
+      background-color: $yellow1;
+      border: none;
+      color: $darkgray;
+      box-shadow: none;
+      &:focus {
+          color: $darkgray;
+          background-color: $yellow2;
+          border: none;
+          box-shadow: none;
+      }
+  }
+  input[type="password"] {
+      background-color: $yellow1;
+      border: none;
+      color: $darkgray;
+      box-shadow: none;
+      &:focus {
+          color: $darkgray;
+          background-color: $yellow2;
+          border: none;
+          box-shadow: none;
+      }
+  }
+}
+#confirm {
+    width: 100%;
+    background-color: $login;
+    padding: 10px;
+    float: left;
+    // border-radius: 0.4em;
+    margin-top:7em;
+    font-size: 18px;
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    &:active,
+    &:hover {
+        background-color: $loginHover;
+    }
+}
+
+#create-an-account {
+  font-family:$heading;
+  font-size:3em;
+  margin-bottom: 0.3em;
 }

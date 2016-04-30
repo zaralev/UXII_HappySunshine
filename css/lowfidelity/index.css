@@ -5,7 +5,7 @@
   font-weight: normal;
   font-style: normal; }
 body {
-  background-color: #fff;
+  background-color: #Fed859;
   width: 100%;
   margin: auto; }
 
@@ -37,7 +37,8 @@ body {
       font-family: "Sun", Helvetica, sans-serif; }
     #greetingContainer #greeting #location {
       margin-top: -2.5em;
-      color: #39cbaf; }
+      color: #39cbaf;
+      margin-right: 2.5em; }
 
 hr {
   margin: 0;
@@ -112,5 +113,52 @@ input[type="text"]::-moz-placeholder {
 
 input[type="text"]::-ms-input-placeholder {
   color: #a6a6a6; }
+
+.reveal {
+  padding: 1em; }
+
+.accountmodal {
+  height: 200px;
+  text-align: center; }
+  .accountmodal input[type="text"] {
+    margin-top: 2em;
+    background-color: #FFF8CC;
+    border: none;
+    color: #50514F;
+    box-shadow: none; }
+    .accountmodal input[type="text"]:focus {
+      color: #50514F;
+      background-color: #fffce7;
+      border: none;
+      box-shadow: none; }
+  .accountmodal input[type="password"] {
+    background-color: #FFF8CC;
+    border: none;
+    color: #50514F;
+    box-shadow: none; }
+    .accountmodal input[type="password"]:focus {
+      color: #50514F;
+      background-color: #fffce7;
+      border: none;
+      box-shadow: none; }
+
+#confirm {
+  width: 100%;
+  background-color: #39cbaf;
+  padding: 10px;
+  float: left;
+  margin-top: 7em;
+  font-size: 18px;
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: none;
+  border: none; }
+  #confirm:active, #confirm:hover {
+    background-color: #47d6bb; }
+
+#create-an-account {
+  font-family: "Sun", Helvetica, sans-serif;
+  font-size: 3em;
+  margin-bottom: 0.3em; }
 
 /*# sourceMappingURL=index.css.map */
