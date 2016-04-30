@@ -1,1 +1,21 @@
+@import "colors";
+@font-face {
+    font-family: 'Sun';
+    src: url('../../fonts/DKLemonYellowSun.eot');
+    src: url('../../fonts/DKLemonYellowSun.eot?#iefix') format('embedded-opentype'), url('../../fonts/DKLemonYellowSun.woff2') format('woff2'), url('../../fonts/DKLemonYellowSun.woff') format('woff'), url('../../fonts/DKLemonYellowSun.ttf') format('truetype'), url('../../fonts/DKLemonYellowSun.svg#DKLemonYellowSun') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.menu-title {
+  font-size: 3em;
+  text-align:center;
+  background-color: $yellow;
+  padding: 0em;
+  font-family: $heading;
+}
 
+.accordion {
+  width: 110%;
+  margin-left:-1em;
+  // background-color: $blue;
+}

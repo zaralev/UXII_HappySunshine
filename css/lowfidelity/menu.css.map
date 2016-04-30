@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AACA,UAMC;EALG,WAAW,EAAE,KAAK;EAClB,GAAG,EAAE,uCAAuC;EAC5C,GAAG,EAAE,kUAAkU;EACvU,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,MAAM;AAEtB,WAAY;EACV,SAAS,EAAE,GAAG;EACd,UAAU,EAAC,MAAM;EACjB,gBAAgB,ECNT,OAAO;EDOd,OAAO,EAAE,GAAG;EACZ,WAAW,ECFH,4BAA4B;;ADKtC,UAAW;EACT,KAAK,EAAE,IAAI;EACX,WAAW,EAAC,IAAI",
+"sources": ["../../scss/lowfidelity/menu.scss","../../scss/lowfidelity/_colors.scss"],
 "names": [],
 "file": "menu.css"
 }
