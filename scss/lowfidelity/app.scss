@@ -47,3 +47,33 @@
 i{
  cursor: pointer;
 }
+
+@import "colors";
+// TITLE BAR //
+.title-bar {
+    background-color: $orange;
+    .title-bar-left {
+        i {
+            color: $yellow1;
+            transition: 1s all ease;
+            &:active,
+            &:hover {
+                color: $yellow2;
+                -ms-transform: rotate(90deg);
+                /* IE 9 */
+                -webkit-transform: rotate(90deg);
+                /* Chrome, Safari, Opera */
+                transform: rotate(90deg);
+            }
+        }
+    }
+    .title-bar-right {
+        a {
+            color: $yellow1;
+            &:active,
+            &:hover {
+                color: $yellow2;
+            }
+        }
+    }
+}
