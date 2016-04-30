@@ -389,4 +389,12 @@ i {
     .title-bar .title-bar-right a:active, .title-bar .title-bar-right a:hover {
       color: #fffce7; }
 
+.off-canvas-wrapper {
+  background-color: #fffce7; }
+  .off-canvas-wrapper .off-canvas-wrapper-inner {
+    background-color: #fffce7; }
+
+.position-left {
+  background-color: #fffce7; }
+
 /*# sourceMappingURL=app.css.map */
