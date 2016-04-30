@@ -9,7 +9,10 @@
 body {
   background-color: $yellow2;
 }
-.past-orders {
+.favorite-row {
+  margin:1em;
+}
+.favorites-header {
     font-size: 1.3em;
     width: 100%;
     text-align: center;
@@ -22,33 +25,38 @@ body {
         margin: 0.3em;
     }
 }
-div.small-12 {
-    p {
-        display: inline-table;
-        padding: 0.6em;
-    }
-    p:first-child {
-      font-size: 3em;
-      color: $teal;
-      width: 50%;
-      float:left;
-      margin:0;
-      font-family: $heading;
-    }
-    p:nth-child(2) {
-      width: 50%;
-      float:right;
-    }
-}
 
-.food {
-  margin-top: 2em;
+.favorite{
+  ul {
+    li {
+      display:inline-table;
+      img {
+        width:100%;
+        height:auto;
+      }
+      &:first-child {
+        width: 35%;
+      }
+      &:nth-child(2){
+        font-weight: bold;
+      }
+      &:nth-child(3){
+        font-style: italic;
+        font-size: 0.8em;
+      }
+    }
+  }
 }
-
-.order:first-child {
-  background-color: #fff;
+.add {
+  text-align: center;
 }
-
-.title {
-  margin-bottom: -2em;
+.add-fav {
+  width: 60%;
+  margin:auto;
+  background-color: $teal;
+  padding: 1em;
+  font-weight: bold;
+  &:hover,&:active {
+    background-color: $loginHover;
+  }
 }

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1.0;">
     <link rel="stylesheet" href="../css/foundation/foundation.css">
     <link rel="stylesheet" href="../css/lowfidelity/app.css">
+    <link rel="stylesheet" href="../css/lowfidelity/favorites.css">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 </head>
 
@@ -41,35 +43,47 @@
 
             <!-- Page Content Begins Here-->
             <div class="row">
-                <div class="small-12 columns">
+                <div class="small-12 columns favorites-header">
                     <h1>Favorites</h1>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="small-12 columns">
-                    <p>Egg &amp; Cheese</p>
-                    <p>ordered 12 times!</p>
+            <div class="row favorite-row">
+                <div class="small-12 columns favorite">
+                    <ul>
+                        <li><img src="../images/placeholder.png" alt="Picture of food"></li>
+                        <li>Egg &amp; Cheese
+                        </li>
+                        <li>ordered 12 times!</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row favorite-row">
+                <div class="small-12 columns favorite">
+                  <ul>
+                      <li><img src="../images/placeholder.png" alt="Picture of food"></li>
+                      <li>French Toast
+                      </li>
+                      <li>ordered 5 times!</li>
+                  </ul>
+                </div>
+            </div>
+
+            <div class="row favorite-row">
+                <div class="small-12 columns favorite">
+                  <ul>
+                      <li><img src="../images/placeholder.png" alt="Picture of food"></li>
+                      <li>Steak, Egg &amp; Cheese
+                      </li>
+                      <li>ordered 1 time!</li>
+                  </ul>
                 </div>
             </div>
 
             <div class="row">
-                <div class="small-12 columns">
-                    <p>French Toast</p>
-                    <p>ordered 5 times!</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="small-12 columns">
-                    <p>Steak, Egg &amp; Cheese</p>
-                    <p>ordered 1 time</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="small-12 columns">
-                    <p>+ Add more favorites</p>
+                <div class="small-12 columns favorite add">
+                    <button class="add-fav">+ Add more favorites</button>
                 </div>
             </div>
             <!-- Page Content Ends Here -->
