@@ -10,6 +10,12 @@
 body{
   background-color: $yellow2;
 }
+
+.h1 {
+  font-family: $heading;
+  font-size: 3em;
+  margin-bottom: 0.3em;
+}
 ul.cards > li{
     display:inline-table;
     vertical-align: middle;
@@ -90,4 +96,86 @@ button.add {
   &:hover,&:active {
     background-color: $loginHover;
   }
+}
+
+
+///
+
+
+
+
+input[type="text"] {
+    background-color: $yellow1;
+    border: none;
+    color: $darkgray;
+    box-shadow: none;
+    &:focus {
+        color: $darkgray;
+        background-color: $yellow2;
+        border: none;
+        box-shadow: none;
+    }
+}
+input[type="password"] {
+    background-color: $yellow1;
+    border: none;
+    color: $darkgray;
+    box-shadow: none;
+    &:focus {
+        color: $darkgray;
+        background-color: $yellow2;
+        border: none;
+        box-shadow: none;
+    }
+}
+
+input[type="button"].save {
+    width: 100%;
+    background-color: $teal;
+    padding: 10px;
+    float: left;
+    // border-radius: 0.4em;
+    margin-bottom: 0.8em;
+    font-size: 18px;
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    &:active,
+    &:hover {
+        background-color: $loginHover;
+    }
+}
+
+select {
+    width: 100%;
+    background-color: $yellow1;
+    padding: 10px;
+    float: left;
+    // border-radius: 0.4em;
+    margin-bottom: 0.8em;
+    font-size: 1em;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    &:active,
+    &:hover {
+        background-color: $yellow2;
+    }
+}
+//PLACEHOLDER FORM TEXT
+input[type="text"]::-webkit-input-placeholder {
+    color: $lightgray;
+}
+input[type="text"]:-moz-placeholder {
+    /* Firefox 18- */
+    color: $lightgray;
+}
+input[type="text"]::-moz-placeholder {
+    /* Firefox 19+ */
+    color: $lightgray;
+}
+input[type="text"]::-ms-input-placeholder {
+    color: $lightgray;
 }
