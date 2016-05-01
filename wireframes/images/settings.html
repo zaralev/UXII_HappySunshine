@@ -1,40 +1,39 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
+<!-- saved from url=(0117)file:///Users/zleventhal/Documents/1College/1Drexel/Spring-2016/WBDV-T380/UXII_HappySunshine/wireframes/settings.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1.0;">
-    <link rel="stylesheet" href="../css/foundation/foundation.css">
-    <link rel="stylesheet" href="../css/lowfidelity/app.css">
-    <link rel="stylesheet" href="../css/lowfidelity/settings.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-</head>
+    <link rel="stylesheet" href="./settings_files/foundation.css">
+    <link rel="stylesheet" href="./settings_files/app.css">
+    <link rel="stylesheet" href="./settings_files/settings.css">
+    <link rel="stylesheet" href="./settings_files/font-awesome.min.css">
+<meta class="foundation-mq"></head>
 
-<body>
+<body data-whatinput="keyboard">
 
     <!-- Foundation off-Canvas Navigation Begins! -->
     <div class="title-bar">
         <div class="title-bar-left">
-            <i class="fa fa-bars fa-3x" data-toggle="offCanvas" aria-hidden="true"></i>
+            <i class="fa fa-bars fa-3x" data-toggle="offCanvas" aria-hidden="true" aria-expanded="false" aria-controls="offCanvas"></i>
         </div>
 
         <div class="title-bar-right">
-            <a href="cart.html"><i class="fa fa-shopping-cart fa-3x"></i></a>
+            <a href="file:///Users/zleventhal/Documents/1College/1Drexel/Spring-2016/WBDV-T380/UXII_HappySunshine/wireframes/cart.html"><i class="fa fa-shopping-cart fa-3x"></i></a>
         </div>
     </div>
 
 
     <div class="off-canvas-wrapper">
-        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-            <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+            <div class="off-canvas position-left" id="offCanvas" data-off-canvas="64yk1l-off-canvas" aria-hidden="true">
 
 
                 <ul class="vertical menu">
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="settings.html">Account and Settings</a></li>
-                    <li><a href="pastOrders.html">Past Orders</a></li>
-                    <li><a href="favorites.html">Favorites</a></li>
-                    <li><a href="rewards.html">Rewards</a></li>
+                    <li><a href="file:///Users/zleventhal/Documents/1College/1Drexel/Spring-2016/WBDV-T380/UXII_HappySunshine/wireframes/menu.html">Menu</a></li>
+                    <li><a href="file:///Users/zleventhal/Documents/1College/1Drexel/Spring-2016/WBDV-T380/UXII_HappySunshine/wireframes/settings.html">Account and Settings</a></li>
+                    <li><a href="file:///Users/zleventhal/Documents/1College/1Drexel/Spring-2016/WBDV-T380/UXII_HappySunshine/wireframes/pastOrders.html">Past Orders</a></li>
+                    <li><a href="file:///Users/zleventhal/Documents/1College/1Drexel/Spring-2016/WBDV-T380/UXII_HappySunshine/wireframes/favorites.html">Favorites</a></li>
+                    <li><a href="file:///Users/zleventhal/Documents/1College/1Drexel/Spring-2016/WBDV-T380/UXII_HappySunshine/wireframes/rewards.html">Rewards</a></li>
                 </ul>
 
             </div>
@@ -54,7 +53,7 @@
                     <p>Push Notifications</p>
 
                     <div class="switch">
-                        <input class="switch-input" id="PushSwitch" type="checkbox" name="PushSwitch"></input>
+                        <input class="switch-input" id="PushSwitch" type="checkbox" name="PushSwitch">
                         <label class="switch-paddle" for="PushSwitch">
                         </label>
                     </div>
@@ -66,7 +65,7 @@
                     <p>Email Updates</p>
 
                     <div class="switch">
-                        <input class="switch-input" id="EmailSwitch" type="checkbox" name="EmailSwitch"></input>
+                        <input class="switch-input" id="EmailSwitch" type="checkbox" name="EmailSwitch">
                         <label class="switch-paddle" for="EmailSwitch">
                         </label>
                     </div>
@@ -80,35 +79,50 @@
                     <ul class="cards">
                         <li><span class="fa fa-credit-card fa-2x"></span></li>
                         <li>
-                            <ul class="info">
+                            <ul>
                                 <li>
                                     DISCOVER
                                 </li>
                                 <li>xxxx xxxx xxxx 1234</li>
                             </ul>
                         </li>
-                        <li>
-                          <button>X</button>
-                        </li>
+
                     </ul>
                     <ul class="cards">
-                        <li><span class="fa fa-credit-card fa-2x"></span></li>
+                        <li></li>
                         <li>
-                            <ul class="info">
+                            <ul>
                                 <li>MASTERCARD</li>
                                 <li>xxxx xxxx xxxx 6789</li>
                             </ul>
-                        </li>
-                        <li>
-                          <button>X</button>
                         </li>
 
                     </ul>
 
                     <p class="center">
-                        <button class="add menu-reset" data-open="add-card">Add Another Card</button>
+                        <button class="add menu-reset" data-open="add-card" aria-controls="add-card" id="js6my7-reveal" aria-haspopup="true" tabindex="0">Add Another Card</button>
                     </p>
-                    <div class="reveal" id="add-card" data-reveal>
+                    
+                </div>
+            </div>
+
+            <!-- Page Content Ends Here -->
+
+            <!-- Following Two Div Tags Close the Off-Canvas Wrapper -->
+        </div>
+    </div>
+    <!--^ Do NOT Remove Above Div Tags ^  -->
+
+
+
+    <!-- All The Javascript -->
+    <script src="./settings_files/jquery.js"></script>
+
+    <!-- Foundation JS -->
+    <script src="./settings_files/what-input.js"></script>
+    <script src="./settings_files/foundation.js"></script>
+
+    <script src="./settings_files/app.js"></script><div class="reveal-overlay" tabindex="-1" aria-hidden="true"><div class="reveal" id="add-card" data-reveal="2himoq-reveal" aria-labelledby="js6my7-reveal" role="dialog" aria-hidden="true" data-yeti-box="add-card" data-resize="add-card" data-events="resize" style="top: 0px;">
                         <div class="cardmodal small-12 columns">
                             <h1>Card Details</h1>
                             <form>
@@ -155,36 +169,17 @@
                                 </div>
                             </form>
                         </div>
-                        <button class="close-button" data-close aria-label="close modal" type="button">
-                            <span aria-hidden="true">&times;</span>
+                        <button class="close-button" data-close="" aria-label="close modal" type="button">
+                            <span aria-hidden="true">×</span>
                         </button>
                         <div class="row">
                             <div class="large-4 columns">
                                 <button class="success button">Save Card</button>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Page Content Ends Here -->
-
-            <!-- Following Two Div Tags Close the Off-Canvas Wrapper -->
-        </div>
-    </div>
-    <!--^ Do NOT Remove Above Div Tags ^  -->
+                    </div></div>
 
 
 
-    <!-- All The Javascript -->
-    <script src="../js/lowfidelity/vendor/jquery.js"></script>
 
-    <!-- Foundation JS -->
-    <script src="../js/lowfidelity/vendor/what-input.js"></script>
-    <script src="../js/lowfidelity/vendor/foundation.js"></script>
-
-    <script src="../js/lowfidelity/app.js"></script>
-
-</body>
-
-</html>
+</body></html>

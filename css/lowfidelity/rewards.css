@@ -34,4 +34,9 @@ ul.checks {
     display: inline-table;
     width: 20%; }
 
+.description {
+  text-align: center;
+  font-size: 1.2em;
+  padding: 0 1.7em 0 1.7em; }
+
 /*# sourceMappingURL=rewards.css.map */
