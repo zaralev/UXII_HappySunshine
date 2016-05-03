@@ -1,34 +1,31 @@
-// localStorage.setItem("username", "John");
-// console.log(localStorage.getItem("username"));
-
 // Create Accout Local Storage
 
 // STILL NEEDS TO BE WORKED ON!
 
-var email = document.getElementsByClassName('.account-email');
-var pw = document.getElementsByClassName('.account-password');
-
-// Store email and pw
-function saveAccount(){
- localStorage.setItem('email', email.value);
- localStorage.setItem('pw', pw.value);
+// this function sets variables and local storage
+function accountDetails() {
+ // create variables to hold inputed values
+ var email = document.getElementById("create-email");
+ var pw = document.getElementById("create-password");
+ // sets local storage to the variables that were set earlier
+ localStorage.setItem("create-email", email.value);
+ localStorage.setItem("create-password", pw.value);
 }
+console.log(localStorage.getItem("create-email"));
+console.log(localStorage.getItem("create-password"));
 
-// Checks stored email/pw against entered email/pw
-function loginValidation(){
- // email and pw that were stored
- var storedEmail = localStorage.getItem('email');
- var storedPw = localStorage.getItem('pw');
+// this function
+function loginValidation() {
+ // getting the values entered in the login screen
+ var enteredEmail = document.getElementById("email");
+ var enteredPw = document.getElementById("password");
 
-
- // what user enters at home screen
- var enteredEmail = document.getElementById('email');
- var enteredPw = document.getElementById('password');
-
- // if/else to check stored against entered vars
- if(enteredEmail != storedEmail || enteredPw != storedPw){
-  alert("Email or Password Do Not Match. Please make sure you have the correct email and password or create an account")
+ var userEmail = enteredEmail.value;
+ var userPw = enteredPw.value;
+// if/else to determine if email and pw are equal and proceed to menu page
+ if(userEmail == localStorage.getItem("create-email") && userPw == localStorage.getItem("create-password")){
+  window.location.href="menu.html";
  }else{
-  alert("Hello!")
+  alert("Email or password not recognized. Please re-enter valid email or password or create an account");
  }
 }
