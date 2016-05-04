@@ -61,29 +61,97 @@
 
             <div class="row favorite-row">
                 <div class="small-12 columns favorite">
-                  <ul>
-                      <li><img src="images/placeholder.png" alt="Picture of food"></li>
-                      <li>French Toast
-                      </li>
-                      <li>ordered 5 times!</li>
-                  </ul>
+                    <ul>
+                        <li><img src="images/placeholder.png" alt="Picture of food"></li>
+                        <li>French Toast
+                        </li>
+                        <li>ordered 5 times!</li>
+                    </ul>
                 </div>
             </div>
 
             <div class="row favorite-row">
                 <div class="small-12 columns favorite">
-                  <ul>
-                      <li><img src="images/placeholder.png" alt="Picture of food"></li>
-                      <li>Steak, Egg &amp; Cheese
-                      </li>
-                      <li>ordered 1 time!</li>
-                  </ul>
+                    <ul>
+                        <li><img src="images/placeholder.png" alt="Picture of food"></li>
+                        <li>Steak, Egg &amp; Cheese
+                        </li>
+                        <li>ordered 1 time!</li>
+                    </ul>
                 </div>
             </div>
 
             <div class="row">
                 <div class="small-12 columns favorite add">
-                    <button class="add-fav">+ Add more favorites</button>
+                    <button class="add-fav" data-open="add-fav">+ Add more favorites</button>
+
+
+                    <div class="reveal" id="add-fav" data-reveal>
+                        <div class="cardmodal small-12 columns">
+                            <h1 class="h1">Add Favorites</h1>
+                            <form>
+                                <div class="row">
+                                    <div class="large-12 columns">
+                                        <label>Sandwiches
+                                            <select>
+                                                <option disabled selected value> -- select an option -- </option>
+                                                <option class="card-name" data-card-name="EC" value="EC">Egg & Cheese</option>
+                                                <option class="card-name" data-card-name="SEC" value="SEC">Steak,Egg & Cheese</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="large-12 columns">
+                                        <label>Cheesesteaks
+                                            <select>
+                                                <option disabled selected value> -- select an option -- </option>
+                                                <option class="card-name" data-card-name="CS" value="CS">Cheesesteak</option>
+                                                <option class="card-name" data-card-name="CCS" value="CCS">Chicken Cheesesteak</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="large-12 columns">
+                                        <label>French Toast
+                                            <select>
+                                                <option disabled selected value> -- select an option -- </option>
+                                                <option class="card-name" data-card-name="FT" value="FT">French Toast</option>
+                                                <option class="card-name" data-card-name="FTB" value="FTB">French Toast with Bacon</option>
+                                                <option class="card-name" data-card-name="FTS" value="FTS">French Toast with Sausage</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="large-12 columns">
+                                        <label>Hot Dogs
+                                            <select>
+                                                <option disabled selected value> -- select an option -- </option>
+                                                <option class="card-name" data-card-name="HD" value="HD">Hot Dog</option>
+                                                <option class="card-name" data-card-name="HS" value="HS">Hot Sausage</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                        <button class="close-button" data-close aria-label="close modal" type="button">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div class="row">
+                            <div class="large-4 columns">
+                                <input type="button" class="success button save" value="Save Card"></input>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
             <!-- Page Content Ends Here -->
