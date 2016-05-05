@@ -4,34 +4,33 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1.0;">
-    <link rel="stylesheet" href="../css/foundation/foundation.css">
+
+    <link rel="stylesheet" href="../css/remodal.css">
+    <link rel="stylesheet" href="../css/remodal-default-theme.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="../js/remodal.js"></script>
+
+
 </head>
 
 <body>
+    <button onclick="location.href='#modal'">go to project</button>
 
-    <p><a data-open="exampleModal">Bloodflood Pt.I</a></p>
+    <!--MODAL-->
+    <div class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+        <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+        <div>
+            <h2 id="modal1Title">Title</h2>
+            <p id="modal1Desc">
 
-    <div class="reveal" id="exampleModal" data-reveal>
-        <h1>Bloodflood</h1>
-        <p class="lead">C-O-double M-O-N, a wave, an awesome wave That rushes skin and widens in flooded veins Breath in, exhale, I've poked a nerve He'll slap me like a whale</p>
+                Description
 
-        <p>Slaps the C-O-double M-O-N Tide out, tide in, a flood of blood To the heart through the fear slipstreams Breath in, exhale, I've poked a nerve You'll slap me like a whale</p>
-
-        <p>Slaps the C-O-double M-O-N Flood of blood to the heart</p>
-
-        <button class="close-button" data-close aria-label="close modal" type="button">
-            <span aria-hidden="true">&times;</span>
-        </button>
+            </p>
+        </div>
     </div>
+    <!-- END MODAL-->
 
-    <!-- All The Javascript -->
-    <script src="../js/lowfidelity/vendor/jquery.js"></script>
 
-    <!-- Foundation JS -->
-    <script src="../js/lowfidelity/vendor/what-input.js"></script>
-    <script src="../js/lowfidelity/vendor/foundation.js"></script>
-
-    <script src="../js/lowfidelity/app.js"></script>
 </body>
 
 </html>
