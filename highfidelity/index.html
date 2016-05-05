@@ -42,7 +42,7 @@
 
         <div class="row">
             <div class="small-12 columns">
-                <input type="button" class="login" onclick="location.href='menu.html';" value="login" />
+                <input type="button" class="login" onclick="loginValidation()" value="login" />
             </div>
         </div>
 
@@ -58,13 +58,13 @@
                         <form>
                             <div class="row">
                                 <div class="small-12 columns">
-                                    <input class="account-email" data-account-email="account-email" type="text" placeholder="enter your email">
+                                    <input id="account-email" data-account-email="account-email" type="text" placeholder="enter your email">
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="small-12 columns">
-                                    <input class="account-password" data-account-password="account-password" type="password" id="password" required pattern="[a-zA-Z]+" placeholder="enter your password">
+                                    <input id="account-password" data-account-password="account-password" type="password" id="password" required pattern="[a-zA-Z]+" placeholder="enter your password">
                                 </div>
                             </div>
                         </form>
@@ -76,7 +76,7 @@
                     <div class="row">
                         <div class="small-12 columns">
                             <button id="confirm" class="success button">
-                                <a href="menu.html" style="color:#fff">confirm account</a>
+                                <a href="index.html" onclick="accountDetails()" style="color:#fff">confirm account</a>
                             </button>
                         </div>
                     </div>
