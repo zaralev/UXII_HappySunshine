@@ -1,18 +1,16 @@
 // Create Accout Local Storage
 
-// STILL NEEDS TO BE WORKED ON!
-
 // this function sets variables and local storage
 function accountDetails() {
  // create variables to hold inputed values
- var email = document.getElementById("create-email");
- var pw = document.getElementById("create-password");
+ var email = document.getElementById("account-email");
+ var pw = document.getElementById("account-password");
  // sets local storage to the variables that were set earlier
- localStorage.setItem("create-email", email.value);
- localStorage.setItem("create-password", pw.value);
+ localStorage.setItem("account-email", email.value);
+ localStorage.setItem("account-password", pw.value);
 }
-console.log(localStorage.getItem("create-email"));
-console.log(localStorage.getItem("create-password"));
+console.log(localStorage.getItem("account-email"));
+console.log(localStorage.getItem("account-password"));
 
 // this function
 function loginValidation() {
@@ -22,8 +20,9 @@ function loginValidation() {
 
  var userEmail = enteredEmail.value;
  var userPw = enteredPw.value;
+
 // if/else to determine if email and pw are equal and proceed to menu page
- if(userEmail == localStorage.getItem("create-email") && userPw == localStorage.getItem("create-password")){
+ if(userEmail == localStorage.getItem("account-email") && userPw == localStorage.getItem("account-password")){
   window.location.href="menu.html";
  }else{
   alert("Email or password not recognized. Please re-enter valid email or password or create an account");
