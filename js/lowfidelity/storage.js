@@ -1,5 +1,5 @@
 // Create Accout Local Storage
-
+// NOT FINISHED NEEDS MORE WORK
 // this function sets variables and local storage
 function accountDetails() {
  // create variables to hold inputed values
@@ -8,6 +8,10 @@ function accountDetails() {
  // sets local storage to the variables that were set earlier
  localStorage.setItem("account-email", email.value);
  localStorage.setItem("account-password", pw.value);
+
+ if (email || pw == ""){
+   alert("Please Enter an email or password");
+ }
 }
 console.log(localStorage.getItem("account-email"));
 console.log(localStorage.getItem("account-password"));
