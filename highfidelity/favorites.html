@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1.0;">
+    <link rel="stylesheet" href="../css/foundation/foundation.css">
+    <link rel="stylesheet" href="../css/lowfidelity/app.css">
+    <link rel="stylesheet" href="../css/lowfidelity/favorites.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- Foundation off-Canvas Navigation Begins! -->
+    <div class="title-bar">
+        <div class="title-bar-left">
+            <i class="fa fa-bars fa-3x" data-toggle="offCanvas" aria-hidden="true"></i>
+        </div>
+
+        <div class="title-bar-right">
+            <a href="cart.html"><i class="fa fa-shopping-cart fa-3x"></i></a>
+        </div>
+    </div>
+
+
+    <div class="off-canvas-wrapper">
+        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+            <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+
+                <ul class="vertical menu">
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="settings.html">Account and Settings</a></li>
+                    <li><a href="pastOrders.html">Past Orders</a></li>
+                    <li><a href="favorites.html">Favorites</a></li>
+                    <li><a href="rewards.html">Rewards</a></li>
+                </ul>
+
+            </div>
+
+            <!-- Foundation Off-Canvas Navigation Ends! -->
+
+            <!-- Page Content Begins Here-->
+            <div class="row">
+                <div class="small-12 columns favorites-header">
+                    <h1>Favorites</h1>
+                </div>
+            </div>
+
+            <div class="row favorite-row">
+                <div class="small-12 columns favorite">
+                    <ul>
+                        <li><img src="images/placeholder.png" alt="Picture of food"></li>
+                        <li>Egg &amp; Cheese
+                        </li>
+                        <li>ordered 12 times!</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row favorite-row">
+                <div class="small-12 columns favorite">
+                    <ul>
+                        <li><img src="images/placeholder.png" alt="Picture of food"></li>
+                        <li>French Toast
+                        </li>
+                        <li>ordered 5 times!</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row favorite-row">
+                <div class="small-12 columns favorite">
+                    <ul>
+                        <li><img src="images/placeholder.png" alt="Picture of food"></li>
+                        <li>Steak, Egg &amp; Cheese
+                        </li>
+                        <li>ordered 1 time!</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="small-12 columns favorite add">
+                    <button class="add-fav" data-open="add-fav">+ Add more favorites</button>
+
+
+                    <div class="reveal" id="add-fav" data-reveal>
+                        <div class="cardmodal small-12 columns">
+                            <h1 class="h1">Add Favorites</h1>
+                            <form>
+                                <div class="row">
+                                    <div class="large-12 columns">
+                                        <label>Sandwiches
+                                            <select>
+                                                <option disabled selected value> -- select an option -- </option>
+                                                <option class="card-name" data-card-name="EC" value="EC">Egg & Cheese</option>
+                                                <option class="card-name" data-card-name="SEC" value="SEC">Steak,Egg & Cheese</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="large-12 columns">
+                                        <label>Cheesesteaks
+                                            <select>
+                                                <option disabled selected value> -- select an option -- </option>
+                                                <option class="card-name" data-card-name="CS" value="CS">Cheesesteak</option>
+                                                <option class="card-name" data-card-name="CCS" value="CCS">Chicken Cheesesteak</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="large-12 columns">
+                                        <label>French Toast
+                                            <select>
+                                                <option disabled selected value> -- select an option -- </option>
+                                                <option class="card-name" data-card-name="FT" value="FT">French Toast</option>
+                                                <option class="card-name" data-card-name="FTB" value="FTB">French Toast with Bacon</option>
+                                                <option class="card-name" data-card-name="FTS" value="FTS">French Toast with Sausage</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="large-12 columns">
+                                        <label>Hot Dogs
+                                            <select>
+                                                <option disabled selected value> -- select an option -- </option>
+                                                <option class="card-name" data-card-name="HD" value="HD">Hot Dog</option>
+                                                <option class="card-name" data-card-name="HS" value="HS">Hot Sausage</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                        <button class="close-button" data-close aria-label="close modal" type="button">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div class="row">
+                            <div class="large-4 columns">
+                                <input type="button" class="success button save" value="Save Card"></input>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- Page Content Ends Here -->
+
+            <!-- Following Two Div Tags Close the Off-Canvas Wrapper -->
+        </div>
+    </div>
+    <!--^ Do NOT Remove Above Div Tags ^  -->
+
+    <!-- All The Javascript -->
+    <script src="../js/lowfidelity/vendor/jquery.js"></script>
+
+    <!-- Foundation JS -->
+    <script src="../js/lowfidelity/vendor/what-input.js"></script>
+    <script src="../js/lowfidelity/vendor/foundation.js"></script>
+
+    <script src="../js/lowfidelity/app.js"></script>
+</body>
+
+</html>
