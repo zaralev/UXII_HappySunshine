@@ -1,0 +1,118 @@
+@import "normalize";
+
+.title-bar {
+    background: #333;
+    padding: 0.9rem;
+}
+.top-bar {
+    background: #333;
+    ul {
+        background: #333;
+        li {
+            background: #333;
+            a {
+                color: #fff;
+            }
+        }
+    }
+    .menu:last-child {
+        @media only screen and (min-width: 40em) {
+            border-left: 1px solid #4e4e4e;
+        }
+    }
+    .menu:first-child {
+        @media only screen and (min-width: 40em) {
+            border-left: none;
+        }
+    }
+    .menu li:not(:last-child) {
+        @media only screen and (min-width: 40em) {
+            border-right: 1px solid #4e4e4e;
+        }
+    }
+}
+.menu-text {
+    color: #fff;
+    @media only screen and (max-width: 40em) {
+        display: none !important;
+    }
+}
+.dropdown {
+    .menu {
+        .submenu {
+            border: none;
+        }
+    }
+}
+i{
+ cursor: pointer;
+}
+
+@import "colors";
+// TITLE BAR //
+.title-bar {
+    background-color: $orange;
+    .title-bar-left {
+        i {
+            color: $yellow1;
+            transition: 1s all ease;
+            &:active,
+            &:hover {
+                color: $yellow2;
+                -ms-transform: rotate(90deg);
+                /* IE 9 */
+                -webkit-transform: rotate(90deg);
+                /* Chrome, Safari, Opera */
+                transform: rotate(90deg);
+            }
+        }
+    }
+    .title-bar-right {
+        a {
+            color: $yellow1;
+            &:active,
+            &:hover {
+                color: $yellow2;
+            }
+        }
+    }
+}
+
+// SIDE BAR //
+.off-canvas-wrapper {
+  background-color: $yellow2;
+  .off-canvas-wrapper-inner{
+    background-color: $yellow2;
+    ul.vertical {
+      li {
+        height: 3em;
+        padding-top:0.3em;
+        a {
+          color: #fff;
+          font-weight: bold;
+          &:hover {
+            color:#eee;
+          }
+        }
+      }
+      li:first-child {
+        background-color: $blue;
+      }
+      li:nth-child(2){
+        background-color: $teal;
+      }
+      li:nth-child(3){
+        background-color: $yellow;
+      }
+      li:nth-child(4){
+        background-color: $orange;
+      }
+      li:nth-child(5){
+        background-color: $red;
+      }
+    }
+  }
+}
+.position-left {
+    background-color: $yellow2;
+}

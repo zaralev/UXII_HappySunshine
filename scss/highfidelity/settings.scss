@@ -1,0 +1,181 @@
+@import "colors";
+
+@font-face {
+    font-family: 'Sun';
+    src: url('../../fonts/DKLemonYellowSun.eot');
+    src: url('../../fonts/DKLemonYellowSun.eot?#iefix') format('embedded-opentype'), url('../../fonts/DKLemonYellowSun.woff2') format('woff2'), url('../../fonts/DKLemonYellowSun.woff') format('woff'), url('../../fonts/DKLemonYellowSun.ttf') format('truetype'), url('../../fonts/DKLemonYellowSun.svg#DKLemonYellowSun') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+  background-color: $yellow2;
+}
+
+.h1 {
+  font-family: $heading;
+  font-size: 3em;
+  margin-bottom: 0.3em;
+}
+ul.cards > li{
+    display:inline-table;
+    vertical-align: middle;
+    &:last-child {
+      float:right;
+    }
+    button {
+      background-color: #fff;
+      padding: 0.7em;
+      border-radius: 0.3em;
+      font-weight: bold;
+      color: $darkgray;
+      border: 0.05em solid #ddd;
+      &:hover,&:active {
+        background-color: #f5f5f5;
+        border: 0.05em solid #ccc;
+      }
+    }
+}
+
+.info li{
+  &:first-child {
+    font-weight: bold;
+    margin-bottom: -0.3em;
+  }
+}
+
+
+.account-title {
+    font-size: 1.3em;
+    width:100%;
+    text-align: center;
+    background-color: $yellow;
+    padding: 0;
+    margin-bottom: 1em;
+    h1 {
+          font-family: $heading;
+              padding: 0;
+              margin:0.3em;
+    }
+}
+
+.card-info {
+    font-size: 2em;
+    width:110%;
+    text-align: center;
+    background-color: $red;
+    color:#fff;
+    font-family: $heading;
+    padding: 0.3em;
+    margin-bottom: 1em;
+    margin-left: -0.3em;
+    margin-top: 2em;
+    h1 {
+          font-family: $heading;
+              padding: 0;
+              margin:0.3em;
+    }
+}
+
+.switch-paddle {
+  background-color: #bfbfbf;
+}
+
+.notification {
+  text-align: center;
+  font-weight: bold;
+}
+.center {
+  text-align: center;
+}
+button.add {
+    width:60%;
+    margin:1em auto auto auto;
+    padding: 1em;
+    font-weight: bold;
+  background-color: $login;
+  &:hover,&:active {
+    background-color: $loginHover;
+  }
+}
+
+
+///
+
+
+
+
+input[type="text"] {
+    background-color: $yellow1;
+    border: none;
+    color: $darkgray;
+    box-shadow: none;
+    &:focus {
+        color: $darkgray;
+        background-color: $yellow2;
+        border: none;
+        box-shadow: none;
+    }
+}
+input[type="password"] {
+    background-color: $yellow1;
+    border: none;
+    color: $darkgray;
+    box-shadow: none;
+    &:focus {
+        color: $darkgray;
+        background-color: $yellow2;
+        border: none;
+        box-shadow: none;
+    }
+}
+
+input[type="button"].save {
+    width: 100%;
+    background-color: $teal;
+    padding: 10px;
+    float: left;
+    // border-radius: 0.4em;
+    margin-bottom: 0.8em;
+    font-size: 18px;
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    &:active,
+    &:hover {
+        background-color: $loginHover;
+    }
+}
+
+select {
+    width: 100%;
+    background-color: $yellow1;
+    padding: 10px;
+    float: left;
+    // border-radius: 0.4em;
+    margin-bottom: 0.8em;
+    font-size: 1em;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    &:active,
+    &:hover {
+        background-color: $yellow2;
+    }
+}
+//PLACEHOLDER FORM TEXT
+input[type="text"]::-webkit-input-placeholder {
+    color: $lightgray;
+}
+input[type="text"]:-moz-placeholder {
+    /* Firefox 18- */
+    color: $lightgray;
+}
+input[type="text"]::-moz-placeholder {
+    /* Firefox 19+ */
+    color: $lightgray;
+}
+input[type="text"]::-ms-input-placeholder {
+    color: $lightgray;
+}

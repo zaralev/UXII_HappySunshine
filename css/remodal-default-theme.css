@@ -88,8 +88,8 @@
     right: 1em;
     display: block;
     overflow: visible;
-    width: 35px;
-    height: 35px;
+    width: 20px;
+    height: 20px;
     margin: 0;
     padding: 0;
     cursor: pointer;
@@ -107,11 +107,11 @@
 .remodal-close:before {
     font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif !important;
     font-size: 4em;
-    line-height: 35px;
+    line-height: 20px;
     position: absolute;
     top: 0.3em;
     display: block;
-    width: 35px;
+    width: 20px;
     content: "\00d7";
     text-align: center;
 }

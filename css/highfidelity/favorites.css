@@ -17,10 +17,11 @@ body {
   background-color: #Fed859;
   padding: 0;
   margin-bottom: 1em; }
-  .favorites-header h1 {
-    font-family: "Sun", Helvetica, sans-serif;
-    padding: 0;
-    margin: 0.3em; }
+
+h1 {
+  font-family: "Sun", Helvetica, sans-serif;
+  padding: 0;
+  margin: 0.3em; }
 
 .favorite ul li {
   display: inline-table; }
@@ -40,13 +41,16 @@ body {
 .add {
   text-align: center; }
 
-.add-fav {
+.add-fav, .save {
   width: 60%;
   margin: auto;
   background-color: #39cbaf;
   padding: 1em;
   font-weight: bold; }
-  .add-fav:hover, .add-fav:active {
+  .add-fav:hover, .add-fav:active, .save:hover, .save:active {
     background-color: #47d6bb; }
+
+.save {
+  margin-top: 3em; }
 
 /*# sourceMappingURL=favorites.css.map */

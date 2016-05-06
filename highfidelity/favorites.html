@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="../css/highfidelity/favorites.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../css/remodal.css">
+    <link rel="stylesheet" href="../css/remodal-default-theme.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="../js/remodal.js"></script>
 </head>
 
 <body>
@@ -83,10 +88,85 @@
 
             <div class="row">
                 <div class="small-12 columns favorite add">
-                    <button class="add-fav" data-open="add-fav">+ Add more favorites</button>
+                    <!-- <button class="add-fav" data-open="add-fav">+ Add more favorites</button> -->
 
+                    <button class="add-fav" onclick="location.href='#fav'">+ Add more favorites</button>
 
-                    <div class="reveal" id="add-fav" data-reveal>
+                    <!--MODAL-->
+                    <div class="remodal" data-remodal-id="fav" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+                        <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                        <div>
+                            <!-- <h2 id="modal1Title">Title</h2> -->
+                            <h1 class="h1">Add Favorites</h1>
+                            <p id="modal1Desc">
+
+                                <div class="cardmodal small-12 columns">
+
+                                    <form>
+                                        <div class="row">
+                                            <div class="large-12 columns">
+                                                <label>Sandwiches
+                                                    <select>
+                                                        <option disabled selected value> -- select an option -- </option>
+                                                        <option class="card-name" data-card-name="EC" value="EC">Egg & Cheese</option>
+                                                        <option class="card-name" data-card-name="SEC" value="SEC">Steak,Egg & Cheese</option>
+                                                    </select>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="large-12 columns">
+                                                <label>Cheesesteaks
+                                                    <select>
+                                                        <option disabled selected value> -- select an option -- </option>
+                                                        <option class="card-name" data-card-name="CS" value="CS">Cheesesteak</option>
+                                                        <option class="card-name" data-card-name="CCS" value="CCS">Chicken Cheesesteak</option>
+                                                    </select>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="large-12 columns">
+                                                <label>French Toast
+                                                    <select>
+                                                        <option disabled selected value> -- select an option -- </option>
+                                                        <option class="card-name" data-card-name="FT" value="FT">French Toast</option>
+                                                        <option class="card-name" data-card-name="FTB" value="FTB">French Toast with Bacon</option>
+                                                        <option class="card-name" data-card-name="FTS" value="FTS">French Toast with Sausage</option>
+                                                    </select>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="large-12 columns">
+                                                <label>Hot Dogs
+                                                    <select>
+                                                        <option disabled selected value> -- select an option -- </option>
+                                                        <option class="card-name" data-card-name="HD" value="HD">Hot Dog</option>
+                                                        <option class="card-name" data-card-name="HS" value="HS">Hot Sausage</option>
+                                                    </select>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                </div>
+                                <div class="row">
+                                    <div class="large-4 columns">
+                                        <input type="button" class="success button save" value="Save Card"></input>
+                                    </div>
+                                </div>
+                        </div>
+
+                        </p>
+                    </div>
+                </div>
+                <!-- END MODAL-->
+
+                <!-- <div class="reveal" id="add-fav" data-reveal>
                         <div class="cardmodal small-12 columns">
                             <h1 class="h1">Add Favorites</h1>
                             <form>
@@ -149,15 +229,15 @@
                                 <input type="button" class="success button save" value="Save Card"></input>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
 
-                </div>
             </div>
-            <!-- Page Content Ends Here -->
-
-            <!-- Following Two Div Tags Close the Off-Canvas Wrapper -->
         </div>
+        <!-- Page Content Ends Here -->
+
+        <!-- Following Two Div Tags Close the Off-Canvas Wrapper -->
+    </div>
     </div>
     <!--^ Do NOT Remove Above Div Tags ^  -->
 

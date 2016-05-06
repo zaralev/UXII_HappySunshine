@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="../css/highfidelity/app.css">
     <link rel="stylesheet" href="../css/highfidelity/settings.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../css/remodal.css">
+    <link rel="stylesheet" href="../css/remodal-default-theme.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="../js/remodal.js"></script>
 </head>
 
 <body>
@@ -88,7 +93,7 @@
                             </ul>
                         </li>
                         <li>
-                          <button>X</button>
+                            <button>X</button>
                         </li>
                     </ul>
                     <ul class="cards">
@@ -100,15 +105,80 @@
                             </ul>
                         </li>
                         <li>
-                          <button>X</button>
+                            <button>X</button>
                         </li>
 
                     </ul>
 
-                    <p class="center">
+                    <!-- <p class="center">
                         <button class="add menu-reset" data-open="add-card">Add Another Card</button>
+                    </p> -->
+                    <p class="center">
+                        <button class="add menu-reset" onclick="location.href='#add'">Add Another Card</button>
                     </p>
-                    <div class="reveal" id="add-card" data-reveal>
+                    <!--MODAL-->
+                    <div class="remodal" data-remodal-id="add" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+                        <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                        <div>
+                            <!-- <h2 id="modal1Title">Title</h2> -->
+                            <h1 class="h1">Card Details</h1>
+                            <p id="modal1Desc">
+
+                                <form>
+                                    <div class="row">
+                                        <div class="large-12 columns">
+                                            <label>Card Type
+                                                <select>
+                                                    <option class="card-name" data-card-name="AmEx" value="AmEx">American Express</option>
+                                                    <option class="card-name" data-card-name="Discover" value="Discover">Discover</option>
+                                                    <option class="card-name" data-card-name="MasterCard" value="MasterCard">MasterCard</option>
+                                                    <option class="card-name" data-card-name="Visa" value="Visa">Visa</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="large-12 columns">
+                                            <label>Card Number
+                                                <input class="card-number" data-card-number="card-number" type="text" placeholder="XXXX XXXX XXXX 1234">
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="large-4 columns">
+                                            <label>Card Expiration Date
+                                                <input class="card-expiration-month" data-card-expiration-date="card-expiration-month" type="text" placeholder="Month">
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="large-4 columns">
+                                            <input class="card-expiration-year" data-card-expiration-date="card-expiration-year" type="text" placeholder="Year">
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="large-4 columns">
+                                            <label for="CVC Code">
+                                                <input class="card-security-number" data-card-security-number="card-secuirty-number" type="text" placeholder="CVC Code">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </form>
+                        </div>
+                        <div class="row">
+                            <div class="large-4 columns">
+                                <input type="button" class="success button save" value="Save Card"></input>
+                            </div>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+                <!-- END MODAL-->
+
+                <!-- <div class="reveal" id="add-card" data-reveal>
                         <div class="cardmodal small-12 columns">
                             <h1 class="h1">Card Details</h1>
                             <form>
@@ -163,14 +233,14 @@
                                 <input type="button" class="success button save" value="Save Card"></input>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div> -->
             </div>
-
-            <!-- Page Content Ends Here -->
-
-            <!-- Following Two Div Tags Close the Off-Canvas Wrapper -->
         </div>
+
+        <!-- Page Content Ends Here -->
+
+        <!-- Following Two Div Tags Close the Off-Canvas Wrapper -->
+    </div>
     </div>
     <!--^ Do NOT Remove Above Div Tags ^  -->
 

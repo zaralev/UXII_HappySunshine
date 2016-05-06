@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="../css/highfidelity/index.css">
     <!--styling for index-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../css/remodal.css">
+    <link rel="stylesheet" href="../css/remodal-default-theme.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="../js/remodal.js"></script>
 </head>
 
 <body>
@@ -48,10 +53,13 @@
 
         <div class="row">
             <div class="small-12 columns">
-                <p>
+              <p>
+                  <input type="button" class="create menu-reset"  onclick="location.href='#create'" value="create an account" />
+              </p>
+                <!-- <p>
                     <input type="button" class="create menu-reset" data-open="create-account" value="create an account" />
-                </p>
-                <div class="reveal" id="create-account" data-reveal>
+                </p> -->
+                <!-- <div class="reveal" id="create-account" data-reveal>
                     <div class="accountmodal small-12 columns">
                         <h1 id="create-an-account">Create An Account</h1>
                         <span id="desc-create">Creating an account lets you access special deals and save your payment options!</span>
@@ -80,7 +88,43 @@
                             </button>
                         </div>
                     </div>
+                </div> -->
+
+                <!--MODAL-->
+                <div class="remodal" data-remodal-id="create" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <!-- <h2 id="modal1Title">Title</h2> -->
+                        <h1 id="create-an-account">Create An Account</h1>
+                        <p id="modal1Desc">
+
+                          <span id="desc-create">Creating an account lets you access special deals and save your payment options!</span>
+                          <form>
+                              <div class="row">
+                                  <div class="small-12 columns">
+                                      <input id="account-email" data-account-email="account-email" type="text" placeholder="enter your email">
+                                  </div>
+                              </div>
+
+                              <div class="row">
+                                  <div class="small-12 columns">
+                                      <input id="account-password" data-account-password="account-password" type="password" id="password" required pattern="[a-zA-Z]+" placeholder="enter your password">
+                                  </div>
+                              </div>
+                          </form>
+                        </div>
+                        <div class="row">
+                            <div class="small-12 columns">
+                                <button id="confirm" class="success button">
+                                    <a href="index.html" onclick="accountDetails()" style="color:#fff">confirm account</a>
+                                </button>
+                            </div>
+                        </div>
+
+                        </p>
+                    </div>
                 </div>
+                <!-- END MODAL-->
 
             </div>
         </div>

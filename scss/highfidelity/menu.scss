@@ -1,0 +1,67 @@
+@import "colors";
+@font-face {
+    font-family: 'Sun';
+    src: url('../../fonts/DKLemonYellowSun.eot');
+    src: url('../../fonts/DKLemonYellowSun.eot?#iefix') format('embedded-opentype'), url('../../fonts/DKLemonYellowSun.woff2') format('woff2'), url('../../fonts/DKLemonYellowSun.woff') format('woff'), url('../../fonts/DKLemonYellowSun.ttf') format('truetype'), url('../../fonts/DKLemonYellowSun.svg#DKLemonYellowSun') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+  background-color: $yellow2;
+}
+.menu-title {
+    font-size: 3em;
+    text-align: center;
+    background-color: $yellow;
+    padding: 0;
+    font-family: $heading;
+}
+.accordion {
+    width: 105%;
+    border: none;
+    margin-left: -0.6em;
+    // background-color: $blue;
+
+    a.accordion-title{
+        height: 2em;
+        vertical-align: bottom;
+        font-family: $heading;
+        font-size: 2em;
+      color: $darkgray;
+    }
+    li:active,
+    li:first-child,
+    li:hover {
+        background-color: $yellow1;
+    }
+    li:active,
+    li:hover,
+    li:nth-child(2) {
+        background-color: $yellow2;
+    }
+    li:active,
+    li:hover,
+    li:nth-child(3) {
+        background-color: $yellow1;
+    }
+    li:active,
+    li:hover,
+    li:nth-child(4) {
+        background-color: $yellow2;
+    }
+    li:active,
+    li:hover,
+    li:nth-child(5) {
+        background-color: $yellow1;
+    }
+    li:active,
+    li:hover,
+    li:nth-child(6) {
+        background-color: $yellow2;
+    }
+    li:active,
+    li:hover,
+    li:nth-child(7) {
+        background-color: $yellow1;
+    }
+}
