@@ -7,24 +7,28 @@
 body {
   background-color: #fffce7; }
 
-h1, h2{
+h1, h2 {
   cursor: pointer;
-  font-family: 'Sun';
-}
+  font-family: 'Sun'; }
 
-h1{
-  font-size: 3em;
-}
-h2{
-  font-size: 2em;
-}
-button{
+h1 {
+  font-size: 3em; }
+
+h2 {
+  font-size: 2em; }
+
+.arrow {
+  transform: rotate(180deg);
+  ms-transform: rotate(180deg);
+  webkit-transform: rotate(180deg); }
+
+button {
   background-color: #39cbaf;
   padding: 5px;
   color: #fff;
   font-family: 'Sun';
-  font-size: 2em;
-}
+  font-size: 2em; }
+
 .menu-title {
   font-size: 3em;
   text-align: center;
@@ -70,5 +74,8 @@ button{
   .accordion li:hover,
   .accordion li:nth-child(7) {
     background-color: #FFF8CC; }
+
+.submit-center {
+  text-align: center; }
 
 /*# sourceMappingURL=menu.css.map */
