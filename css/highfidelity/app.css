@@ -391,6 +391,7 @@ i {
   .off-canvas-wrapper .off-canvas-wrapper-inner {
     background-color: #fffce7; }
     .off-canvas-wrapper .off-canvas-wrapper-inner ul.vertical li {
+      -webkit-tap-highlight-color: transparent;
       height: 3em;
       padding-top: 0.3em; }
       .off-canvas-wrapper .off-canvas-wrapper-inner ul.vertical li a {
