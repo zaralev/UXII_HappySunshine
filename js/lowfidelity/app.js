@@ -25,8 +25,8 @@ $(document).ready(function() {
 });
 
 // New Accordion Menu
-$(document).ready(function($){
+$(document).ready(function(){
   $('#accordion').find('.accordion-toggle').click(function(){
-    $(this).next().slideToggle('fast');
+    $(this).next().slideToggle('slow');
   });
 });
