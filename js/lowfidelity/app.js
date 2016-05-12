@@ -43,3 +43,8 @@ $(document).ready(function(){
     $('.title-bar-left .hamburger').toggle();
   });
 });
+
+// Midnight.JS for sticky "Create Your Own Sandwich" options
+// $(document).ready(function(){
+//   $('.create-your-own').midnight();
+// })
