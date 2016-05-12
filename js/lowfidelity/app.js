@@ -30,3 +30,16 @@ $(document).ready(function(){
     $(this).next().slideToggle('slow');
   });
 });
+
+
+// remove icon for hamburger
+$(document).ready(function(){
+  $('.title-bar-left .hamburger').click(function(){
+    $(this).toggle();
+    $('.title-bar-left .x').toggle();
+  });
+  $('.title-bar-left .x').click(function(){
+    $(this).toggle();
+    $('.title-bar-left .hamburger').toggle();
+  });
+});

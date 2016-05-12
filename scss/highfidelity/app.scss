@@ -53,18 +53,33 @@ i{
 .title-bar {
     background-color: $orange;
     .title-bar-left {
-        i {
+        i.hamburger {
             color: $yellow1;
             transition: 1s all ease;
-            &:active,
-            &:hover {
-                color: $yellow2;
-                -ms-transform: rotate(90deg);
-                /* IE 9 */
-                -webkit-transform: rotate(90deg);
-                /* Chrome, Safari, Opera */
-                transform: rotate(90deg);
-            }
+            // &:active,
+            // &:hover {
+            //     color: $yellow2;
+            //     -ms-transform: rotate(90deg);
+            //     /* IE 9 */
+            //     -webkit-transform: rotate(90deg);
+            //     /* Chrome, Safari, Opera */
+            //     transform: rotate(90deg);
+            // }
+        }
+        i.x {
+            color: $yellow1;
+            transition: 1s all ease;
+            display:none;
+            // &:active,
+            // &:hover {
+            //     color: $yellow2;
+            //     -ms-transform: rotate(90deg);
+            //     /* IE 9 */
+            //     -webkit-transform: rotate(90deg);
+            //     /* Chrome, Safari, Opera */
+            //     transform: rotate(90deg);
+            // }
+
         }
     }
     .title-bar-right {

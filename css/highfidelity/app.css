@@ -374,16 +374,13 @@ i {
 
 .title-bar {
   background-color: #fd823c; }
-  .title-bar .title-bar-left i {
+  .title-bar .title-bar-left i.hamburger {
     color: #FFF8CC;
     transition: 1s all ease; }
-    .title-bar .title-bar-left i:active, .title-bar .title-bar-left i:hover {
-      color: #fffce7;
-      -ms-transform: rotate(90deg);
-      /* IE 9 */
-      -webkit-transform: rotate(90deg);
-      /* Chrome, Safari, Opera */
-      transform: rotate(90deg); }
+  .title-bar .title-bar-left i.x {
+    color: #FFF8CC;
+    transition: 1s all ease;
+    display: none; }
   .title-bar .title-bar-right a {
     color: #FFF8CC; }
     .title-bar .title-bar-right a:active, .title-bar .title-bar-right a:hover {
