@@ -102,18 +102,58 @@ h2 {
 }
 
 #thirdaccordion {
-  background-color: #ff9487;;
+  background-color: #ff9487;
   border-bottom: 5px solid $red;
 }
 
 .add-to-cart {
-  border-radius: 5px;
-}
-
-button {
   background-color: #39cbaf;
   padding: 5px;
   color: #fff;
-  font-family: 'Sun';
-  font-size: 2em;
+  // font-family: 'Sun';
+  // font-size: 2em;
+  border-radius: 5px;
+}
+
+.add-to {
+    background-color: #39cbaf;
+    padding: 5px;
+    color: #fff;
+    // font-family: 'Sun';
+    // font-size: 1.3em;
+    border-radius: 5px;
+    position:absolute;
+    right:1.3em;
+}
+
+.left-align {
+  margin-left:-1.8em;
+}
+
+.foodForCart {
+  li {
+    margin-bottom: 1em;
+    span {
+      position: absolute;
+      right: 8em;
+      font-weight: bold;
+    }
+  }
+}
+
+.builditems {
+  // background-color: #ff9487;
+  border-bottom: 3px dotted $teal;
+}
+
+.builditemsB{
+    border-bottom: 3px dotted $yellow;
+}
+
+.builditemsC{
+    border-bottom: 3px dotted $red;
+}
+
+.accordion-content ul {
+  font-size: 12px;
 }
