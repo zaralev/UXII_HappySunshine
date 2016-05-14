@@ -7,6 +7,7 @@
     <title>Happy Sunshine</title>
     <link rel="stylesheet" href="../css/foundation/foundation.css">
     <link rel="stylesheet" href="../css/highfidelity/app.css">
+    <link rel="stylesheet" href="../css/highfidelity/cart.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 </head>
 
@@ -43,17 +44,14 @@
             <!-- Page Content Begins Here-->
             <div class="row">
                 <div class="small-12 columns">
-                    <h1>Order Review</h1>
+                    <h1 class="order-title">Order Review</h1>
                     <ul class="show-cart" onload="displayCart()">
                     </ul>
                 </div>
             </div>
-
-            <hr>
-
             <div class="row">
                 <div class="small-12 columns">
-                    <h2>PICK UP</h2>
+                    <h2 class="time-title">PICK UP</h2>
                     <ul class="inline-list">
                         <input type="radio" name="pickUp" id="pickUpASAP" required>
                         <label for="pickUpAsap">ASAP</label>
@@ -62,7 +60,7 @@
                         <input type="radio" name="pickUp" id="pickUp30">
                         <label for="pickUp30">30 Min</label>
                         <input type="radio" name="pickUp" id="pickUp60">
-                        <label for="pickUp60">1 Hour</label>
+                        <label for="pickUp60">1 Hr</label>
                     </ul>
                 </div>
             </div>
@@ -71,7 +69,7 @@
 
             <div class="row">
                 <div class="small-12 columns">
-                  <h2>TIP</h2>
+                    <h2 class="tip-title">TIP</h2>
                     <ul class="inline-list">
                         <input type="radio" name="tip" id="tip15" required>
                         <label for="tip15">15%</label>
@@ -84,33 +82,31 @@
                     </ul>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="small-12 columns">
-                    Total: $4.50
+            <div class="total">
+                <div class="row">
+                    <div class="small-12 columns total-cost">
+                        <b>Total:</b> $4.50
+                    </div>
                 </div>
-            </div>
 
-            <hr>
-
-            <div class="row">
-                <div class="small-12 columns">
-                    <fieldset>
+                <div class="row">
+                    <div class="small-12 columns">
+                        <!-- <fieldset> -->
                         <input type="radio" name="payment" value="Pay With Cash" id="payWithCash" required>
                         <label for="payWithCash">Pay With Cash</label>
                         <br>
                         <input type="radio" name="payment" value="Pay With Card" id="payWithCard" required>
-                        <label for="payWithCard">Pay With Card Discover xxxx xxxx xxxx 1234</label>
-                    </fieldset>
+                        <label for="payWithCard">Pay With Card
+                        </label><br>
+                        <div class="card"><span class="fa fa-credit-card"></span>Discover xxxx xxxx xxxx 1234</div>
+                        <!-- </fieldset> -->
+                    </div>
                 </div>
             </div>
-
-            <hr>
-
-            <div class="row">
-                <div class="small-12 columns">
-                    <a class="success button" href="confirm.html">Confirm</a>
-                </div>
+            <div class="row confirm-row">
+              <a href="confirm.html">
+                  <button class="confirm" type="submit">Confirm</button>
+              </a>
             </div>
 
             <!-- Page Content Ends Here -->
