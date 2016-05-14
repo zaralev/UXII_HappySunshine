@@ -53,9 +53,9 @@
       <div class="row">
         <div class="columns">
           <div id="accordion">
-            <h1 class="accordion-toggle">Create Your Own</h1>
+            <h1 id="firstaccordion" class="accordion-toggle">Create Your Own <span class="fa fa-plus" style="float:right; padding:0.2em;"></span></h1>
             <div class="accordion-content">
-              <h2 class="accordion-toggle">Bread <img class="arrow" src="images/drop-down-arrow.png" alt="drop down" style="float:right;"/></h2>
+              <h2 class="accordion-toggle">Bread <span class="fa fa-minus" style="float:right;"></span></h2>
               <ul>
                 <li>
                   <input type="radio" name="bread" value="hoagie"> Hoagie</li>
@@ -64,7 +64,7 @@
                 <li>
                   <input type="radio" name="bread" value="toast"> Toast</li>
               </ul>
-              <h2 class="accordion-toggle">Egg  <img class="arrow" src="images/drop-down-arrow.png" alt="drop down" style="float:right;"/></h2>
+              <h2 class="accordion-toggle">Egg <span class="fa fa-minus" style="float:right;"></span></h2>
               <ul>
                 <li>
                   <input type="radio" name="egg" value="sunny"> Sunny-Side Up</li>
@@ -73,7 +73,7 @@
                 <li>
                   <input type="radio" name="egg" value="none"> None</li>
               </ul>
-              <h2 class="accordion-toggle">Cheese <img class="arrow" src="images/drop-down-arrow.png" alt="drop down" style="float:right;"/></h2>
+              <h2 class="accordion-toggle">Cheese <span class="fa fa-minus" style="float:right;"></span></h2>
               <ul>
                 <li>
                   <input type="radio" name="cheese" value="american"> American</li>
@@ -82,7 +82,7 @@
                 <li>
                   <input type="radio" name="cheese" value="none"> None</li>
               </ul>
-              <h2 class="accordion-toggle">Meat <img class="arrow" src="images/drop-down-arrow.png" alt="drop down" style="float:right;"/></h2>
+              <h2 class="accordion-toggle">Meat <span class="fa fa-minus" style="float:right;"></span></h2>
               <ul>
                 <li>
                   <input type="radio" name="meat" value="bacon"> Bacon</li>
@@ -93,7 +93,7 @@
                 <li>
                   <input type="radio" name="meat" value="none"> None</li>
               </ul>
-              <h2 class="accordion-toggle">Add Ons <img class="arrow" src="images/drop-down-arrow.png" alt="drop down" style="float:right;"/></h2>
+              <h2 class="accordion-toggle">Add Ons <span class="fa fa-minus" style="float:right;"></span></h2>
               <ul>
                 <li>
                   <input type="checkbox" name="add-on" value="salt"> Salt</li>
@@ -111,12 +111,12 @@
 
               <div class="submit-center">
                 <a href="cart.html">
-                  <button type="submit">Add to Cart</button>
+                  <button class="add-to-cart" type="submit">Add to Cart</button>
                 </a>
               </div>
             </div>
 
-            <h1 class="accordion-toggle">Breakfast</h1>
+            <h1 id="secondaccordion" class="accordion-toggle">Breakfast <span class="fa fa-plus" style="float:right; padding:0.2em;"></span></h1>
             <div class="accordion-content">
               <h2 class="accordion-toggle">French Toast</h2>
               <ul class="accordion-content foodForCart">
@@ -202,7 +202,7 @@
               </ul>
             </div>
 
-            <h1 class="accordion-toggle">Lunch</h1>
+            <h1 id="thirdaccordion" class="accordion-toggle">Lunch <span class="fa fa-plus" style="float:right; padding:0.2em;"></span></h1>
             <div class="accordion-content">
               <h2 class="accordion-toggle">Cheesesteaks</h2>
               <ul class="accordion-content foodForCart">

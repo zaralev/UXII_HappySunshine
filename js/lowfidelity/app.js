@@ -44,6 +44,19 @@ $(document).ready(function(){
   });
 });
 
+
+// change plus to minus
+$(document).ready(function(){
+  $('.accordion-toggle').click(function(){
+    $(this).children('span').toggleClass('fa-plus');
+        $(this).children('span').toggleClass('fa-minus');
+    // $(this).children('.fa-minus').removeClass('fa-plus');
+    // $(this).children('.fa-plus').addClass('fa-minus');
+    // $(this).children('.fa-minus').addClass('fa-plus');
+  });
+});
+
+
 // Midnight.JS for sticky "Create Your Own Sandwich" options
 // $(document).ready(function(){
 //   $('.create-your-own').midnight();

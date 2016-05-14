@@ -25,13 +25,6 @@ h2 {
   ms-transform: rotate(180deg);
   webkit-transform: rotate(180deg);
 }
-button {
-  background-color: #39cbaf;
-  padding: 5px;
-  color: #fff;
-  font-family: 'Sun';
-  font-size: 2em;
-}
 .menu-title {
     font-size: 3em;
     text-align: center;
@@ -93,4 +86,34 @@ button {
 .submit-center {
   text-align:center;
 
+}
+.accordion-toggle {
+  padding: 0.2em;
+}
+
+#firstaccordion {
+  background-color: $teal;
+  border-bottom: 5px solid #64ebd1;
+}
+
+#secondaccordion {
+  background-color: #fff38b;
+  border-bottom: 5px solid $yellow;
+}
+
+#thirdaccordion {
+  background-color: #ff9487;;
+  border-bottom: 5px solid $red;
+}
+
+.add-to-cart {
+  border-radius: 5px;
+}
+
+button {
+  background-color: #39cbaf;
+  padding: 5px;
+  color: #fff;
+  font-family: 'Sun';
+  font-size: 2em;
 }
