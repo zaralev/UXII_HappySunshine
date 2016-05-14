@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="../css/highfidelity/app.css">
     <link rel="stylesheet" href="../css/highfidelity/cart.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="../css/remodal.css">
+    <link rel="stylesheet" href="../css/remodal-default-theme.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="../js/remodal.js"></script>
 </head>
 
 <body>
@@ -104,16 +110,36 @@
                 </div>
             </div>
             <div class="row confirm-row">
-              <a href="confirm.html">
-                  <button class="confirm" type="submit">Confirm</button>
-              </a>
+                  <button class="confirm" type="submit" onclick="location.href='#favs'">Confirm</button>
             </div>
+
+
+            <!--MODAL-->
+            <div class="remodal" data-remodal-id="favs" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+                <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                <div>
+                    <!-- <h2 id="modal1Title">Title</h2> -->
+                    <h1>Thanks For Ordering!</h1>
+                    <p id="modal1Desc">
+
+                      <span>Would you like to add this order to  favorites?</span>
+                      <br><br>
+                      <button class="not-today" type="submit" onclick="location.href='progress.html'">Not Today</button>
+                      <button class="yes" type="submit" onclick="location.href='progress.html'">Yes!</button>
+                    </p>
+                </div>
+            </div>
+            <!-- END MODAL-->
+
+
+
 
             <!-- Page Content Ends Here -->
 
             <!-- Following Two Div Tags Close the Off-Canvas Wrapper -->
         </div>
     </div>
+
     <!--^ Do NOT Remove Above Div Tags ^  -->
 
 

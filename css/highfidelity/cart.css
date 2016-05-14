@@ -70,4 +70,24 @@ h1, h2 {
   text-align: center;
   margin-top: 1em; }
 
+.yes {
+  background-color: #Fed859;
+  padding: 10px;
+  color: #fff;
+  font-family: 'Sun';
+  font-size: 1.5em;
+  border-radius: 5px;
+  width: 58%;
+  display: inline-block; }
+
+.not-today {
+  background-color: #50514F;
+  padding: 10px;
+  color: #fff;
+  font-family: 'Sun';
+  font-size: 1.5em;
+  border-radius: 5px;
+  width: 30%;
+  display: inline-block; }
+
 /*# sourceMappingURL=cart.css.map */
