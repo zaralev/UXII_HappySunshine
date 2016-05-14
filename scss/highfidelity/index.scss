@@ -16,35 +16,51 @@ body {
     // this exists because of styling
     background-color: #fff;
 }
+#background {
+  background-color: rgba(0, 68, 89, 0.36);
+  padding:2em 0 0.5em 0;
+  width: 110%;
+  margin-left: -5%;
+}
 #greetingContainer {
     /*$yellow2*/
-    background-color: #fff;
-    width: 80%;
+    // background-color: #fff;
+    background: #5399fc; /* Old browsers */
+    background: -moz-linear-gradient(top, #5399fc 0%, #75d0fd 48%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #5399fc 0%,#75d0fd 48%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #5399fc 0%,#75d0fd 48%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5399fc', endColorstr='#75d0fd',GradientType=0 ); /* IE6-9 */
+    width: 100%;
     #greeting {
-        margin-top: 1.3em;
         text-align: right;
+        overflow-x:hidden;
         .center {
+            position: relative;
             text-align: center;
             .morning {
-                color: $orange;
+                position: relative;
+                top: -0.5em;
+                color: #fff;
                 font-size: 3.5em;
                 font-family: $heading;
                 margin-bottom: 0;
             }
         }
         img {
-            max-width: 100%;
+            max-width: 110%;
+            margin-left:-5%;
         }
         #happy-sunshine {
-            margin-top: -1.2em;
-            color: $darkgray;
+            position: relative;
+            margin-top: -1em;
+            color: #fffd46;
             font-size: 3em;
             line-height: 1em;
             font-family: $heading;
         }
         #location {
             margin-top: -2.5em;
-            color: $teal;
+            color: #fff;
             margin-right: 2.5em;
         }
     }
@@ -137,35 +153,34 @@ input[type="text"]::-ms-input-placeholder {
 .reveal {
     padding: 1em;
 }
-
 .accountmodal {
-  height: 200px;
-  text-align:center;
-  input[type="text"] {
-    margin-top:2em;
-      background-color: $yellow1;
-      border: none;
-      color: $darkgray;
-      box-shadow: none;
-      &:focus {
-          color: $darkgray;
-          background-color: $yellow2;
-          border: none;
-          box-shadow: none;
-      }
-  }
-  input[type="password"] {
-      background-color: $yellow1;
-      border: none;
-      color: $darkgray;
-      box-shadow: none;
-      &:focus {
-          color: $darkgray;
-          background-color: $yellow2;
-          border: none;
-          box-shadow: none;
-      }
-  }
+    height: 200px;
+    text-align: center;
+    input[type="text"] {
+        margin-top: 2em;
+        background-color: $yellow1;
+        border: none;
+        color: $darkgray;
+        box-shadow: none;
+        &:focus {
+            color: $darkgray;
+            background-color: $yellow2;
+            border: none;
+            box-shadow: none;
+        }
+    }
+    input[type="password"] {
+        background-color: $yellow1;
+        border: none;
+        color: $darkgray;
+        box-shadow: none;
+        &:focus {
+            color: $darkgray;
+            background-color: $yellow2;
+            border: none;
+            box-shadow: none;
+        }
+    }
 }
 #confirm {
     width: 100%;
@@ -173,7 +188,7 @@ input[type="text"]::-ms-input-placeholder {
     padding: 10px;
     float: left;
     // border-radius: 0.4em;
-    margin-top:2em;
+    margin-top: 2em;
     font-size: 18px;
     color: #FFF;
     font-weight: bold;
@@ -184,9 +199,8 @@ input[type="text"]::-ms-input-placeholder {
         background-color: $loginHover;
     }
 }
-
 #create-an-account {
-  font-family:$heading;
-  font-size:3em;
-  margin-bottom: 0.3em;
+    font-family: $heading;
+    font-size: 3em;
+    margin-bottom: 0.3em;
 }

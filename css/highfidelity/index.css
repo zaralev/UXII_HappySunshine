@@ -13,31 +13,51 @@ body {
   /*$yellow2*/
   background-color: #fff; }
 
+#background {
+  background-color: rgba(0, 68, 89, 0.36);
+  padding: 2em 0 0.5em 0;
+  width: 110%;
+  margin-left: -5%; }
+
 #greetingContainer {
   /*$yellow2*/
-  background-color: #fff;
-  width: 80%; }
+  background: #5399fc;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #5399fc 0%, #75d0fd 48%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #5399fc 0%, #75d0fd 48%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #5399fc 0%, #75d0fd 48%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5399fc', endColorstr='#75d0fd',GradientType=0 );
+  /* IE6-9 */
+  width: 100%; }
   #greetingContainer #greeting {
-    margin-top: 1.3em;
-    text-align: right; }
+    text-align: right;
+    overflow-x: hidden; }
     #greetingContainer #greeting .center {
+      position: relative;
       text-align: center; }
       #greetingContainer #greeting .center .morning {
-        color: #fd823c;
+        position: relative;
+        top: -0.5em;
+        color: #fff;
         font-size: 3.5em;
         font-family: "Sun", Helvetica, sans-serif;
         margin-bottom: 0; }
     #greetingContainer #greeting img {
-      max-width: 100%; }
+      max-width: 110%;
+      margin-left: -5%; }
     #greetingContainer #greeting #happy-sunshine {
-      margin-top: -1.2em;
-      color: #50514F;
+      position: relative;
+      margin-top: -1em;
+      color: #fffd46;
       font-size: 3em;
       line-height: 1em;
       font-family: "Sun", Helvetica, sans-serif; }
     #greetingContainer #greeting #location {
       margin-top: -2.5em;
-      color: #39cbaf;
+      color: #fff;
       margin-right: 2.5em; }
 
 hr {
