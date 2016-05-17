@@ -4,7 +4,6 @@ $(document).ready(function() {
     event.preventDefault();
     var name = $(this).attr("data-menu-item");
     var price = Number($(this).attr("data-item-price")).toFixed(2);
-
     shoppingCart.addItemToCart(name, price, 1);
     displayCart();
   });
