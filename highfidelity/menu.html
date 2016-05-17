@@ -2,434 +2,436 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
-    <link rel="stylesheet" href="../css/foundation/foundation.css">
-    <link rel="stylesheet" href="../css/highfidelity/app.css">
-    <link rel="stylesheet" href="../css/highfidelity/menu.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+  <link rel="stylesheet" href="../css/foundation/foundation.css">
+  <link rel="stylesheet" href="../css/highfidelity/app.css">
+  <link rel="stylesheet" href="../css/highfidelity/menu.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 </head>
 
 <body>
 
-    <!-- Foundation off-Canvas Navigation Begins! -->
-    <div class="title-bar">
-        <div class="title-bar-left">
-            <i class="hamburger fa fa-bars fa-3x" data-toggle="offCanvas" aria-hidden="true"></i>
-            <i class="x fa fa-times fa-3x" data-toggle="offCanvas" aria-hidden="true"></i>
-        </div>
-
-        <div class="title-bar-right">
-            <a href="cart.html"><i class="fa fa-shopping-cart fa-3x"></i></a>
-        </div>
+  <!-- Foundation off-Canvas Navigation Begins! -->
+  <div class="title-bar">
+    <div class="title-bar-left">
+      <i class="hamburger fa fa-bars fa-3x" data-toggle="offCanvas" aria-hidden="true"></i>
+      <i class="x fa fa-times fa-3x" data-toggle="offCanvas" aria-hidden="true"></i>
     </div>
 
-
-    <div class="off-canvas-wrapper">
-        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-            <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
-
-                <ul class="vertical menu">
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="settings.html">Account and Settings</a></li>
-                    <li><a href="pastOrders.html">Past Orders</a></li>
-                    <li><a href="favorites.html">Favorites</a></li>
-                    <li><a href="rewards.html">Rewards</a></li>
-                </ul>
-
-            </div>
-
-            <!-- Foundation Off-Canvas Navigation Ends! -->
-
-            <!-- Foundation Accordion Menu Begins!  -->
-
-            <div class="row">
-                <div class="small-12 columns menu-title">
-                    <!--<h1 class="secondary button expanded button"><--><span>Menu</span>
-                    <!--</h1>-->
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="columns">
-                    <div id="accordion">
-                        <h1 id="firstaccordion" class="accordion-toggle">Create Your Own <span class="fa fa-plus" style="float:right; padding:0.2em;"></span></h1>
-                        <div class="accordion-content">
-                            <h2 class="builditems accordion-toggle">Bread <span class="fa fa-minus" style="float:right;"></span></h2>
-                            <ul>
-                                <li>
-                                    <input type="radio" name="bread" value="hoagie"> Hoagie</li>
-                                <li>
-                                    <input type="radio" name="bread" value="bagel"> Bagel</li>
-                                <li>
-                                    <input type="radio" name="bread" value="toast"> Toast</li>
-                            </ul>
-                            <h2 class="builditems accordion-toggle">Egg <span class="fa fa-minus" style="float:right;"></span></h2>
-                            <ul>
-                                <li>
-                                    <input type="radio" name="egg" value="sunny"> Sunny-Side Up</li>
-                                <li>
-                                    <input type="radio" name="egg" value="scrambled"> Scrambled</li>
-                                <li>
-                                    <input type="radio" name="egg" value="none"> None</li>
-                            </ul>
-                            <h2 class="builditems accordion-toggle">Cheese <span class="fa fa-minus" style="float:right;"></span></h2>
-                            <ul>
-                                <li>
-                                    <input type="radio" name="cheese" value="american"> American</li>
-                                <li>
-                                    <input type="radio" name="cheese" value="swiss"> Swiss</li>
-                                <li>
-                                    <input type="radio" name="cheese" value="none"> None</li>
-                            </ul>
-                            <h2 class="builditems accordion-toggle">Meat <span class="fa fa-minus" style="float:right;"></span></h2>
-                            <ul>
-                                <li>
-                                    <input type="radio" name="meat" value="bacon"> Bacon</li>
-                                <li>
-                                    <input type="radio" name="meat" value="steak"> Steak</li>
-                                <li>
-                                    <input type="radio" name="meat" value="turkey-sausage"> Turkey Sausage</li>
-                                <li>
-                                    <input type="radio" name="meat" value="none"> None</li>
-                            </ul>
-                            <h2 class="builditems accordion-toggle">Add Ons <span class="fa fa-minus" style="float:right;"></span></h2>
-                            <ul>
-                                <li>
-                                    <input type="checkbox" name="add-on" value="salt"> Salt</li>
-                                <li>
-                                    <input type="checkbox" name="add-on" value="pepper"> Pepper</li>
-                                <li>
-                                    <input type="checkbox" name="add-on" value="ketchup"> Ketchup</li>
-                                <li>
-                                    <input type="checkbox" name="add-on" value="hashbrown"> Hashbrown</li>
-                                <li>
-                                    <input type="checkbox" name="add-on" value="onions"> Onions</li>
-                                <li>
-                                    <input type="checkbox" name="add-on" value="peppers"> Peppers</li>
-                            </ul>
-
-                            <div class="submit-center">
-                                <a href="cart.html">
-                                    <button class="add-to-cart" type="submit">Add to Cart</button>
-                                </a>
-                            </div>
-                        </div>
-
-                        <h1 id="secondaccordion" class="accordion-toggle">Breakfast <span class="fa fa-plus" style="float:right; padding:0.2em;"></span></h1>
-                        <div class="accordion-content">
-                            <h2 class="builditemsB accordion-toggle">French Toast <span class="fa fa-plus" style="float:right;"></span></h2>
-                            <ul class="accordion-content foodForCart">
-                                <li data-menu-item="French Toast" data-item-price="3.50" class="left-align added-food">French Toast <span>$3.50</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-                                <li data-menu-item="French Toast with Bacon" data-item-price="4.50">w/ Bacon <span>$4.50</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-                                <li data-menu-item="French Toast with Kielbasa" data-item-price="5.50">w/ Kielbasa <span>$5.50</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-                                <li data-menu-item="Frech Toast with Hot Sausage" data-item-price="5.25">w/ Hot Sausage <span>$5.25</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-                            </ul>
-
-                            <h2 class="builditemsB accordion-toggle">Breakfast Sandwiches <span class="fa fa-plus" style="float:right;"></span></h2>
-                            <ul class="accordion-content foodForCart">
-                                <li data-menu-item="Hashbrown &amp; Cheese" data-item-price="2.50">Hashbrown &amp; Cheese <span>$2.50</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Hashbrown, Egg, &amp; Cheese" data-item-price="3.50">Hashbrown, Egg, &amp; Cheese <span>$3.50</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Hasbrown, Bacon, Egg, &amp; Cheese" data-item-price="4.00">Hasbrown, Bacon, Egg, &amp; Cheese <span>$4.00</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Egg &amp; Cheese" data-item-price="2.50">Egg &amp; Cheese <span>$2.50</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Pepper, Egg &amp; Cheese" data-item-price="2.75">Pepper, Egg &amp; Cheese <span>$2.75</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Bacon, Egg &amp; Cheese" data-item-price="3.00">Bacon, Egg &amp; Cheese <span>$3.00</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Turkey Bacon, Egg &amp; Cheese" data-item-price="3.00">Turkey Bacon, Egg &amp; Cheese <span>$3.00</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Sausage, Egg &amp; Cheese" data-item-price="3.00">Sausage, Egg &amp; Cheese <span>$3.00</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Ham, Egg &amp; Cheese" data-item-price="3.00">Ham, Egg &amp; Cheese <span>$3.00</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Hot Ham, Egg &amp; Cheese" data-item-price="3.00">Hot Ham, Egg &amp; Cheese <span>$3.00</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Turkey Breast, Egg &amp; Cheese" data-item-price="3.00">Turkey Breast, Egg &amp; Cheese <span>$3.00</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Pork Roll, Egg &amp; Cheese" data-item-price="3.00">Pork Roll, Egg &amp; Cheese <span>$3.00</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Scrapple, Egg &amp; Cheese" data-item-price="3.00">Scrapple, Egg &amp; Cheese <span>$3.00</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Hot Sausage, Egg &amp; Cheese" data-item-price="4.00">Hot Sausage, Egg &amp; Cheese <span>$4.00</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Kielbasa, Egg &amp; Cheese" data-item-price="4.50">Kielbasa, Egg &amp; Cheese <span>$4.50</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Steak, Egg, &amp; Cheese" data-item-price="5.50">Steak, Egg, &amp; Cheese <span>$5.50</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <h1 id="thirdaccordion" class="accordion-toggle">Lunch <span class="fa fa-plus" style="float:right; padding:0.2em;"></span></h1>
-                        <div class="accordion-content">
-                            <h2 class="builditemsC accordion-toggle">Cheesesteaks <span class="fa fa-plus" style="float:right;"></span></h2>
-                            <ul class="accordion-content foodForCart">
-                                <li data-menu-item="Mushroom Cheesesteak" data-item-price="5.00">Mushroom Cheesesteak <span>$5.00</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Pepper Cheesesteak" data-item-price="5.00">Pepper Cheesesteak <span>$5.00</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Pepperoni Cheesesteak" data-item-price="5.00">Pepperoni Cheesesteak <span>$5.00</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Cheesesteak Hoagie" data-item-price="5.00">Cheesesteak Hoagie <span>$5.00</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-                            </ul>
-
-                            <h2 class="builditemsC accordion-toggle">Chicken Cheesesteak <span class="fa fa-plus" style="float:right;"></span></h2>
-                            <ul class="accordion-content foodForCart">
-
-                                <li data-menu-item="Chicken Cheesesteak" data-item-price="4.50">Chicken Cheesesteak <span>$4.50</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Mushroom Chicken Cheesesteak" data-item-price="5.00">Mushroom Chicken Cheesesteak <span>$5.00</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Pepper Chicken Cheesesteak" data-item-price="5.00">Pepper Chicken Cheesesteak <span>$5.00</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Pepperoni Chicken Cheesesteak" data-item-price="5.00">Pepperoni Chicken Cheesesteak <span>$5.00</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Chicken Cheesesteak Hoagie" data-item-price="5.00">Chicken Cheesesteak Hoagie <span>$5.00</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Buffalo Chicken Cheesesteak" data-item-price="5.00">Buffalo Chicken Cheesesteak <span>$5.00</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-                            </ul>
-
-                            <h2 class="builditemsC accordion-toggle">Sandwiches <span class="fa fa-plus" style="float:right;"></span></h2>
-                            <ul class="accordion-content foodForCart">
-
-                                <li data-menu-item="Ham Sandwich" data-item-price="3.50">Ham Sandwich <span>$3.50</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Turkey Sandwich" data-item-price="3.50">Turkey Sandwich <span>$3.50</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Tuna Salad Sandwich" data-item-price="3.50">Tuna Salad Sandwich <span>$3.50</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Chicken Salad Sandwich" data-item-price="3.50">Chicken Salad Sandwich <span>$3.50</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Grilled Chicken on Hoagie Roll" data-item-price="5.00">Grilled Chicken on Hoagie Roll <span>$5.00</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-                            </ul>
-
-                            <h2 class="builditemsC accordion-toggle">Club Sandwiches <span class="fa fa-plus" style="float:right;"></span></h2>
-                            <ul class="accordion-content foodForCart">
-
-                                <li data-menu-item="Ham Club" data-item-price="4.50">Ham Club <span>$4.50</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Hot Ham Club" data-item-price="4.50">Hot Ham Club <span>$4.50</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Turkey Club" data-item-price="4.50">Turkey Club <span>$4.50</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Chicken Salad Club" data-item-price="4.50">Chicken Salad Club <span>$4.50</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Tuna Salad Club" data-item-price="4.50">Tuna Salad Club <span>$4.50</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="BLT">BLT <span class="price" data-item-price="3.00">$3.00</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="BLT Club">BLT Club <span class="price" data-item-price="4.00">$4.00</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-                            </ul>
-
-                            <h2 class="builditemsC accordion-toggle">Hot Dogs <span class="fa fa-plus" style="float:right;"></span></h2>
-                            <ul class="accordion-content foodForCart">
-
-                                <li data-menu-item="Hot Dog" data-item-price="1.25">Hot Dog <span>$1.25</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Hot Sausage" data-item-price="2.50">Hot Sausage <span>$2.50</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Kielbasa" data-item-price="3.00">Kielbasa <span>$3.00</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Texas Tommy" data-item-price="3.50">Texas Tommy <span>$3.50</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-                            </ul>
-
-                            <h2 class="builditemsC accordion-toggle">Hoagies <span class="fa fa-plus" style="float:right;"></span></h2>
-                            <ul class="accordion-content foodForCart">
-
-                                <li data-menu-item="Vegetable Hoagie" data-item-price="3.00">Vegetable Hoagie <span>$3.00</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Cheese Hoagie" data-item-price="4.00">Cheese Hoagie <span>$4.00</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="American Hoagie" data-item-price="5.00">American Hoagie <span>$5.00</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Italian Hoagie" data-item-price="5.00">Italian Hoagie <span>$5.00</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Ham Hoagie" data-item-price="5.00">Ham Hoagie <span>$5.00</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Turkey Hoagie" data-item-price="5.00">Turkey Hoagie <span>$5.00</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Chicken Salad Hoagie" data-item-price="5.00">Chicken Salad Hoagie <span>$5.00</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Tuna Salad Hoagie" data-item-price="5.00">Tuna Salad Hoagie <span>$5.00</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-                            </ul>
-
-                            <h2 class="builditemsC accordion-toggle">Burgers <span class="fa fa-plus" style="float:right;"></span></h2>
-                            <ul class="accordion-content foodForCart">
-
-                                <li data-menu-item="Cheeseburger" data-item-price="3.50">Cheeseburger <span>$3.50</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-
-                                <li data-menu-item="Bacon Cheeseburger" data-item-price="4.00">Bacon Cheeseburger <span>$4.00</span>
-                                    <button class="add-to">Add to Cart</button>
-                                </li>
-                            </ul>
-
-                            <h2 class="builditemsC accordion-toggle">Grilled Cheese <span class="fa fa-plus" style="float:right;"></span></h2>
-                            <ul class="accordion-content foodForCart">
-
-                                <li data-menu-item="Grilled Cheese" data-item-price="2.50">Grilled Cheese <span>$2.50</span>
-                                    <button class="add-to">Add To Cart</button>
-                                </li>
-
-                                <li data-menu-item="Grilled Cheese with Tomato" data-item-price="2.75">Grilled Cheese with Tomato<span>$2.75</span>
-                                    <button class="add-to">Add To Cart</button>
-                                </li>
-
-                                <li data-menu-item="Grilled Cheese with Ham" data-item-price="3.00">Grilled Cheese with Ham<span>$3.00</span>
-                                    <button class="add-to">Add To Cart</button>
-                                </li>
-
-                                <li data-menu-item="Grilled Cheese with Bacon" data-item-price="3.00">Grilled Cheese with Bacon<span>$3.00</span>
-                                    <button class="add-to">Add To Cart</button>
-                                </li>
-
-                                <li data-menu-item="Grilled Cheese with Turkey Bacon" data-item-price="3.00">Grilled Cheese with Turkey Bacon<span>$3.00</span>
-                                    <button class="add-to">Add To Cart</button>
-                                </li>
-
-                                <li data-menu-item="Grilled Cheese with Pork Roll" data-item-price="3.00">Grilled Cheese with Pork Roll<span>$3.00</span>
-                                    <button class="add-to">Add To Cart</button>
-                                </li>
-
-                                <li data-menu-item="Grilled Cheese with Turkey Breast" data-item-price="3.00">Grilled Cheese with Turkey Breast<span>$3.00</span>
-                                    <button class="add-to">Add To Cart</button>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Foundation Accordion Menu Ends! -->
-
-            <!-- Following Two Div Tags Close the Off-Canvas Wrapper -->
-        </div>
+    <div class="title-bar-right">
+      <a href="cart.html"><i class="fa fa-shopping-cart fa-3x"></i></a>
     </div>
-    <!--^ Do NOT Remove Above Div Tags ^  -->
+  </div>
 
 
-    <!-- All The Javascript -->
-    <script src="../js/lowfidelity/vendor/jquery.js"></script>
-    <!-- <script src="../js/lowfidelity/vendor/midnight.jquery.min.js"></script> -->
-    <!-- Foundation JS -->
-    <script src="../js/lowfidelity/vendor/what-input.js"></script>
-    <script src="../js/lowfidelity/vendor/foundation.js"></script>
+  <div class="off-canvas-wrapper">
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+      <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+
+        <ul class="vertical menu">
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="settings.html">Account and Settings</a></li>
+          <li><a href="pastOrders.html">Past Orders</a></li>
+          <li><a href="favorites.html">Favorites</a></li>
+          <li><a href="rewards.html">Rewards</a></li>
+        </ul>
+
+      </div>
+
+      <!-- Foundation Off-Canvas Navigation Ends! -->
+
+      <!-- Foundation Accordion Menu Begins!  -->
+
+      <div class="row">
+        <div class="small-12 columns menu-title">
+          <!--<h1 class="secondary button expanded button"><--><span>Menu</span>
+          <!--</h1>-->
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="columns">
+          <div id="accordion">
+            <h1 id="firstaccordion" class="accordion-toggle">Create Your Own <span class="fa fa-plus" style="float:right; padding:0.2em;"></span></h1>
+            <div class="accordion-content">
+              <h2 class="builditems accordion-toggle">Bread <span class="fa fa-minus" style="float:right;"></span></h2>
+              <ul>
+                <li>
+                  <input type="radio" name="bread" value="hoagie"> Hoagie</li>
+                <li>
+                  <input type="radio" name="bread" value="bagel"> Bagel</li>
+                <li>
+                  <input type="radio" name="bread" value="toast"> Toast</li>
+              </ul>
+              <h2 class="builditems accordion-toggle">Egg <span class="fa fa-minus" style="float:right;"></span></h2>
+              <ul>
+                <li>
+                  <input type="radio" name="egg" value="sunny"> Sunny-Side Up</li>
+                <li>
+                  <input type="radio" name="egg" value="scrambled"> Scrambled</li>
+                <li>
+                  <input type="radio" name="egg" value="none"> None</li>
+              </ul>
+              <h2 class="builditems accordion-toggle">Cheese <span class="fa fa-minus" style="float:right;"></span></h2>
+              <ul>
+                <li>
+                  <input type="radio" name="cheese" value="american"> American</li>
+                <li>
+                  <input type="radio" name="cheese" value="swiss"> Swiss</li>
+                <li>
+                  <input type="radio" name="cheese" value="none"> None</li>
+              </ul>
+              <h2 class="builditems accordion-toggle">Meat <span class="fa fa-minus" style="float:right;"></span></h2>
+              <ul>
+                <li>
+                  <input type="radio" name="meat" value="bacon"> Bacon</li>
+                <li>
+                  <input type="radio" name="meat" value="steak"> Steak</li>
+                <li>
+                  <input type="radio" name="meat" value="turkey-sausage"> Turkey Sausage</li>
+                <li>
+                  <input type="radio" name="meat" value="none"> None</li>
+              </ul>
+              <h2 class="builditems accordion-toggle">Add Ons <span class="fa fa-minus" style="float:right;"></span></h2>
+              <ul>
+                <li>
+                  <input type="checkbox" name="add-on" value="salt"> Salt</li>
+                <li>
+                  <input type="checkbox" name="add-on" value="pepper"> Pepper</li>
+                <li>
+                  <input type="checkbox" name="add-on" value="ketchup"> Ketchup</li>
+                <li>
+                  <input type="checkbox" name="add-on" value="hashbrown"> Hashbrown</li>
+                <li>
+                  <input type="checkbox" name="add-on" value="onions"> Onions</li>
+                <li>
+                  <input type="checkbox" name="add-on" value="peppers"> Peppers</li>
+              </ul>
+
+              <div class="submit-center">
+                <a href="cart.html">
+                  <button class="add-to-cart" type="submit">Add to Cart</button>
+                </a>
+              </div>
+            </div>
+
+            <h1 id="secondaccordion" class="accordion-toggle">Breakfast <span class="fa fa-plus" style="float:right; padding:0.2em;"></span></h1>
+            <div class="accordion-content">
+              <h2 class="builditemsB accordion-toggle">French Toast <span class="fa fa-plus" style="float:right;"></span></h2>
+              <ul class="accordion-content foodForCart">
+                <li class="left-align added-food">French Toast <span>$3.50</span>
+                  <button data-menu-item="French Toast" data-item-price="3.50" class="add-to">Add to Cart</button>
+                </li>
+                <li>w/ Bacon <span>$4.50</span>
+                  <button data-menu-item="French Toast with Bacon" data-item-price="4.50" class="add-to">Add to Cart</button>
+                </li>
+                <li>w/ Kielbasa <span>$5.50</span>
+                  <button data-menu-item="French Toast with Kielbasa" data-item-price="5.50" class="add-to">Add to Cart</button>
+                </li>
+                <li>w/ Hot Sausage <span>$5.25</span>
+                  <button data-menu-item="French Toast with Hot Sausage" data-item-price="5.25" class="add-to">Add to Cart</button>
+                </li>
+              </ul>
+
+              <h2 class="builditemsB accordion-toggle">Breakfast Sandwiches <span class="fa fa-plus" style="float:right;"></span></h2>
+              <ul class="accordion-content foodForCart">
+                <li>Hashbrown &amp; Cheese <span>$2.50</span>
+                  <button data-menu-item="Hashbrown &amp; Cheese" data-item-price="2.50" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Hashbrown, Egg, &amp; Cheese <span>$3.50</span>
+                  <button data-menu-item="Hashbrown, Egg, &amp; Cheese" data-item-price="3.50" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Hasbrown, Bacon, Egg, &amp; Cheese <span>$4.00</span>
+                  <button data-menu-item="Hasbrown, Bacon, Egg, &amp; Cheese" data-item-price="4.00" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Egg &amp; Cheese <span>$2.50</span>
+                  <button data-menu-item="Egg &amp; Cheese" data-item-price="2.50" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Pepper, Egg &amp; Cheese <span>$2.75</span>
+                  <button data-menu-item="Pepper, Egg &amp; Cheese" data-item-price="2.75" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Bacon, Egg &amp; Cheese <span>$3.00</span>
+                  <button data-menu-item="Bacon, Egg &amp; Cheese" data-item-price="3.00" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Turkey Bacon, Egg &amp; Cheese <span>$3.00</span>
+                  <button data-menu-item="Turkey Bacon, Egg &amp; Cheese" data-item-price="3.00" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Sausage, Egg &amp; Cheese <span>$3.00</span>
+                  <button data-menu-item="Sausage, Egg &amp; Cheese" data-item-price="3.00" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Ham, Egg &amp; Cheese <span>$3.00</span>
+                  <button data-menu-item="Ham, Egg &amp; Cheese" data-item-price="3.00" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Hot Ham, Egg &amp; Cheese <span>$3.00</span>
+                  <button data-menu-item="Hot Ham, Egg &amp; Cheese" data-item-price="3.00" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Turkey Breast, Egg &amp; Cheese <span>$3.00</span>
+                  <button data-menu-item="Turkey Breast, Egg &amp; Cheese" data-item-price="3.00" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Pork Roll, Egg &amp; Cheese <span>$3.00</span>
+                  <button data-menu-item="Pork Roll, Egg &amp; Cheese" data-item-price="3.00" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Scrapple, Egg &amp; Cheese <span>$3.00</span>
+                  <button data-menu-item="Scrapple, Egg &amp; Cheese" data-item-price="3.00" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Hot Sausage, Egg &amp; Cheese <span>$4.00</span>
+                  <button data-menu-item="Hot Sausage, Egg &amp; Cheese" data-item-price="4.00" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Kielbasa, Egg &amp; Cheese <span>$4.50</span>
+                  <button data-menu-item="Kielbasa, Egg &amp; Cheese" data-item-price="4.50" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Steak, Egg, &amp; Cheese <span>$5.50</span>
+                  <button data-menu-item="Steak, Egg, &amp; Cheese" data-item-price="5.50" class="add-to">Add to Cart</button>
+                </li>
+              </ul>
+            </div>
+
+            <h1 id="thirdaccordion" class="accordion-toggle">Lunch <span class="fa fa-plus" style="float:right; padding:0.2em;"></span></h1>
+            <div class="accordion-content">
+              <h2 class="builditemsC accordion-toggle">Cheesesteaks <span class="fa fa-plus" style="float:right;"></span></h2>
+              <ul class="accordion-content foodForCart">
+                <li>Mushroom Cheesesteak <span>$5.00</span>
+                  <button data-menu-item="Mushroom Cheesesteak" data-item-price="5.00" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Pepper Cheesesteak <span>$5.00</span>
+                  <button data-menu-item="Pepper Cheesesteak" data-item-price="5.00" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Pepperoni Cheesesteak <span>$5.00</span>
+                  <button data-menu-item="Pepperoni Cheesesteak" data-item-price="5.00" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Cheesesteak Hoagie <span>$5.00</span>
+                  <button data-menu-item="Cheesesteak Hoagie" data-item-price="5.00" class="add-to">Add to Cart</button>
+                </li>
+              </ul>
+
+              <h2 class="builditemsC accordion-toggle">Chicken Cheesesteak <span class="fa fa-plus" style="float:right;"></span></h2>
+              <ul class="accordion-content foodForCart">
+
+                <li>Chicken Cheesesteak <span>$4.50</span>
+                  <button data-menu-item="Chicken Cheesesteak" data-item-price="4.50" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Mushroom Chicken Cheesesteak <span>$5.00</span>
+                  <button data-menu-item="Mushroom Chicken Cheesesteak" data-item-price="5.00" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Pepper Chicken Cheesesteak <span>$5.00</span>
+                  <button data-menu-item="Pepper Chicken Cheesesteak" data-item-price="5.00" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Pepperoni Chicken Cheesesteak <span>$5.00</span>
+                  <button data-menu-item="Pepperoni Chicken Cheesesteak" data-item-price="5.00" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Chicken Cheesesteak Hoagie <span>$5.00</span>
+                  <button data-menu-item="Chicken Cheesesteak Hoagie" data-item-price="5.00" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Buffalo Chicken Cheesesteak <span>$5.00</span>
+                  <button data-menu-item="Buffalo Chicken Cheesesteak" data-item-price="5.00" class="add-to">Add to Cart</button>
+                </li>
+              </ul>
+
+              <h2 class="builditemsC accordion-toggle">Sandwiches <span class="fa fa-plus" style="float:right;"></span></h2>
+              <ul class="accordion-content foodForCart">
+
+                <li>Ham Sandwich <span>$3.50</span>
+                  <button data-menu-item="Ham Sandwich" data-item-price="3.50" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Turkey Sandwich <span>$3.50</span>
+                  <button data-menu-item="Turkey Sandwich" data-item-price="3.50" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Tuna Salad Sandwich <span>$3.50</span>
+                  <button data-menu-item="Tuna Salad Sandwich" data-item-price="3.50" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Chicken Salad Sandwich <span>$3.50</span>
+                  <button data-menu-item="Chicken Salad Sandwich" data-item-price="3.50" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Grilled Chicken on Hoagie Roll <span>$5.00</span>
+                  <button data-menu-item="Grilled Chicken on Hoagie Roll" data-item-price="5.00" class="add-to">Add to Cart</button>
+                </li>
+              </ul>
+
+              <h2 class="builditemsC accordion-toggle">Club Sandwiches <span class="fa fa-plus" style="float:right;"></span></h2>
+              <ul class="accordion-content foodForCart">
+
+                <li>Ham Club <span>$4.50</span>
+                  <button data-menu-item="Ham Club" data-item-price="4.50" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Hot Ham Club <span>$4.50</span>
+                  <button data-menu-item="Hot Ham Club" data-item-price="4.50" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Turkey Club <span>$4.50</span>
+                  <button data-menu-item="Turkey Club" data-item-price="4.50" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Chicken Salad Club <span>$4.50</span>
+                  <button data-menu-item="Chicken Salad Club" data-item-price="4.50" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Tuna Salad Club <span>$4.50</span>
+                  <button data-menu-item="Tuna Salad Club" data-item-price="4.50" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>$3.00</span>
+                  <button data-menu-item="BLT">BLT <span class="price" data-item-price="3.00" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>$4.00</span>
+                  <button data-menu-item="BLT Club">BLT Club <span class="price" data-item-price="4.00" class="add-to">Add to Cart</button>
+                </li>
+              </ul>
+
+              <h2 class="builditemsC accordion-toggle">Hot Dogs <span class="fa fa-plus" style="float:right;"></span></h2>
+              <ul class="accordion-content foodForCart">
+
+                <li>Hot Dog <span>$1.25</span>
+                  <button data-menu-item="Hot Dog" data-item-price="1.25" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Hot Sausage <span>$2.50</span>
+                  <button data-menu-item="Hot Sausage" data-item-price="2.50" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Kielbasa <span>$3.00</span>
+                  <button data-menu-item="Kielbasa" data-item-price="3.00" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Texas Tommy <span>$3.50</span>
+                  <button data-menu-item="Texas Tommy" data-item-price="3.50" class="add-to">Add to Cart</button>
+                </li>
+              </ul>
+
+              <h2 class="builditemsC accordion-toggle">Hoagies <span class="fa fa-plus" style="float:right;"></span></h2>
+              <ul class="accordion-content foodForCart">
+
+                <li>Vegetable Hoagie <span>$3.00</span>
+                  <button data-menu-item="Vegetable Hoagie" data-item-price="3.00" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Cheese Hoagie <span>$4.00</span>
+                  <button data-menu-item="Cheese Hoagie" data-item-price="4.00" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>American Hoagie <span>$5.00</span>
+                  <button data-menu-item="American Hoagie" data-item-price="5.00" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Italian Hoagie <span>$5.00</span>
+                  <button data-menu-item="Italian Hoagie" data-item-price="5.00" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Ham Hoagie <span>$5.00</span>
+                  <button data-menu-item="Ham Hoagie" data-item-price="5.00" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Turkey Hoagie <span>$5.00</span>
+                  <button data-menu-item="Turkey Hoagie" data-item-price="5.00" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Chicken Salad Hoagie <span>$5.00</span>
+                  <button data-menu-item="Chicken Salad Hoagie" data-item-price="5.00" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Tuna Salad Hoagie <span>$5.00</span>
+                  <button data-menu-item="Tuna Salad Hoagie" data-item-price="5.00" class="add-to">Add to Cart</button>
+                </li>
+              </ul>
+
+              <h2 class="builditemsC accordion-toggle">Burgers <span class="fa fa-plus" style="float:right;"></span></h2>
+              <ul class="accordion-content foodForCart">
+
+                <li>Cheeseburger <span>$3.50</span>
+                  <button data-menu-item="Cheeseburger" data-item-price="3.50" class="add-to">Add to Cart</button>
+                </li>
+
+                <li>Bacon Cheeseburger <span>$4.00</span>
+                  <button data-menu-item="Bacon Cheeseburger" data-item-price="4.00" class="add-to">Add to Cart</button>
+                </li>
+              </ul>
+
+              <h2 class="builditemsC accordion-toggle">Grilled Cheese <span class="fa fa-plus" style="float:right;"></span></h2>
+              <ul class="accordion-content foodForCart">
+
+                <li>Grilled Cheese <span>$2.50</span>
+                  <button data-menu-item="Grilled Cheese" data-item-price="2.50" class="add-to">Add To Cart</button>
+                </li>
+
+                <li>Grilled Cheese with Tomato<span>$2.75</span>
+                  <button data-menu-item="Grilled Cheese with Tomato" data-item-price="2.75" class="add-to">Add To Cart</button>
+                </li>
+
+                <li>Grilled Cheese with Ham<span>$3.00</span>
+                  <button data-menu-item="Grilled Cheese with Ham" data-item-price="3.00" class="add-to">Add To Cart</button>
+                </li>
+
+                <li>Grilled Cheese with Bacon<span>$3.00</span>
+                  <button data-menu-item="Grilled Cheese with Bacon" data-item-price="3.00" class="add-to">Add To Cart</button>
+                </li>
+
+                <li>Grilled Cheese with Turkey Bacon<span>$3.00</span>
+                  <button data-menu-item="Grilled Cheese with Turkey Bacon" data-item-price="3.00" class="add-to">Add To Cart</button>
+                </li>
+
+                <li>Grilled Cheese with Pork Roll<span>$3.00</span>
+                  <button data-menu-item="Grilled Cheese with Pork Roll" data-item-price="3.00" class="add-to">Add To Cart</button>
+                </li>
+
+                <li>Grilled Cheese with Turkey Breast<span>$3.00</span>
+                  <button data-menu-item="Grilled Cheese with Turkey Breast" data-item-price="3.00" class="add-to">Add To Cart</button>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Foundation Accordion Menu Ends! -->
+
+      <!-- Following Two Div Tags Close the Off-Canvas Wrapper -->
+    </div>
+  </div>
+  <!--^ Do NOT Remove Above Div Tags ^  -->
 
 
-    <script src="../js/lowfidelity/app.js"></script>
-    <script src="../js/lowfidelity/cart.js"></script>
-    <script src="arrow-rotate.js"></script>
+  <!-- All The Javascript -->
+  <script type="text/javascript">
+
+  </script>
+  <script src="../js/lowfidelity/vendor/jquery.js"></script>
+  <!-- <script src="../js/lowfidelity/vendor/midnight.jquery.min.js"></script> -->
+  <!-- Foundation JS -->
+  <script src="../js/lowfidelity/vendor/what-input.js"></script>
+  <script src="../js/lowfidelity/vendor/foundation.js"></script>
+
+  <script src="../js/lowfidelity/cart.js"></script>
+  <script src="../js/lowfidelity/app.js"></script>
+  <script src="arrow-rotate.js"></script>
 
 </body>
 
