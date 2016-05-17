@@ -12,6 +12,16 @@ $(document).ready(function() {
         shoppingCart.clearCart();
         displayCart();
     });
+    // ---------------- Clear Cart on Confirm Order --------------
+    $("#modal1Desc").on("click", ".not-today", function(event){
+     shoppingCart.clearCart();
+     displayCart();
+    });
+
+    $("#modal1Desc").on("click", ".yes", function(event){
+     shoppingCart.clearCart();
+     displayCart();
+    });
     // ----------------- Function to Print out Cart Items to Cart.html ----------------
     function displayCart() {
         var cartArray = shoppingCart.listCart();
