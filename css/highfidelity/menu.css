@@ -122,4 +122,52 @@ h2 {
 .accordion-content ul {
   font-size: 12px; }
 
+.counter {
+  font-family: 'Sun';
+  font-weight: bold;
+  font-size: 16px; }
+
+.counter-icon {
+  background-color: red;
+  border-radius: 15px; }
+
+.animated {
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scaled3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  50% {
+    -webkit-transform: scaled3d(1.5, 1.5, 1.5);
+    transform: scale3d(1.5, 1.5, 1.5); }
+  to {
+    -webkit-transform: scaled3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+@keyframes pulse {
+  from {
+    -webkit-transform: scaled3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  50% {
+    -webkit-transform: scaled3d(1.5, 1.5, 1.5);
+    transform: scale3d(1.5, 1.5, 1.5); }
+  to {
+    -webkit-transform: scaled3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse; }
+
+.counter-icon, .counter {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 30px;
+  height: 30px;
+  text-align: center;
+  color: #fff; }
+
 /*# sourceMappingURL=menu.css.map */
