@@ -9,7 +9,7 @@ $(document).ready(function() {
     });
     // Hide Counter-icon
     $(".counter-icon").hide();
-    // ---------Cart on Click Animation ---------
+    // ---------Add to Cart Animation ---------
     var counter = 0;
     $(".add-to").click(function(event) {
         $(".counter-icon").show();
