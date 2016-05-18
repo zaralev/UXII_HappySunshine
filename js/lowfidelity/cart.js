@@ -7,20 +7,31 @@ $(document).ready(function() {
         shoppingCart.addItemToCart(name, price, 1);
         displayCart();
     });
+    // ---------Cart on Click Animation ---------
+    var counter = 0;
+    $(".add-to").click(function(event) {
+        $(".counter-icon").addClass('pulse');
+        counter++;
+        $(".counter").text(counter);
+        setTimeout(function() {
+            $(".counter-icon").removeClass('pulse')
+        }, 500);
+        console.log("count count");
+    });
     // ---------------- Clear Entire Cart -------------------
     $("#clear-cart").click(function() {
         shoppingCart.clearCart();
         displayCart();
     });
     // ---------------- Clear Cart on Confirm Order --------------
-    $("#modal1Desc").on("click", ".not-today", function(event){
-     shoppingCart.clearCart();
-     displayCart();
+    $("#modal1Desc").on("click", ".not-today", function(event) {
+        shoppingCart.clearCart();
+        displayCart();
     });
 
-    $("#modal1Desc").on("click", ".yes", function(event){
-     shoppingCart.clearCart();
-     displayCart();
+    $("#modal1Desc").on("click", ".yes", function(event) {
+        shoppingCart.clearCart();
+        displayCart();
     });
     // ----------------- Function to Print out Cart Items to Cart.html ----------------
     function displayCart() {
