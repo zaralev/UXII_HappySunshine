@@ -7,9 +7,12 @@ $(document).ready(function() {
         shoppingCart.addItemToCart(name, price, 1);
         displayCart();
     });
+    // Hide Counter-icon
+    $(".counter-icon").hide();
     // ---------Cart on Click Animation ---------
     var counter = 0;
     $(".add-to").click(function(event) {
+        $(".counter-icon").show();
         $(".counter-icon").addClass('pulse');
         counter++;
         $(".counter").text(counter);
