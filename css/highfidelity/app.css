@@ -413,4 +413,23 @@ i {
 .position-left {
   background-color: #fffce7; }
 
+.title-bar-sticky {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  border-top: 0; }
+  .title-bar-sticky .title-bar {
+    background-color: #fd823c; }
+    .title-bar-sticky .title-bar .title-bar-left i.hamburger {
+      color: #FFF8CC;
+      transition: 1s all ease; }
+    .title-bar-sticky .title-bar .title-bar-left i.x {
+      color: #FFF8CC;
+      transition: 1s all ease;
+      display: none; }
+    .title-bar-sticky .title-bar .title-bar-right a {
+      color: #FFF8CC; }
+      .title-bar-sticky .title-bar .title-bar-right a:active, .title-bar-sticky .title-bar .title-bar-right a:hover {
+        color: #fffce7; }
+
 /*# sourceMappingURL=app.css.map */

@@ -7,9 +7,9 @@ $(document).ready(function() {
         shoppingCart.addItemToCart(name, price, 1);
         displayCart();
     });
-    // Hide Counter-icon
+    // --------------- Hide Counter-icon---------------------
     $(".counter-icon").hide();
-    // ---------Add to Cart Animation ---------
+    // ---------Add to Cart Animation -------------------
     var counter = 0;
     $(".add-to").click(function(event) {
         $(".counter-icon").show();

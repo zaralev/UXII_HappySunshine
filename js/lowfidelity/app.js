@@ -56,8 +56,22 @@ $(document).ready(function(){
   });
 });
 
+// Make title bar sticky on menu page
+$(document).ready(function(){
+ var stickyTitleBar = $('.title-bar').offset().top;
 
-// Midnight.JS for sticky "Create Your Own Sandwich" options
-// $(document).ready(function(){
-//   $('.create-your-own').midnight();
-// })
+ var stickyBar = function(){
+  var scrollTop = $(window).scrollTop();
+  if (scrollTop > stickyTitleBar){
+   $('.title-bar').addClass('title-bar-sticky');
+  }else {
+   $('.title-bar').removeClass('title-bar-sticky');
+  }
+ };
+
+ stickyBar();
+
+ $(window).scroll(function(){
+  stickyBar();
+ });
+});
