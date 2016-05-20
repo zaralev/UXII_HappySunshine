@@ -7,9 +7,20 @@ $(document).ready(function() {
     shoppingCart.addItemToCart(name, price, 1);
     displayCart();
   });
-  // --------------- Hide Counter-icon---------------------
+
+  //--------------- Create Your Own Sandwich ---------------
+  $("input").one("click", function(event){
+    var name = $(this).attr("data-menu-item");
+    var price = Number($(this).attr("data-item-price")).toFixed(2);
+    shoppingCart.addItemToCart(name, price, 1);
+  });
+  //Prevents User From adding more items when clicked multiple times
+  $("input").dblclick(function(event){
+    event.preventDefault();
+  });
+// --------------- Hide Counter-icon---------------------
   $(".counter-icon").hide();
-  // ---------Add to Cart Animation -------------------
+  // --------------- Add to Cart Animation -------------------
   var counter = 0;
   $(".add-to").click(function(event) {
     $(".counter-icon").show();
@@ -25,16 +36,19 @@ $(document).ready(function() {
   $("#clear-cart").click(function() {
     shoppingCart.clearCart();
     displayCart();
+
   });
   // ---------------- Clear Cart on Confirm Order --------------
   $("#modal1Desc").on("click", ".not-today", function(event) {
     shoppingCart.clearCart();
     displayCart();
+
   });
 
   $("#modal1Desc").on("click", ".yes", function(event) {
     shoppingCart.clearCart();
     displayCart();
+
   });
   // ----------------- Function to Print out Cart Items to Cart.html ----------------
   function displayCart() {
@@ -42,19 +56,7 @@ $(document).ready(function() {
     var output = "";
 
     for (var i in cartArray) {
-      output += "<tr>"
-      + "<td>"
-      + " "
-      + cartArray[i].name + " "
-      + cartArray[i].count
-      + " x "
-      + "$" + cartArray[i].price + " "
-      + " = " + "$" + cartArray[i].total
-      + " <button class ='sub-item' data-menu-item='" + cartArray[i].name + "'> - </button> "
-      + " <button class ='plus-item' data-menu-item='" + cartArray[i].name + "'> + </button> "
-      + " <button class ='delete-item' data-menu-item='" + cartArray[i].name +"'> Remove </button> "
-      + "</td>"
-      + "</tr>"
+      output += "<tr>" + "<td>" + " " + cartArray[i].name + " " + cartArray[i].count + " x " + "$" + cartArray[i].price + " " + " = " + "$" + cartArray[i].total + " <button class ='sub-item' data-menu-item='" + cartArray[i].name + "'> - </button> " + " <button class ='plus-item' data-menu-item='" + cartArray[i].name + "'> + </button> " + " <button class ='delete-item' data-menu-item='" + cartArray[i].name + "'> Remove </button> " + "</td>" + "</tr>"
     }
     $("#show-cart").html(output);
     $("#total-cart").html(shoppingCart.totalCart());
@@ -66,6 +68,7 @@ $(document).ready(function() {
   $("#show-cart").on("click", ".delete-item", function(event) {
     var name = $(this).attr("data-menu-item");
     shoppingCart.removeItemFromCartAll(name);
+
     displayCart();
     console.log("item removed");
   });
