@@ -43,21 +43,22 @@ $(document).ready(function() {
 
         for (var i in cartArray) {
             output += "<tr>"
-            + "<td>" + cartArray[i].name + "</td>"
-            + "<td>" + cartArray[i].count + "</td>"
-            + "<td>" + " x " + "</td>"
-            + "<td>" + "$" + cartArray[i].price + "</td>"
-            + "<td>" + "=" + "</td>"
-            + "<td>" + "$" + cartArray[i].total + "</td>"
-            + "<td>" + " <button class='sub-item' data-menu-item='"
+            + "<td>" + cartArray[i].name + " "
+            + cartArray[i].count + " "
+            +  " x "
+            +  "$" + cartArray[i].price + " "
+            +  "=" + " "
+            +  "$" + cartArray[i].total
+            +  " <button class='sub-item' data-menu-item='"
             + cartArray[i].name
-            + "'> - </button> " + "</td>"
-            + "<td>" + " <button class='plus-item' data-menu-item='"
+            + "'> - </button> "
+            + " <button class='plus-item' data-menu-item='"
             + cartArray[i].name
-            + "'> + </button> " + "</td>"
-            + "<td>" + " <button class='delete-item' data-menu-item='"
+            + "'> + </button> "
+            + " <button class='delete-item' data-menu-item='"
             + cartArray[i].name
-            + "'> Remove </button> " + "</td>"
+            + "'> Remove </button> "
+            + "</td>"
             + "</tr>"
         }
         $("#show-cart").html(output);
