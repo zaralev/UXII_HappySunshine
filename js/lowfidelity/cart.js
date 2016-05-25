@@ -56,14 +56,30 @@ $(document).ready(function() {
     var output = "";
 
     for (var i in cartArray) {
-      output += "<tr>" + "<td>" + " " + cartArray[i].name + " " + cartArray[i].count + " x " + "$" + cartArray[i].price + " " + " = " + "$" + cartArray[i].total + " <button class ='sub-item' data-menu-item='" + cartArray[i].name + "'> - </button> " + " <button class ='plus-item' data-menu-item='" + cartArray[i].name + "'> + </button> " + " <button class ='delete-item' data-menu-item='" + cartArray[i].name + "'> Remove </button> " + "</td>" + "</tr>"
+      output += "<tr>"
+      + "<td>"
+      + " "
+      + cartArray[i].name
+      + " "
+      + cartArray[i].count
+      + " x "
+      + "$"
+      + cartArray[i].price
+      + " "
+      + " = "
+      + "$"
+      + cartArray[i].total
+      + " <button class ='sub-item' data-menu-item='" + cartArray[i].name + "'> - </button> "
+      + " <button class ='plus-item' data-menu-item='" + cartArray[i].name + "'> + </button> "
+      + " <button class ='delete-item' data-menu-item='" + cartArray[i].name + "'> Remove </button> "
+      + "</td>"
+      + "</tr>"
     }
     $("#show-cart").html(output);
     $("#total-cart").html(shoppingCart.totalCart());
     $("#item-count").html(shoppingCart.countCart());
   }
   // -------------- Functions to add, delete, or remove item from cart directly form cart page -----------
-
   // when any button class named .delete-item is clicked remove item from cart
   $("#show-cart").on("click", ".delete-item", function(event) {
     var name = $(this).attr("data-menu-item");
@@ -91,6 +107,8 @@ $(document).ready(function() {
 
   displayCart();
 });
+// ----------------- Function to Display Cart on Past Orders Page -----------------------------
+("")
 
 
 
