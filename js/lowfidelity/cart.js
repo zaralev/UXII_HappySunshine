@@ -140,6 +140,7 @@ var shoppingCart = (function() {
   foodItem.addItemToCart = function(name, price, count) {
     // loops through every item
     for (var i in cart) {
+      console.log(cart[i]);
       // if data-name matches then count will increase
       if (cart[i].name === name) {
         cart[i].count += count;
@@ -155,9 +156,12 @@ var shoppingCart = (function() {
   // ------------ Remove a single count of a menu item from cart -------------------
   foodItem.removeItemFromCart = function(name) {
     // loop through array
+    console.log(name);
     for (var i in cart) {
+      console.log(cart[i]);
       // if name matches decrecment count
       if (cart[i].name === name) {
+        console.log("Log");
         cart[i].count--;
         if (cart[i].count === 0) {
           cart.splice(i, 1);
