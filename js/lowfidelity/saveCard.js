@@ -22,7 +22,6 @@ $(".save-card-details").click(function(event) {
   $(".cards").show();
   $(".card-name-detail").html(cardName);
   $(".card-number-detail").html(cardNumber);
-  $(".add menu-reset").html("Add Another Card");
 
   localStorage.setItem("cardDetails", JSON.stringify(cardDetailsArray));
   cardDetailsArray = JSON.parse(localStorage.getItem("cardDetails"));
