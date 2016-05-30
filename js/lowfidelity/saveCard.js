@@ -1,31 +1,29 @@
-// $(document).ready(function(){
-//   $(".success button save").click(function(){
-//     $("#card-details input").each(function(){
-//       card.push(this.value);
-//     });
-//   });
-// });
-//
-//
-// // ---------- Saving Credit Card Details
-//
-// var saveCard = (function(){
-//   var card = [];
-//
-//   function CardDetails(name, number, dateOne, dateTwo, SecCode){
-//     this.name = name;
-//     this.number = number;
-//     this.dateOne = dateOne;
-//     this.dateTwo = dateTwo;
-//     this.SecCode = SecCode;
-//   }
-//
-//   function saveCardDetails(){
-//     localStorage.setItem("saveCard", JSON.stringify(card));
-//   }
-//   function loadCardDetails(){
-//     card = JSON.parse(localStorage.getItem("saveCard"));
-//   }
-// 
-//   loadCardDetails();
-// });
+$(".cards").hide();
+$(".save-card-details").click(function(event) {
+  var cardName = $("#card-names option:selected").val();
+  console.log(cardName);
+
+  var cardNumber = $(".card-number").val();
+  console.log(cardNumber);
+
+  var cardMonthExp = $(".card-expiration-month").val();
+  console.log(cardMonthExp);
+
+  var cardYearExp = $(".card-expiration-year").val();
+  console.log(cardYearExp);
+
+  var cardSecurityCode = $(".card-security-number").val();
+  console.log(cardSecurityCode);
+
+  var cardDetailsArray = [];
+  cardDetailsArray.push(cardName + " " + cardNumber + " " + cardMonthExp + " " + cardYearExp + " " + cardSecurityCode);
+  console.log(cardDetailsArray);
+
+  $(".cards").show();
+  $(".card-name-detail").html(cardName);
+  $(".card-number-detail").html(cardNumber);
+  $(".add menu-reset").html("Add Another Card");
+
+  localStorage.setItem("cardDetails", JSON.stringify(cardDetailsArray));
+  cardDetailsArray = JSON.parse(localStorage.getItem("cardDetails"));
+});

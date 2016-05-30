@@ -87,45 +87,20 @@
                         <li><span class="fa fa-credit-card fa-2x"></span></li>
                         <li>
                             <ul class="info">
-                                <li>
-                                    DISCOVER
-                                </li>
-                                <li>xxxx xxxx xxxx 1234</li>
+                                <li class="card-name-detail"></li>
+                                <li class="card-number-detail"></li>
                             </ul>
                         </li>
                         <li>
-                            <button>X</button>
+                            <button class="remove-card">X</button>
                         </li>
-                    </ul>
-
-                    <ul class="cards">
-                        <li><span class="fa fa-credit-card fa-2x"></span></li>
-                        <li>
-                            <ul class="info">
-                                <li>MASTERCARD</li>
-                                <li>xxxx xxxx xxxx 6789</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <button>X</button>
-                        </li>
-                    </ul>
-                    <ul class="cards">
-                      <li><span class="fa fa-credit-card fa-2x"></span></li>
-                      <li>
-                        <ul class="info">
-                          <li>CREDIT CARD</li>
-                          <li>xxxx xxxx xxxx 0987</li>
-                        </ul>
-                      </li>
-                      <li><button>X</button></li>
                     </ul>
 
                     <!-- <p class="center">
                         <button class="add menu-reset" data-open="add-card">Add Another Card</button>
                     </p> -->
                     <p class="center">
-                        <button class="add menu-reset" onclick="location.href='#add'">Add Another Card</button>
+                        <button class="add menu-reset" onclick="location.href='#add'">Add Card</button>
                     </p>
                     <!--MODAL-->
                     <div class="remodal" data-remodal-id="add" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
@@ -139,8 +114,8 @@
                                     <div class="row">
                                         <div class="large-12 columns">
                                             <label>Card Type
-                                                <select>
-                                                    <option class="card-name" data-card-name="AmEx" value="AmEx">American Express</option>
+                                                <select id="card-names">
+                                                    <option class="card-name" data-card-name="American Express" value="American Express">American Express</option>
                                                     <option class="card-name" data-card-name="Discover" value="Discover">Discover</option>
                                                     <option class="card-name" data-card-name="MasterCard" value="MasterCard">MasterCard</option>
                                                     <option class="card-name" data-card-name="Visa" value="Visa">Visa</option>
@@ -181,7 +156,7 @@
                         </div>
                         <div class="row">
                             <div class="large-4 columns">
-                                <input type="button" class="success button save save-card" value="Save Card"></input>
+                                <a href="#" class="save-card-details"> <input type="button" class="success button save save-card" value="Save Card"></input></a>
                             </div>
                         </div>
                         </p>

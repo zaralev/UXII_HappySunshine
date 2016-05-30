@@ -1,13 +1,4 @@
 $(document).ready(function() {
-  // ------------- Adding items to array on click ------------------
-  $(".add-to").click(function(event) {
-    event.preventDefault();
-    var name = $(this).attr("data-menu-item");
-    var price = Number($(this).attr("data-item-price")).toFixed(2);
-    shoppingCart.addItemToCart(name, price, 1);
-    displayCart();
-  });
-
   //--------------- Create Your Own Sandwich ---------------
   $("input").one("click", function(event){
     var name = $(this).attr("data-menu-item");
@@ -32,23 +23,28 @@ $(document).ready(function() {
     }, 500);
     console.log("count count");
   });
-  // ---------------- Clear Entire Cart -------------------
-  $("#clear-cart").click(function() {
-    shoppingCart.clearCart();
-    displayCart();
-
-  });
   // ---------------- Clear Cart on Confirm Order --------------
   $("#modal1Desc").on("click", ".not-today", function(event) {
     shoppingCart.clearCart();
     displayCart();
-
   });
 
   $("#modal1Desc").on("click", ".yes", function(event) {
     shoppingCart.clearCart();
     displayCart();
-
+  });
+  // ------------- Adding items to array on click ------------------
+  $(".add-to").click(function(event) {
+    event.preventDefault();
+    var name = $(this).attr("data-menu-item");
+    var price = Number($(this).attr("data-item-price")).toFixed(2);
+    shoppingCart.addItemToCart(name, price, 1);
+    displayCart();
+  });
+  // ---------------- Clear Entire Cart -------------------
+  $("#clear-cart").click(function() {
+    shoppingCart.clearCart();
+    displayCart();
   });
   // ----------------- Function to Print out Cart Items to Cart.html ----------------
   function displayCart() {
@@ -108,7 +104,7 @@ $(document).ready(function() {
   displayCart();
 });
 // ----------------- Function to Display Cart on Past Orders Page -----------------------------
-("")
+// ("")
 
 
 
