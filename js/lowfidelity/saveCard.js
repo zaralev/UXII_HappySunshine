@@ -1,5 +1,8 @@
+//------------------------- SAVING CREDIT CARD DETAILS -----------------------
 $(".cards").hide();
 $(".save-card-details").click(function(event) {
+  // SAVING CARD DETAILS ON MODAL CLICK
+  // CREATING VARS TO SAVE VALUES TO
   var cardName = $("#card-names option:selected").val();
   console.log(cardName);
 
@@ -15,6 +18,7 @@ $(".save-card-details").click(function(event) {
   var cardSecurityCode = $(".card-security-number").val();
   console.log(cardSecurityCode);
 
+// PUSHING VARS TO ARRAYS
   var cardDetailsArray = [];
   cardDetailsArray.push(cardName + " " + cardNumber + " " + cardMonthExp + " " + cardYearExp + " " + cardSecurityCode);
   console.log(cardDetailsArray);
