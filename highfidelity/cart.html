@@ -2,160 +2,163 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
-  <title>Happy Sunshine</title>
-  <link rel="stylesheet" href="../css/foundation/foundation.css">
-  <link rel="stylesheet" href="../css/highfidelity/app.css">
-  <link rel="stylesheet" href="../css/highfidelity/cart.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <title>Happy Sunshine</title>
+    <link rel="stylesheet" href="../css/foundation/foundation.css">
+    <link rel="stylesheet" href="../css/highfidelity/app.css">
+    <link rel="stylesheet" href="../css/highfidelity/cart.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
 
-  <link rel="stylesheet" href="../css/remodal.css">
-  <link rel="stylesheet" href="../css/remodal-default-theme.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-  <script src="../js/remodal.js"></script>
-  <script src="../js/rewards.js"></script>
+    <link rel="stylesheet" href="../css/remodal.css">
+    <link rel="stylesheet" href="../css/remodal-default-theme.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="../js/remodal.js"></script>
+    <script src="../js/rewards.js"></script>
+    <script src="../js/lowfidelity/cart.js"></script>
 </head>
 
 <body>
 
-  <!-- Foundation off-Canvas Navigation Begins! -->
-  <div class="title-bar">
-    <div class="title-bar-left">
-      <i class="hamburger fa fa-bars fa-3x" data-toggle="offCanvas" aria-hidden="true"></i>
-      <i class="x fa fa-times fa-3x" data-toggle="offCanvas" aria-hidden="true"></i>
+    <!-- Foundation off-Canvas Navigation Begins! -->
+    <div class="title-bar">
+        <div class="title-bar-left">
+            <i class="hamburger fa fa-bars fa-3x" data-toggle="offCanvas" aria-hidden="true"></i>
+            <i class="x fa fa-times fa-3x" data-toggle="offCanvas" aria-hidden="true"></i>
+        </div>
+
+        <div class="title-bar-right">
+            <a href="cart.html"><i class="fa fa-shopping-cart fa-3x"></i></a>
+        </div>
     </div>
 
-    <div class="title-bar-right">
-      <a href="cart.html"><i class="fa fa-shopping-cart fa-3x"></i></a>
+
+    <div class="off-canvas-wrapper">
+        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+            <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+
+                <ul class="vertical menu">
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="settings.html">Account and Settings</a></li>
+                    <li><a href="pastOrders.html">Past Orders</a></li>
+                    <li><a href="favorites.html">Favorites</a></li>
+                    <li><a href="rewards.html">Rewards</a></li>
+                </ul>
+
+            </div>
+
+            <!-- Foundation Off-Canvas Navigation Ends! -->
+
+            <!-- Page Content Begins Here-->
+            <div class="row">
+                <div class="small-12 columns">
+                    <h1 class="order-title">Order Review</h1>
+                    <div id="clear">
+                        <button id="clear-cart"><i><b>Clear All</b></i></button>
+                    </div>
+                    <table id="show-cart">
+
+                    </table>
+
+                    <div id="cart-total"><b>Total:</b> $<span id="total-cart"></span></div>
+                    <!-- <div>You have <span id="item-count"></span> items in your cart</div> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-12 columns">
+                    <h2 class="time-title">PICK UP</h2>
+                    <ul class="inline-list">
+                        <input type="radio" name="pickUp" id="pickUpASAP" required>
+                        <label for="pickUpAsap">ASAP</label>
+                        <input type="radio" name="pickUp" id="pickUp15">
+                        <label for="pickUp15">15 Min</label>
+                        <input type="radio" name="pickUp" id="pickUp30">
+                        <label for="pickUp30">30 Min</label>
+                        <input type="radio" name="pickUp" id="pickUp60">
+                        <label for="pickUp60">1 Hr</label>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="small-12 columns">
+                    <h2 class="tip-title">TIP</h2>
+                    <ul class="inline-list">
+                        <input type="radio" name="tip" id="tip15" required>
+                        <label for="tip15">15%</label>
+                        <input type="radio" name="tip" id="tip20" required>
+                        <label for="tip20">20%</label>
+                        <input type="radio" name="tip" id="tip25" required>
+                        <label for="tip25">25%</label>
+                        <input type="radio" name="tip" id="tipNone" required>
+                        <label for="tipNone">None</label>
+                    </ul>
+                </div>
+            </div>
+            <div class="total">
+                <div class="row">
+                    <div class="small-12 columns">
+                        <!-- <fieldset> -->
+                        <input type="radio" name="payment" value="Pay With Cash" id="payWithCash" required>
+                        <label for="payWithCash">Pay With Cash</label>
+                        <br>
+                        <input type="radio" name="payment" value="Pay With Card" id="payWithCard" required>
+                        <label for="payWithCard">Pay With Card
+                        </label>
+                        <br>
+                        <div class="card"><span class="fa fa-credit-card"></span> <span class="card-name-detail"></span> <span class="card-number-detail"></span></div>
+                        <!-- </fieldset> -->
+                    </div>
+                </div>
+            </div>
+            <div class="row confirm-row">
+                <button id="confirm-button" class="confirm" type="submit" onclick="location.href='#favs'">Confirm</button>
+            </div>
+
+
+            <!--MODAL-->
+            <div class="remodal" data-remodal-id="favs" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+                <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                <div>
+                    <!-- <h2 id="modal1Title">Title</h2> -->
+                    <h1>Thanks For Ordering!</h1>
+                    <p id="modal1Desc">
+
+                        <span>Would you like to add this order to  favorites?</span>
+                        <br>
+                        <br>
+                        <button class="not-today" type="submit" onclick="location.href='progress.html'">Not Today</button>
+                        <button class="yes" type="submit" onclick="location.href='progress.html'">Yes!</button>
+                    </p>
+                </div>
+            </div>
+            <!-- END MODAL-->
+
+
+
+
+            <!-- Page Content Ends Here -->
+
+            <!-- Following Two Div Tags Close the Off-Canvas Wrapper -->
+        </div>
     </div>
-  </div>
+
+    <!--^ Do NOT Remove Above Div Tags ^  -->
 
 
-  <div class="off-canvas-wrapper">
-    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-      <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+    <!-- All The Javascript -->
+    <script src="../js/lowfidelity/vendor/jquery.js"></script>
 
-        <ul class="vertical menu">
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="settings.html">Account and Settings</a></li>
-          <li><a href="pastOrders.html">Past Orders</a></li>
-          <li><a href="favorites.html">Favorites</a></li>
-          <li><a href="rewards.html">Rewards</a></li>
-        </ul>
-
-      </div>
-
-      <!-- Foundation Off-Canvas Navigation Ends! -->
-
-      <!-- Page Content Begins Here-->
-      <div class="row">
-        <div class="small-12 columns">
-          <h1 class="order-title">Order Review</h1>
-          <div id="clear"><button id="clear-cart"><i><b>Clear All</b></i></button></div>
-          <table id="show-cart">
-
-          </table>
-
-          <div id="cart-total"><b>Total:</b> $<span id="total-cart"></span></div>
-          <!-- <div>You have <span id="item-count"></span> items in your cart</div> -->
-        </div>
-      </div>
-      <div class="row">
-        <div class="small-12 columns">
-          <h2 class="time-title">PICK UP</h2>
-          <ul class="inline-list">
-            <input type="radio" name="pickUp" id="pickUpASAP" required>
-            <label for="pickUpAsap">ASAP</label>
-            <input type="radio" name="pickUp" id="pickUp15">
-            <label for="pickUp15">15 Min</label>
-            <input type="radio" name="pickUp" id="pickUp30">
-            <label for="pickUp30">30 Min</label>
-            <input type="radio" name="pickUp" id="pickUp60">
-            <label for="pickUp60">1 Hr</label>
-          </ul>
-        </div>
-      </div>
+    <!-- Foundation JS -->
+    <script src="../js/lowfidelity/vendor/what-input.js"></script>
+    <script src="../js/lowfidelity/vendor/foundation.js"></script>
 
 
-
-      <div class="row">
-        <div class="small-12 columns">
-          <h2 class="tip-title">TIP</h2>
-          <ul class="inline-list">
-            <input type="radio" name="tip" id="tip15" required>
-            <label for="tip15">15%</label>
-            <input type="radio" name="tip" id="tip20" required>
-            <label for="tip20">20%</label>
-            <input type="radio" name="tip" id="tip25" required>
-            <label for="tip25">25%</label>
-            <input type="radio" name="tip" id="tipNone" required>
-            <label for="tipNone">None</label>
-          </ul>
-        </div>
-      </div>
-      <div class="total">
-        <div class="row">
-          <div class="small-12 columns">
-            <!-- <fieldset> -->
-            <input type="radio" name="payment" value="Pay With Cash" id="payWithCash" required>
-            <label for="payWithCash">Pay With Cash</label>
-            <br>
-            <input type="radio" name="payment" value="Pay With Card" id="payWithCard" required>
-            <label for="payWithCard">Pay With Card
-            </label>
-            <br>
-            <div class="card"><span class="fa fa-credit-card"></span> <span class="card-name-detail"></span> <span class="card-number-detail"></span></div>
-            <!-- </fieldset> -->
-          </div>
-        </div>
-      </div>
-      <div class="row confirm-row">
-        <button id="confirm-button" class="confirm" type="submit" onclick="location.href='#favs'">Confirm</button>
-      </div>
-
-
-      <!--MODAL-->
-      <div class="remodal" data-remodal-id="favs" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
-        <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
-        <div>
-          <!-- <h2 id="modal1Title">Title</h2> -->
-          <h1>Thanks For Ordering!</h1>
-          <p id="modal1Desc">
-
-            <span>Would you like to add this order to  favorites?</span>
-            <br>
-            <br>
-            <button class="not-today" type="submit" onclick="location.href='progress.html'">Not Today</button>
-            <button class="yes" type="submit" onclick="location.href='progress.html'">Yes!</button>
-          </p>
-        </div>
-      </div>
-      <!-- END MODAL-->
-
-
-
-
-      <!-- Page Content Ends Here -->
-
-      <!-- Following Two Div Tags Close the Off-Canvas Wrapper -->
-    </div>
-  </div>
-
-  <!--^ Do NOT Remove Above Div Tags ^  -->
-
-
-  <!-- All The Javascript -->
-  <script src="../js/lowfidelity/vendor/jquery.js"></script>
-
-  <!-- Foundation JS -->
-  <script src="../js/lowfidelity/vendor/what-input.js"></script>
-  <script src="../js/lowfidelity/vendor/foundation.js"></script>
-
-  <script src="../js/lowfidelity/saveCard.js"></script>
-  <script src="../js/lowfidelity/cart.js"></script>
-  <script src="../js/lowfidelity/app.js"></script>
+    <script src="../js/lowfidelity/saveCard.js"></script>
+    <script src="../js/lowfidelity/app.js"></script>
 
 
 </body>

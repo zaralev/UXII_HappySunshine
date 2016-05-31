@@ -163,12 +163,11 @@ var shoppingCart = (function() {
         if (cart[i].count === 0) {
           cart.splice(i, 1);
         }
+        break;
       }
-      break;
     }
+   saveCart();
   };
-  saveCart();
-
   // ----------------- Remove an entire Menu Item -----------------------
   foodItem.removeItemFromCartAll = function(name) {
     // loops array
