@@ -104,8 +104,9 @@ h2 {
   margin-left: -1.8em; }
 
 .foodForCart li {
-  margin-bottom: 1em; }
-  .foodForCart li span {
+  margin-bottom: 1em;
+  width: 60%; }
+  .foodForCart li span.pricing {
     position: absolute;
     right: 8em;
     font-weight: bold; }
@@ -120,7 +121,7 @@ h2 {
   border-bottom: 3px dotted #ff5f4b; }
 
 .accordion-content ul {
-  font-size: 12px; }
+  font-size: 16px; }
 
 .counter {
   font-family: 'Sun';
