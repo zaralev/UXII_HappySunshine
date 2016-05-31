@@ -7,8 +7,28 @@
 body {
   background-color: #fffce7; }
 
-h1, h2 {
+h1,
+h2 {
   font-family: 'Sun'; }
+
+table {
+  border: #fffce7; }
+
+#clear {
+  margin-top: -2.5em;
+  margin-bottom: 0.3em;
+  color: #50514F; }
+
+#cart-total {
+  text-align: right;
+  padding: 0.7em 1em 0.7em 1em;
+  background-color: #dedede;
+  margin-top: -1em;
+  font-size: 18px;
+  margin-bottom: 1em; }
+
+#show-cart td {
+  padding-left: 1.8em; }
 
 .order-title {
   font-size: 3em;

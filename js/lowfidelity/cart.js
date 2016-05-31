@@ -54,21 +54,22 @@ $(document).ready(function() {
     for (var i in cartArray) {
       output += "<tr>"
       + "<td>"
-      + " "
+      + " <b>"
       + cartArray[i].name
-      + " "
-      + cartArray[i].count
-      + " x "
-      + "$"
-      + cartArray[i].price
-      + " "
-      + " = "
-      + "$"
+      + "</b>"
+      + " <button class ='delete-item' data-menu-item='" + cartArray[i].name + "'> <i class='fa fa-times fa-lg' style='color:#f00; position:absolute; left: 0.7em; margin-top:-0.6em;'></i></button> "
+
+      + "<div style='padding: 0.2em;position:absolute; margin-top: -1.8em; right: 1em;'> <button class ='sub-item' data-menu-item='" + cartArray[i].name + "'> <i class='fa fa-minus' style='color:#2c688b;'></i> </button> <b style='padding-right: 0.3em; padding-left:0.3em;'>"
+            + cartArray[i].count
+      + "</b> <button class ='plus-item' data-menu-item='" + cartArray[i].name + "'> <i class='fa fa-plus' style='color:#2c688b;'></i> </button> </div>"
+      +"<br>"
+      // + " x "
+      // + "$"
+      // + cartArray[i].price
+      + " <div style='position:relative; left: 16.8em;'>"
+      + "<b>$"
       + cartArray[i].total
-      + " <button class ='sub-item' data-menu-item='" + cartArray[i].name + "'> - </button> "
-      + " <button class ='plus-item' data-menu-item='" + cartArray[i].name + "'> + </button> "
-      + " <button class ='delete-item' data-menu-item='" + cartArray[i].name + "'> Remove </button> "
-      + "</td>"
+      + "</b></div></td>"
       + "</tr>"
     }
     $("#show-cart").html(output);

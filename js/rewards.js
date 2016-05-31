@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  // this doesn't work and I don't know why
+  // this doesn't work and I don't know whyg
     var count;
     $("#confirm-button").click(function() {
         count++;

@@ -6,102 +6,115 @@
     font-weight: normal;
     font-style: normal;
 }
-
 body {
-  background-color: $yellow2;
+    background-color: $yellow2;
 }
-h1,h2 {
-  font-family: 'Sun';
+h1,
+h2 {
+    font-family: 'Sun';
 }
-
+table {
+      border: $yellow2;
+}
+#clear {
+  margin-top:-2.5em;
+  margin-bottom: 0.3em;
+  color: $darkgray;
+}
+#cart-total {
+  text-align: right;
+  padding: 0.7em 1em 0.7em 1em;
+  background-color: #dedede;
+  margin-top:-1em;
+  font-size: 18px;
+  margin-bottom: 1em;
+}
+#show-cart {
+    tr {
+        // background-color: $yellow2;
+        // opacity:0.2;
+    }
+    td {
+      padding-left: 1.8em;
+    }
+}
 .order-title {
     font-size: 3em;
     text-align: center;
     background-color: $yellow;
     padding: 0.3em;
     font-family: $heading;
-    width:110%;
-    margin:0 0 1em -2.6%;
+    width: 110%;
+    margin: 0 0 1em -2.6%;
 }
-
 .time-title {
     font-size: 2em;
     text-align: left;
     background-color: $blue;
-    color:#fff;
+    color: #fff;
     padding: 0;
-    width:110%;
-    margin:0 0 1em -2.6%;
-    padding-left:5%;
+    width: 110%;
+    margin: 0 0 1em -2.6%;
+    padding-left: 5%;
     font-family: $heading;
 }
-
 .tip-title {
     font-size: 2em;
     text-align: left;
-    background-color:$teal;
-    color:#fff;
+    background-color: $teal;
+    color: #fff;
     padding: 0;
-    width:110%;
-    margin:0 0 1em -2.6%;
-    padding-left:5%;
+    width: 110%;
+    margin: 0 0 1em -2.6%;
+    padding-left: 5%;
     font-family: $heading;
 }
-
 .total {
-  padding:1em;
-  border: 6px solid $orange;
-  // background-color: #ffe89f;
+    padding: 1em;
+    border: 6px solid $orange;
+    // background-color: #ffe89f;
 }
-
 .card {
-  font-size: 0.8em;
-  padding-left:2.1em;
-  margin-top:-0.7em;
+    font-size: 0.8em;
+    padding-left: 2.1em;
+    margin-top: -0.7em;
 }
 .fa-credit-card {
-  margin-right: 0.5em;
+    margin-right: 0.5em;
 }
-
 .total-cost {
-  right: -17.5em;
-  position:absolute;
+    right: -17.5em;
+    position: absolute;
 }
-
-
 .confirm {
-  background-color: #39cbaf;
-  padding: 10px;
-  color: #fff;
-  font-family: 'Sun';
-  font-size: 2em;
-  border-radius: 5px;
-}
-
-.confirm-row {
-  text-align: center;
-  margin-top:1em;
-}
-
-
-.yes {
-  background-color: $yellow;
+    background-color: #39cbaf;
     padding: 10px;
-  color: #fff;
-  font-family: 'Sun';
-  font-size: 1.5em;
-  border-radius: 5px;
-  width:58%;
-  display:inline-block;
+    color: #fff;
+    font-family: 'Sun';
+    font-size: 2em;
+    border-radius: 5px;
 }
-
+.confirm-row {
+    text-align: center;
+    margin-top: 1em;
+}
+.yes {
+    background-color: $yellow;
+    padding: 10px;
+    color: #fff;
+    font-family: 'Sun';
+    font-size: 1.5em;
+    border-radius: 5px;
+    width: 58%;
+    display: inline-block;
+}
 .not-today {
-  background-color: $darkgray;
-  padding: 10px;
-  color: #fff;
-  font-family: 'Sun';
-  font-size: 1.5em;
-  border-radius: 5px;
-    width:30%;
-      display:inline-block;
+    background-color: $darkgray;
+    padding: 10px;
+    color: #fff;
+    font-family: 'Sun';
+    font-size: 1.5em;
+    border-radius: 5px;
+    width: 30%;
+    display: inline-block;
 }
