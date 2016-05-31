@@ -24,15 +24,15 @@ $(document).ready(function() {
     console.log("count count");
   });
   // ---------------- Clear Cart on Confirm Order --------------
-  $("#modal1Desc").on("click", ".not-today", function(event) {
-    shoppingCart.clearCart();
-    displayCart();
-  });
-
-  $("#modal1Desc").on("click", ".yes", function(event) {
-    shoppingCart.clearCart();
-    displayCart();
-  });
+  // $("#modal1Desc").on("click", ".not-today", function(event) {
+  //   shoppingCart.clearCart();
+  //   displayCart();
+  // });
+  //
+  // $("#modal1Desc").on("click", ".yes", function(event) {
+  //   shoppingCart.clearCart();
+  //   displayCart();
+  // });
   // ------------- Adding items to array on click ------------------
   $(".add-to").click(function(event) {
     event.preventDefault();
@@ -50,6 +50,7 @@ $(document).ready(function() {
   function displayCart() {
     var cartArray = shoppingCart.listCart();
     var output = "";
+    var orderOutput = "";
 
     for (var i in cartArray) {
       output += "<tr>"
@@ -72,7 +73,18 @@ $(document).ready(function() {
       + "</b></div></td>"
       + "</tr>"
     }
+
+    for (var i in cartArray) {
+      orderOutput += "<tr>"
+      + "<td>"
+      + "<b>"
+      + cartArray[i].name
+      + "</b>"
+      + "</td>"
+      + "</tr>"
+    }
     $("#show-cart").html(output);
+    $("#past-order").html(orderOutput);
     $("#total-cart").html(shoppingCart.totalCart());
     $("#item-count").html(shoppingCart.countCart());
   }
