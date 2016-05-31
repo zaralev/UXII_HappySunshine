@@ -10,11 +10,11 @@ function accountDetails() {
  localStorage.setItem("account-email", email.value);
  localStorage.setItem("account-password", pw.value);
 
- console.log(localStorage.getItem("account-email").length);
- console.log(localStorage.getItem("account-password").length);
-
- console.log(localStorage.getItem("account-email"));
- console.log(localStorage.getItem("account-password"));
+ // console.log(localStorage.getItem("account-email").length);
+ // console.log(localStorage.getItem("account-password").length);
+ //
+ // console.log(localStorage.getItem("account-email"));
+ // console.log(localStorage.getItem("account-password"));
 
 // If user does not enter anything, wont be allowed to go to home page
  if (localStorage.getItem("account-email").length <= 0 || localStorage.getItem("account-password").length <= 0) {
