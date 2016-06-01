@@ -4,6 +4,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+
+    <!-- iOS Settings -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <!-- Android settings -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Splash Screen -->
+    <link
+  rel="apple-touch-startup-image"
+  href="images/splash_screen.png"
+  media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" >
+
+
     <link rel="stylesheet" href="../css/foundation/foundation.css">
     <link rel="stylesheet" href="../css/highfidelity/app.css">
     <link rel="stylesheet" href="../css/highfidelity/index.css">
@@ -21,16 +36,16 @@
         <div id="greetingContainer" class="row">
 
             <div id="greeting" class="small-12 columns">
-                                        <img id="logo" src="images/slackLogo.png" alt="logo" />
-<div id="background">
-                <div class="center">
-                    <p class="morning">Good Morning!</p>
+                <img id="logo" src="images/slackLogo.png" alt="logo" />
+                <div id="background">
+                    <div class="center">
+                        <p class="morning">Good Morning!</p>
+                    </div>
+                    <div class="center">
+                        <h1 id="happy-sunshine">Happy Sunshine</h1>
+                    </div>
+                    <p id="location">3200 Arch St.</p>
                 </div>
-                <div class="center">
-                    <h1 id="happy-sunshine">Happy Sunshine</h1>
-                </div>
-                <p id="location">3200 Arch St.</p>
-</div>
             </div>
         </div>
     </div>
@@ -57,9 +72,9 @@
 
         <div class="row">
             <div class="small-12 columns">
-              <p>
-                  <input type="button" class="create menu-reset"  onclick="location.href='#create'" value="create an account" />
-              </p>
+                <p>
+                    <input type="button" class="create menu-reset" onclick="location.href='#create'" value="create an account" />
+                </p>
                 <!-- <p>
                     <input type="button" class="create menu-reset" data-open="create-account" value="create an account" />
                 </p> -->
@@ -102,36 +117,36 @@
                         <h1 id="create-an-account">Create An Account</h1>
                         <p id="modal1Desc">
 
-                          <span id="desc-create">Creating an account lets you access special deals and save your payment options!</span>
-                          <form>
-                              <div class="row">
-                                  <div class="small-12 columns">
-                                      <input id="account-email" data-account-email="account-email" type="text" placeholder="enter your email">
-                                  </div>
-                              </div>
+                            <span id="desc-create">Creating an account lets you access special deals and save your payment options!</span>
+                            <form>
+                                <div class="row">
+                                    <div class="small-12 columns">
+                                        <input id="account-email" data-account-email="account-email" type="text" placeholder="enter your email">
+                                    </div>
+                                </div>
 
-                              <div class="row">
-                                  <div class="small-12 columns">
-                                      <input id="account-password" data-account-password="account-password" type="password" id="password" required pattern="[a-zA-Z]+" placeholder="enter your password">
-                                  </div>
-                              </div>
-                          </form>
-                        </div>
-                        <div class="row">
-                            <div class="small-12 columns">
-                                <button id="confirm" class="success button">
-                                    <a onclick="accountDetails()" style="color:#fff">confirm account</a>
-                                </button>
-                            </div>
-                        </div>
-
-                        </p>
+                                <div class="row">
+                                    <div class="small-12 columns">
+                                        <input id="account-password" data-account-password="account-password" type="password" id="password" required pattern="[a-zA-Z]+" placeholder="enter your password">
+                                    </div>
+                                </div>
+                            </form>
                     </div>
-                </div>
-                <!-- END MODAL-->
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <button id="confirm" class="success button">
+                                <a onclick="accountDetails()" style="color:#fff">confirm account</a>
+                            </button>
+                        </div>
+                    </div>
 
+                    </p>
+                </div>
             </div>
+            <!-- END MODAL-->
+
         </div>
+    </div>
     </div>
 
     <!-- All The Javascript -->
