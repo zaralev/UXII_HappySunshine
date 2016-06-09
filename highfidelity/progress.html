@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/foundation/foundation.css">
     <link rel="stylesheet" href="../css/highfidelity/app.css">
     <link rel="stylesheet" href="../css/highfidelity/progress.css">
+    <link rel="stylesheet" href="../js/lowfidelity/jquery-ui-1.11.4/jquery-ui.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 </head>
 
@@ -48,15 +49,19 @@
 
             <div class="row">
                 <div class="small-12 columns">
-                    <div class="progress" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuetext="25 percent" aria-valuemax="100">
+                  <h2>Your Order is Being Prepared</h2>
+                  <div id="progressbar"></div>
+                  <h2>Your Order is Now Complete</h2>
+                  <div id="progressComplete"></div>
+                    <!-- <div class="progress" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuetext="25 percent" aria-valuemax="100">
                         <span class="progress-meter" style="width: 100%">
      <p class="progress-meter-text">Order Received!</p>
    </span>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
-            <div class="row">
+            <!-- <div class="row">
                 <div class="small-12 columns">
                     <div class="progress" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuetext="25 percent" aria-valuemax="100">
                         <span class="progress-meter" style="width: 100%">
@@ -84,7 +89,7 @@
    </span>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div style="text-align:center; margin-top:1em;">
                 <button class="back" type="submit" onclick="location.href='menu.html'">Back To Menu</button>
             </div>
@@ -97,12 +102,16 @@
 
     <!-- All The Javascript -->
     <script src="../js/lowfidelity/vendor/jquery.js"></script>
+    <script src="../js/lowfidelity/jquery-ui-1.11.4/jquery-ui.js">
+
+    </script>
 
     <!-- Foundation JS -->
     <script src="../js/lowfidelity/vendor/what-input.js"></script>
     <script src="../js/lowfidelity/vendor/foundation.js"></script>
 
     <script src="../js/lowfidelity/app.js"></script>
+    <script src="../js/lowfidelity/progressbar.js"></script>
 </body>
 
 </html>

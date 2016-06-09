@@ -9,6 +9,9 @@ body {
 
 h1, h2 {
   font-family: 'Sun'; }
+  h2{
+    text-align: center;
+  }
 
 .progress-title {
   width: 110%;
@@ -29,4 +32,5 @@ h1, h2 {
   width: 58%;
   display: inline-block; }
 
+}
 /*# sourceMappingURL=progress.css.map */
