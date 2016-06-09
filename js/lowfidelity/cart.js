@@ -105,10 +105,6 @@ $(document).ready(function() {
 
     displayCart();
 });
-// ----------------- Function to Display Cart on Past Orders Page -----------------------------
-// ("")
-
-
 
 // ----------------- Building Shopping Cart + Setting/Getting Local Storage -----------------------
 
