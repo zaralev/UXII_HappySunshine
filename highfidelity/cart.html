@@ -42,7 +42,6 @@
                     <li><a href="settings.html">Account and Settings</a></li>
                     <li><a href="pastOrders.html">Past Orders</a></li>
                     <li><a href="favorites.html">Favorites</a></li>
-                    <li><a href="rewards.html">Rewards</a></li>
                 </ul>
 
             </div>
@@ -108,35 +107,14 @@
                         <label for="payWithCard">Pay With Card
                         </label>
                         <br>
-                        <div class="card"><span class="fa fa-credit-card"></span> <span class="card-name-detail"></span> <span class="card-number-detail"></span></div>
+                        <div class="card"><span class="fa fa-credit-card"></span> <span><script>localStorage.getItem("cardDetails")</script></span></div>
                         <!-- </fieldset> -->
                     </div>
                 </div>
             </div>
             <div class="row confirm-row">
-                <button id="confirm-button" class="confirm" type="submit" onclick="location.href='#favs'">Confirm</button>
+                <button id="confirm-button" class="confirm" type="submit"><a href="progress.html">Confirm</a></button>
             </div>
-
-
-            <!--MODAL-->
-            <div class="remodal" data-remodal-id="favs" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
-                <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
-                <div>
-                    <!-- <h2 id="modal1Title">Title</h2> -->
-                    <h1>Thanks For Ordering!</h1>
-                    <p id="modal1Desc">
-
-                        <span>Would you like to add this order to  favorites?</span>
-                        <br>
-                        <br>
-                        <button class="not-today" type="submit" onclick="location.href='progress.html'">Not Today</button>
-                        <button class="yes" type="submit" onclick="location.href='progress.html'">Yes!</button>
-                    </p>
-                </div>
-            </div>
-            <!-- END MODAL-->
-
-
 
 
             <!-- Page Content Ends Here -->
